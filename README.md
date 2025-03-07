@@ -2,7 +2,7 @@
 <img src= "https://webscreative.es/wp-content/uploads/2024/05/LOGO-2-WEBSCREATIVE2.png.webp" width= "100%" height= "300">
 <img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 
-<p align="left" style="display:flex;">
+<p align="left">
 <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
 <a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
 <a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="30" width="40" /></a>
