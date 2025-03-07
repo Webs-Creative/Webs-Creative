@@ -18,10 +18,10 @@
 <br/>
 <br/>
   <h2 align="center"> Github Statistics 📈 </h2>
-
-| ![Webs Creative github stats](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&theme=tokyonight) | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=tokyonight) |
+<div>| ![Webs Creative github stats](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&theme=tokyonight) | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=tokyonight) |
 | --- | --- |
-| | ![Github Stars](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&locale=en&count_private=true&hide_rank=true&custom_title=My%20GitHub%20Stats&disable_animations=true&theme=tokyonight) |
+| | ![Github Stars](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&locale=en&count_private=true&hide_rank=true&custom_title=My%20GitHub%20Stats&disable_animations=true&theme=tokyonight) |</div>
+
 <!--      <div align="center"> 
      <a href="">
       <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Webs-Creative&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" />
