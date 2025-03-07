@@ -6,9 +6,9 @@
 [![GitHub followers](https://img.shields.io/github/followers/Webs-Creative.svg?style=social&label=Followers)](https://github.com/Webs-Creative?tab=followers)
 <p align="left">
 <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="@andermendoza" height="30" width="40" /></a>
-<a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="@andermendoza" height="30" width="40" /></a>
-<a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="@andermendoza" height="30" width="40" /></a>
- <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="@andermendoza" height="30" width="40" /></a>
+<a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="@andermendoza" height="30" width="40" /></a>
+<a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="@andermendoza" height="30" width="40" /></a>
+ <a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="@andermendoza" height="30" width="40" /></a>
 </p>
 
 ## Diseño, Desarrollo y Programación 
