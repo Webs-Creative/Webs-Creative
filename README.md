@@ -28,5 +28,4 @@
      </div>
 [![Webs Creative GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Webs-Creative&theme=tokyonight)](https://git.io/praveenscience)
 
-| ![Aditya's github stats](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&theme=tokyonight) | ![Webs Creative GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Webs-Creative&theme=tokyonight) |
-| --- | --- |
+| ![Aditya's github stats](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&theme=tokyonight)
