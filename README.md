@@ -3,12 +3,12 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/Webs-Creative.svg?style=social&label=Followers)](https://github.com/Webs-Creative?tab=followers)
 <p align="left">
-<img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
 <a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
 <a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="30" width="40" /></a>
  <a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="" height="30" width="40" /></a>
 </p>
+<img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 
 ## Diseño, Desarrollo y Programación 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
