@@ -26,7 +26,6 @@
       <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=react&line_height=40&hide=css"/>
     </a>
      </div>
-[![Aditya's GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Aditya664&theme=tokyonight)](https://git.io/praveenscience)
 
 | ![Aditya's github stats](https://github-readme-stats.vercel.app/api?username=Aditya664&show_icons=true&theme=tokyonight) | ![Aditya GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Aditya664&theme=tokyonight) |
 | --- | --- |
