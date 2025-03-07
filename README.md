@@ -1,4 +1,4 @@
-# Hi there 👋 <img src= "https://webscreative.es/wp-content/uploads/2024/05/LOGO-2-WEBSCREATIVE2.png.webp" width= "200" height= "100">
+# Hi there 👋 <img src= "https://webscreative.es/wp-content/uploads/2024/05/LOGO-2-WEBSCREATIVE2.png.webp" width= "500" height= "100">
 
 ## Diseño, Desarrollo y Programación 
 
