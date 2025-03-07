@@ -17,7 +17,7 @@
 <br/>
 <br/>
 <br/>
-  <div align="center"><h2> Github Statistics </h2><img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git"/>&nbsp;</div>
+  <h2> Github Statistics📈📈 </h2>
   <div align="center">
    
 | <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Webs-Creative&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" /> | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=tokyonight) |
