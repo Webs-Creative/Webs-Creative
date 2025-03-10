@@ -25,7 +25,7 @@
    
 | <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Webs-Creative&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" /> | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=tokyonight) |
 |--|--|
-| ![Github Stars](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&locale=en&count_private=true&hide_rank=true&custom_title=My%20GitHub%20Stats&disable_animations=true&theme=tokyonight) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Webs-Creative&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats) |
+| [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Webs-Creative&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats) | ![Github Stars](https://github-readme-stats.vercel.app/api?username=Webs-Creative&show_icons=true&locale=en&count_private=true&hide_rank=true&custom_title=My%20GitHub%20Stats&disable_animations=true&theme=tokyonight) |
 
 </div>
 
