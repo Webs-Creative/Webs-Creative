@@ -3,13 +3,13 @@
 <img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 
  [![GitHub followers](https://img.shields.io/github/followers/Webs-Creative.svg?style=social&label=Followers)](https://github.com/Webs-Creative?tab=followers)
-<h2 align="center"> 🌐Redes Sociales <h2>
  
+## 🌐Redes Sociales
 <div align="center">
-<a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
-<a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
-<a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="30" width="40" /></a>
-<a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="" height="30" width="40" /></a>
+<a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Twitter.svg" alt="" height="50" width="60" /></a>
+<a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://www.freepngimg.com/thumb/youtube/58961-area-text-brand-trademark-youtube-metroui-alt.png" alt="" height="50" width="60" /></a>
+<a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Instagram.svg" alt="" height="50" width="60" /></a>
+<a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="" height="50" width="60" /></a>
 </div>
 <br/>
 
@@ -19,7 +19,8 @@
 <br/>
 <br/>
 <br/>
-  <h2 align="center"> Github Statistics📈📈 </h2>
+<br/>
+ <h2> Github Statistics📈📈</h2>
   <div align="center">
    
 | <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Webs-Creative&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" /> | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Webs-Creative&theme=tokyonight) |
