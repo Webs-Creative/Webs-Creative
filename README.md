@@ -26,6 +26,15 @@
 
 </div>
 
+## GitHub Thropies 🏆 :
+
+<br>
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=AnushkaWijegoonawardana97)](https://github.com/AnushkaWijegoonawardana97/github-profile-trophy)
+
+<br>
+
+
 
 <!--      <div align="center"> 
      <a href="">
