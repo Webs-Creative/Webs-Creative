@@ -3,7 +3,7 @@
 <img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 
  [![GitHub followers](https://img.shields.io/github/followers/Webs-Creative.svg?style=social&label=Followers)](https://github.com/Webs-Creative?tab=followers)
-
+## 🌐Socials
 <p align="left">
 <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
 <a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
