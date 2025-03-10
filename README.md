@@ -3,13 +3,15 @@
 <img src="https://profile-counter.glitch.me/Webs-Creative/count.svg">
 
  [![GitHub followers](https://img.shields.io/github/followers/Webs-Creative.svg?style=social&label=Followers)](https://github.com/Webs-Creative?tab=followers)
-## 🌐Socials
-<p align="left">
+<h2 align="center"> 🌐Redes Sociales <h2>
+ 
+<div align="center">
 <a href="http://x.com/WesbsC8500" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
 <a href="http://www.youtube.com/channel/UC3ahlIk5lT3gvUDAqnKIRuw" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
 <a href="https://www.instagram.com/webscreative.es/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="30" width="40" /></a>
- <a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="" height="30" width="40" /></a>
-</p>
+<a href="http://www.tiktok.com/@webscreative?lang=es" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg" alt="" height="30" width="40" /></a>
+</div>
+<br/>
 
 ## Diseño, Desarrollo y Programación 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
@@ -26,9 +28,11 @@
 
 </div>
 
+<br/>
+
 ## GitHub Thropies 🏆 :
 
-<br>
+<br/>
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Webs-Creative)](https://github.com/Webs-Creative/github-profile-trophy)
 
