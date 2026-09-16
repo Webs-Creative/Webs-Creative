@@ -1,0 +1,38 @@
+[
+  {
+    "archivo": "marketing-templates/software-a-medida-crm.html",
+    "marca": "Webs Creative",
+    "nombre": "CRM y software a medida",
+    "tipo": "all",
+    "asunto": "Un CRM hecho para tu negocio (con app de fichajes incluida)",
+    "preheader": "Un CRM y un software de gestión hechos a tu medida: clientes, presupuestos, facturas y fichajes en un único panel, cumpliendo la ley.",
+    "adjuntar": false,
+    "comercial": true,
+    "idioma": "es_ES",
+    "opcionales": []
+  },
+  {
+    "archivo": "marketing-templates/desarrollo-web-profesional.html",
+    "marca": "Webs Creative",
+    "nombre": "Diseño y desarrollo web profesional",
+    "tipo": "all",
+    "asunto": "Tu web, diseñada para vender",
+    "preheader": "Diseñamos y desarrollamos tu página web profesional: rápida, segura y pensada para vender.",
+    "adjuntar": false,
+    "comercial": true,
+    "idioma": "es_ES",
+    "opcionales": []
+  },
+  {
+    "archivo": "marketing-templates/sorteo-cupones-descuento.html",
+    "marca": "Webs Creative",
+    "nombre": "Sorteo de cupones de descuento",
+    "tipo": "all",
+    "asunto": "Sorteamos hasta un 70% de descuento entre nuestros clientes",
+    "preheader": "Participa en nuestro sorteo: cupones del 30%, 50% y 70% de descuento en tu próxima web, software de facturación o app móvil.",
+    "adjuntar": false,
+    "comercial": true,
+    "idioma": "es_ES",
+    "opcionales": []
+  }
+]
