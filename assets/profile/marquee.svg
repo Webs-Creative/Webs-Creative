@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="64" viewBox="0 0 1280 64" role="img" aria-label="Servicios de Webs Creative">
+  <defs>
+    <clipPath id="c"><rect width="1280" height="64" rx="14"/></clipPath>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#B9500F"/><stop offset=".5" stop-color="#E5762F"/><stop offset="1" stop-color="#B9500F"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#B9500F"/><stop offset=".08" stop-color="#B9500F" stop-opacity="0"/>
+      <stop offset=".92" stop-color="#B9500F" stop-opacity="0"/><stop offset="1" stop-color="#B9500F"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .w{font:800 22px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#FFFFFF;letter-spacing:2px}
+    .s{font:400 18px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#0E0E12;fill-opacity:.55}
+    .track{animation:slide 32s linear infinite}
+    @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-2502px)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <g clip-path="url(#c)">
+    <rect width="1280" height="64" fill="url(#bg)"/>
+    <g class="track">
+      <g><text x="0" y="40" class="w" textLength="210" lengthAdjust="spacingAndGlyphs">CRM A MEDIDA</text><text x="236.0" y="39" class="s">✦</text><text x="280.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">DISEÑO WEB</text><text x="481.0" y="39" class="s">✦</text><text x="525.0" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">TIENDAS ONLINE</text><text x="796.0" y="39" class="s">✦</text><text x="840.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">VERI*FACTU</text><text x="1041.0" y="39" class="s">✦</text><text x="1085.0" y="40" class="w" textLength="262" lengthAdjust="spacingAndGlyphs">APP DE FICHAJES</text><text x="1373.5" y="39" class="s">✦</text><text x="1417.5" y="40" class="w" textLength="228" lengthAdjust="spacingAndGlyphs">AGENTES DE IA</text><text x="1671.0" y="39" class="s">✦</text><text x="1715.0" y="40" class="w" textLength="280" lengthAdjust="spacingAndGlyphs">MÓDULOS DOLIBARR</text><text x="2021.0" y="39" class="s">✦</text><text x="2065.0" y="40" class="w" textLength="52" lengthAdjust="spacingAndGlyphs">SEO</text><text x="2143.5" y="39" class="s">✦</text><text x="2187.5" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">AUTOMATIZACIÓN</text><text x="2458.5" y="39" class="s">✦</text></g>
+      <g transform="translate(2502 0)"><text x="0" y="40" class="w" textLength="210" lengthAdjust="spacingAndGlyphs">CRM A MEDIDA</text><text x="236.0" y="39" class="s">✦</text><text x="280.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">DISEÑO WEB</text><text x="481.0" y="39" class="s">✦</text><text x="525.0" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">TIENDAS ONLINE</text><text x="796.0" y="39" class="s">✦</text><text x="840.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">VERI*FACTU</text><text x="1041.0" y="39" class="s">✦</text><text x="1085.0" y="40" class="w" textLength="262" lengthAdjust="spacingAndGlyphs">APP DE FICHAJES</text><text x="1373.5" y="39" class="s">✦</text><text x="1417.5" y="40" class="w" textLength="228" lengthAdjust="spacingAndGlyphs">AGENTES DE IA</text><text x="1671.0" y="39" class="s">✦</text><text x="1715.0" y="40" class="w" textLength="280" lengthAdjust="spacingAndGlyphs">MÓDULOS DOLIBARR</text><text x="2021.0" y="39" class="s">✦</text><text x="2065.0" y="40" class="w" textLength="52" lengthAdjust="spacingAndGlyphs">SEO</text><text x="2143.5" y="39" class="s">✦</text><text x="2187.5" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">AUTOMATIZACIÓN</text><text x="2458.5" y="39" class="s">✦</text></g>
+      <g transform="translate(5005 0)"><text x="0" y="40" class="w" textLength="210" lengthAdjust="spacingAndGlyphs">CRM A MEDIDA</text><text x="236.0" y="39" class="s">✦</text><text x="280.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">DISEÑO WEB</text><text x="481.0" y="39" class="s">✦</text><text x="525.0" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">TIENDAS ONLINE</text><text x="796.0" y="39" class="s">✦</text><text x="840.0" y="40" class="w" textLength="175" lengthAdjust="spacingAndGlyphs">VERI*FACTU</text><text x="1041.0" y="39" class="s">✦</text><text x="1085.0" y="40" class="w" textLength="262" lengthAdjust="spacingAndGlyphs">APP DE FICHAJES</text><text x="1373.5" y="39" class="s">✦</text><text x="1417.5" y="40" class="w" textLength="228" lengthAdjust="spacingAndGlyphs">AGENTES DE IA</text><text x="1671.0" y="39" class="s">✦</text><text x="1715.0" y="40" class="w" textLength="280" lengthAdjust="spacingAndGlyphs">MÓDULOS DOLIBARR</text><text x="2021.0" y="39" class="s">✦</text><text x="2065.0" y="40" class="w" textLength="52" lengthAdjust="spacingAndGlyphs">SEO</text><text x="2143.5" y="39" class="s">✦</text><text x="2187.5" y="40" class="w" textLength="245" lengthAdjust="spacingAndGlyphs">AUTOMATIZACIÓN</text><text x="2458.5" y="39" class="s">✦</text></g>
+    </g>
+    <rect width="1280" height="64" fill="url(#fade)"/>
+  </g>
+</svg>
