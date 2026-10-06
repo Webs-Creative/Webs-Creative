@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="¿Hablamos de tu proyecto? Pide presupuesto sin compromiso en webscreative.es/contacto">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B9500F"/><stop offset=".55" stop-color="#E5762F"/><stop offset="1" stop-color="#F29052"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="1280" height="300" rx="28"/></clipPath>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#FFFFFF" fill-opacity=".14"/></pattern>
+  </defs>
+  <style>
+    .k{font:700 15px 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace;fill:#0E0E12;fill-opacity:.7;letter-spacing:3px}
+    .h{font:800 58px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#FFFFFF;letter-spacing:-1.8px}
+    .s{font:500 20px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#FDEBDF}
+    .b{font:700 19px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#FFFFFF}
+    .ring{transform-box:fill-box;transform-origin:center;animation:spin 40s linear infinite}
+    .ring2{animation-duration:60s;animation-direction:reverse}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .btn{animation:nudge 2.4s ease-in-out infinite}
+    @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <g clip-path="url(#c)">
+    <rect width="1280" height="300" fill="url(#bg)"/>
+    <rect width="1280" height="300" fill="url(#dots)"/>
+    <g class="ring" fill="none" stroke="#FFFFFF" stroke-opacity=".18">
+      <circle cx="1120" cy="150" r="200" stroke-dasharray="4 14" stroke-width="2"/>
+    </g>
+    <g class="ring ring2" fill="none" stroke="#0E0E12" stroke-opacity=".2">
+      <circle cx="1120" cy="150" r="140" stroke-dasharray="60 30" stroke-width="10"/>
+    </g>
+    <circle cx="1120" cy="150" r="70" fill="#0E0E12" fill-opacity=".9"/>
+    <text x="1120" y="164" text-anchor="middle" style="font:800 40px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#E5762F">WC</text>
+  </g>
+  <text x="64" y="78" class="k">// NUEVO PROYECTO</text>
+  <text x="64" y="146" class="h">¿Hablamos de tu proyecto?</text>
+  <text x="64" y="186" class="s">Cuéntanos tu idea y te enviamos una propuesta clara, sin compromiso.</text>
+  <g class="btn">
+    <rect x="64" y="214" width="300" height="54" rx="27" fill="#0E0E12"/>
+    <text x="96" y="248" class="b">Pedir presupuesto  <tspan fill="#E5762F">→</tspan></text>
+  </g>
+</svg>

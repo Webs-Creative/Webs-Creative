@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="96" viewBox="0 0 1280 96" role="img" aria-label="Qué hacemos">
+  <defs>
+    <linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#E5762F"/><stop offset="1" stop-color="#E5762F" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .k{font:700 15px 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace;fill:#E5762F;letter-spacing:3px}
+    .t{font:800 40px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#0E0E12;letter-spacing:-1px}
+    .ln{transform-origin:left;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) forwards;transform:scaleX(0)}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .dot{animation:blink 1.2s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <text x="0" y="26" class="k">// SERVICIOS</text>
+  <text x="0" y="72" class="t">Qué hacemos<tspan fill="#E5762F" class="dot">.</tspan></text>
+  <rect class="ln" x="0" y="90" width="1280" height="2" fill="url(#l)"/>
+</svg>

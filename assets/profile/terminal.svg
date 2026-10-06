@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="546" viewBox="0 0 1280 546" role="img" aria-labelledby="t">
+  <title id="t">Sobre Webs Creative: estudio de software a medida y diseño web. Contacto: info@webscreative.es, +34 608 567 883.</title>
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E5762F"/><stop offset=".4" stop-color="#232127"/><stop offset="1" stop-color="#232127"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#E5762F" stop-opacity=".16"/><stop offset="1" stop-color="#E5762F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .mono{font:500 21px 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace;fill:#C4C4CC}
+    .out{fill:#C4C4CC}
+    .bar{font:600 14px 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace;fill:#71717C}
+    .cur{animation:blink 1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <rect x=".75" y=".75" width="1278.5" height="544.5" rx="22" fill="#121216" stroke="url(#border)" stroke-width="1.5"/>
+  <rect x=".75" y=".75" width="1278.5" height="544.5" rx="22" fill="url(#glow)"/>
+  <path d="M.75 52 H1279.25" stroke="#232127"/>
+  <circle cx="32" cy="27" r="7" fill="#FF5F57"/><circle cx="56" cy="27" r="7" fill="#FEBC2E"/><circle cx="80" cy="27" r="7" fill="#28C840"/>
+  <text x="640.0" y="32" text-anchor="middle" class="bar">webscreative@estudio: ~/sobre-nosotros</text>
+    <g>
+      <clipPath id="c0"><rect x="48" y="76" width="0" height="30"><animate attributeName="width" from="0" to="137" begin="0.40s" dur="0.35s" fill="freeze" calcMode="discrete" values="60;72;85;98;111;124;136" keyTimes="0.000;0.143;0.286;0.429;0.571;0.714;0.857"/></rect></clipPath>
+      <text x="48" y="98" class="mono" clip-path="url(#c0)" opacity="0"><set attributeName="opacity" to="1" begin="0.40s" fill="freeze"/><tspan fill="#E5762F">❯</tspan> <tspan fill="#FFFFFF">whoami</tspan></text>
+    </g>
+    <text x="72" y="136" class="mono out" opacity="0"><tspan fill="#FFFFFF" font-weight="700">Webs Creative</tspan> — estudio de software a medida y diseño web · España<animate attributeName="opacity" from="0" to="1" begin="1.00s" dur=".35s" fill="freeze"/></text>
+    <g>
+      <clipPath id="c2"><rect x="48" y="152" width="0" height="30"><animate attributeName="width" from="0" to="239" begin="1.30s" dur="0.77s" fill="freeze" calcMode="discrete" values="60;72;85;98;111;124;136;149;162;175;188;200;213;226;239" keyTimes="0.000;0.067;0.133;0.200;0.267;0.333;0.400;0.467;0.533;0.600;0.667;0.733;0.800;0.867;0.933"/></rect></clipPath>
+      <text x="48" y="174" class="mono" clip-path="url(#c2)" opacity="0"><set attributeName="opacity" to="1" begin="1.30s" fill="freeze"/><tspan fill="#E5762F">❯</tspan> <tspan fill="#FFFFFF">cat mision.txt</tspan></text>
+    </g>
+    <text x="72" y="212" class="mono out" opacity="0">Programamos software y webs pensadas para vender. Sin soluciones genéricas:<animate attributeName="opacity" from="0" to="1" begin="2.32s" dur=".35s" fill="freeze"/></text>
+    <text x="72" y="250" class="mono out" opacity="0">el mismo equipo te asesora, lo desarrolla y te da soporte después.<animate attributeName="opacity" from="0" to="1" begin="2.62s" dur=".35s" fill="freeze"/></text>
+    <g>
+      <clipPath id="c5"><rect x="48" y="266" width="0" height="30"><animate attributeName="width" from="0" to="265" begin="2.92s" dur="0.88s" fill="freeze" calcMode="discrete" values="60;72;85;98;111;124;136;149;162;175;188;200;213;226;239;252;264" keyTimes="0.000;0.059;0.118;0.176;0.235;0.294;0.353;0.412;0.471;0.529;0.588;0.647;0.706;0.765;0.824;0.882;0.941"/></rect></clipPath>
+      <text x="48" y="288" class="mono" clip-path="url(#c5)" opacity="0"><set attributeName="opacity" to="1" begin="2.92s" fill="freeze"/><tspan fill="#E5762F">❯</tspan> <tspan fill="#FFFFFF">./valores --list</tspan></text>
+    </g>
+    <text x="72" y="326" class="mono out" opacity="0"><tspan fill="#3FB950">✓</tspan> Un solo equipo de principio a fin: asesoría, desarrollo y soporte<animate attributeName="opacity" from="0" to="1" begin="4.05s" dur=".35s" fill="freeze"/></text>
+    <text x="72" y="364" class="mono out" opacity="0"><tspan fill="#3FB950">✓</tspan> Sin licencias por usuario ni funciones que no vas a usar<animate attributeName="opacity" from="0" to="1" begin="4.35s" dur=".35s" fill="freeze"/></text>
+    <text x="72" y="402" class="mono out" opacity="0"><tspan fill="#3FB950">✓</tspan> Preparados para la normativa: VERI*FACTU 2027 y registro de jornada<animate attributeName="opacity" from="0" to="1" begin="4.65s" dur=".35s" fill="freeze"/></text>
+    <g>
+      <clipPath id="c9"><rect x="48" y="418" width="0" height="30"><animate attributeName="width" from="0" to="226" begin="4.95s" dur="0.71s" fill="freeze" calcMode="discrete" values="60;72;85;98;111;124;136;149;162;175;188;200;213;226" keyTimes="0.000;0.071;0.143;0.214;0.286;0.357;0.429;0.500;0.571;0.643;0.714;0.786;0.857;0.929"/></rect></clipPath>
+      <text x="48" y="440" class="mono" clip-path="url(#c9)" opacity="0"><set attributeName="opacity" to="1" begin="4.95s" fill="freeze"/><tspan fill="#E5762F">❯</tspan> <tspan fill="#FFFFFF">contact --now</tspan></text>
+    </g>
+    <text x="72" y="478" class="mono out" opacity="0"><tspan fill="#F29052">info@webscreative.es</tspan>  ·  <tspan fill="#F29052">+34 608 567 883</tspan>  ·  <tspan fill="#F29052">webscreative.es</tspan><animate attributeName="opacity" from="0" to="1" begin="5.91s" dur=".35s" fill="freeze"/></text>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="6.21s" fill="freeze"/>
+    <text x="48" y="516" class="mono"><tspan fill="#E5762F">❯</tspan></text>
+    <rect class="cur" x="74" y="499" width="11" height="22" fill="#E5762F"/>
+  </g>
+</svg>

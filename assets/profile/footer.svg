@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="120" viewBox="0 0 1280 120" role="img" aria-label="Webs Creative · webscreative.es">
+  <defs>
+    <linearGradient id="w" x1="0" x2="1">
+      <stop offset="0" stop-color="#B9500F"/><stop offset=".5" stop-color="#E5762F"/><stop offset="1" stop-color="#B9500F"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .wave{animation:wave 9s ease-in-out infinite alternate}
+    .wave2{animation-duration:13s;animation-direction:alternate-reverse}
+    @keyframes wave{from{transform:translateX(0)}to{transform:translateX(-160px)}}
+    .f{font:600 14px 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace;fill:#FDEBDF;letter-spacing:3px}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <path class="wave wave2" fill="#B9500F" fill-opacity=".45" d="M0 60 C 160 20, 320 100, 480 60 S 800 20, 960 60 S 1280 100, 1440 60 V120 H0Z"/>
+  <path class="wave" fill="url(#w)" d="M0 76 C 160 40, 320 112, 480 76 S 800 40, 960 76 S 1280 112, 1440 76 V120 H0Z"/>
+  <text x="640.0" y="108" text-anchor="middle" class="f">WEBS CREATIVE · DISEÑO · DESARROLLO · PROGRAMACIÓN</text>
+</svg>
