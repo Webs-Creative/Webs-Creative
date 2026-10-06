@@ -84,8 +84,15 @@
     <rect class="scan" x="0" y="0" width="220" height="520" fill="#FFFFFF" fill-opacity=".025" transform="skewX(-20)"/>
     <!-- top bar -->
     <g transform="translate(48 40)">
-      <rect width="44" height="44" rx="12" fill="#E5762F"/>
-      <text x="22" y="29.5" text-anchor="middle" style="font:800 18px 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#FFFFFF;letter-spacing:-.5px">WC</text>
+      <g transform="translate(22 24) scale(.06)" fill="none">
+  <defs><mask id="hmo" maskUnits="userSpaceOnUse" x="-500" y="-500" width="1000" height="1000"><rect x="-500" y="-500" width="1000" height="1000" fill="#fff"/><rect x="-88" y="-500" width="176" height="400" fill="#000"/></mask><mask id="hmf" maskUnits="userSpaceOnUse" x="-500" y="-500" width="1000" height="1000"><rect x="-500" y="-500" width="1000" height="1000" fill="#fff"/><rect x="-110" y="-500" width="220" height="400" fill="#000"/></mask></defs>
+  <circle r="300" stroke="#FFFFFF" stroke-width="100" mask="url(#hmo)"/>
+  <circle r="300" stroke="#0E0E12" stroke-width="54" mask="url(#hmf)"/>
+  <path d="M132.0 -269.4 A300 300 0 1 1 -132.0 -269.4" stroke="#E5762F" stroke-width="13" stroke-linecap="round"/>
+  <line y1="-352" y2="10" stroke="#FFFFFF" stroke-width="140" stroke-linecap="round"/>
+  <line y1="-352" y2="10" stroke="#0E0E12" stroke-width="92" stroke-linecap="round"/>
+  <line y1="-342" y2="0" stroke="#E5762F" stroke-width="22" stroke-linecap="round"/>
+</g>
       <text x="58" y="20" class="brand">Webs Creative</text>
       <text x="58" y="38" class="url">webscreative.es</text>
     </g>
