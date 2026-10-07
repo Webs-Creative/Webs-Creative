@@ -216,7 +216,7 @@
      "src": "capturas/despacho/ajustes-usuarios.png",
      "url": "/#/ajustes?seccion=usuarios",
      "caption": "Usuarios: cada persona con su rol, sus clientes, el estado del 2FA y su último acceso.",
-     "alt": "Tabla de usuarios del despacho con rol, número de clientes, estado Sin 2FA y último acceso.",
+     "alt": "Tabla de usuarios del despacho con rol, número de clientes, estado del 2FA (activo o sin 2FA) y último acceso.",
      "mobile": false
     },
     {
@@ -268,15 +268,15 @@
     {
      "src": "capturas/despacho/apariencia-despacho.png",
      "url": "/#/ajustes?seccion=apariencia",
-     "caption": "Ajustes › Apariencia en modo oscuro: ocho temas de color, acento propio, modo, efectos 3D, fondo, esquinas y nivel de detalle.",
-     "alt": "Editor de apariencia del despacho en tema oscuro con ocho tarjetas de temas de color y selectores de modo, efectos, fondo, esquinas y nivel de detalle.",
+     "caption": "Ajustes › Apariencia en modo claro: ocho temas de color, acento propio, modo, efectos 3D, fondo, esquinas y nivel de detalle.",
+     "alt": "Editor de apariencia del despacho en tema claro con ocho tarjetas de temas de color, el modo Claro elegido y selectores de efectos, fondo, esquinas y nivel de detalle.",
      "mobile": false
     },
     {
-     "src": "capturas/despacho/apariencia-mi-perfil-claro.png",
+     "src": "capturas/despacho/apariencia-mi-perfil-oscuro.png",
      "url": "/#/perfil",
-     "caption": "Mi perfil › Mi apariencia en modo claro: cada persona cambia solo lo que ve ella y lo demás sigue el aspecto del despacho.",
-     "alt": "Editor Mi apariencia en tema claro con los temas de color, el modo Claro elegido y los controles de densidad, cristal y tamaño del texto.",
+     "caption": "Mi perfil › Mi apariencia en modo oscuro: cada persona cambia solo lo que ve ella y lo demás sigue el aspecto del despacho.",
+     "alt": "Editor Mi apariencia en tema oscuro con los temas de color, el modo Oscuro elegido y los controles de efectos, fondo, esquinas, densidad, cristal y tamaño del texto.",
      "mobile": false
     }
    ],
@@ -312,7 +312,7 @@
      "src": "capturas/despacho/acceso-despacho.png",
      "url": "/",
      "caption": "Pantalla de acceso del despacho con el nombre de tu asesoría, correo, contraseña y «He olvidado mi contraseña».",
-     "alt": "Pantalla de acceso de Gestoría Creative con el lema a la izquierda y el formulario de correo y contraseña a la derecha.",
+     "alt": "Pantalla de acceso de Gestoría Creative en tema claro, con el lema y una escena 3D a la izquierda y el formulario de correo y contraseña a la derecha.",
      "mobile": false
     }
    ],
@@ -397,6 +397,13 @@
      "url": "/portal/#/mis-obligaciones",
      "caption": "«Tus impuestos» en el móvil: lo próximo con su estado, la documentación que falta y el año mes a mes.",
      "alt": "Pantalla Tus impuestos en un móvil con el próximo vencimiento del 20 de octubre, un aviso de documentación y un gráfico de barras por meses.",
+     "mobile": true
+    },
+    {
+     "src": "capturas/despacho/portal-movil-declaraciones.png",
+     "url": "/portal/#/declaraciones",
+     "caption": "«Mis declaraciones» en el móvil: las pendientes de revisar, con el importe a ingresar, los días que quedan y «Ver y aprobar».",
+     "alt": "Pantalla Mis declaraciones en un móvil con los modelos 111 y 303 del tercer trimestre, sus importes a ingresar, los días que quedan y el botón Ver y aprobar.",
      "mobile": true
     },
     {

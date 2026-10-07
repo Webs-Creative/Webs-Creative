@@ -18,7 +18,7 @@
      "src": "capturas/principal/inicio-indicadores.png",
      "url": "/#/",
      "caption": "Las tarjetas de indicadores: clientes activos, vencimientos de la semana, en riesgo, trimestre en curso, correo, documentos, modelos, conciliación y más.",
-     "alt": "Rejilla de quince tarjetas con cifras como 39 clientes activos, 17 vencimientos esta semana, 116 movimientos por conciliar y 6915 euros de cuotas al mes."
+     "alt": "Rejilla de dieciséis tarjetas con cifras como 39 clientes activos, 17 vencimientos esta semana, 116 movimientos por conciliar y 6915 euros de cuotas al mes."
     },
     {
      "src": "capturas/principal/inicio-graficos.png",
@@ -43,7 +43,7 @@
    "ves": [
     "La fecha, el saludo y los botones Nuevo cliente, Ver clientes y Buscar con el atajo Ctrl K.",
     "Cada pendiente de «Tu día» con su icono, su etiqueta de prioridad, una línea de detalle y los botones Abrir o la acción directa.",
-    "Hasta quince tarjetas: clientes activos, vencimientos, en riesgo, trimestre, correo, documentos, modelos, conciliación, conectores, normativa, cuotas, portal, automatizaciones e IA.",
+    "Hasta dieciséis tarjetas: clientes, vencimientos, en riesgo, trimestre, correo, documentos, modelos, conciliación, conectores, normativa, certificados que caducan, cuotas, portal, automatizaciones e IA.",
     "Gráficos de vencimientos a 30 días, progreso de la campaña, cartera en 3D, cartera por tipo y por sector, modelos, radar normativo, carga por asesor y altas.",
     "La actividad reciente escrita en frases normales, con quién hizo qué y hace cuánto."
    ],
@@ -64,8 +64,8 @@
     {
      "src": "capturas/principal/inicio-avisos.png",
      "url": "/#/",
-     "caption": "La campana abierta con los avisos sin leer: un documento duplicado, una fuente del radar que no responde y una norma en tramitación.",
-     "alt": "Desplegable de avisos con tres entradas, cada una con icono de nivel, título, texto y hace cuánto llegó, y el botón Marcar todo como leído."
+     "caption": "La campana abierta con los últimos avisos: un envío seguro de un cliente, la activación de la Bóveda, tu llave de la Bóveda y un documento duplicado.",
+     "alt": "Desplegable de avisos con cuatro entradas, cada una con icono de nivel, título, texto y hace cuánto llegó, y el botón Marcar todo como leído."
     },
     {
      "src": "capturas/principal/inicio-buscador.png",
@@ -75,7 +75,7 @@
     }
    ],
    "hace": [
-    "Recoge los avisos que generan los módulos: recordatorios de plazos, documentos duplicados, fuentes del radar caídas o propuestas de cambio del catálogo.",
+    "Recoge los avisos que generan los módulos: recordatorios de plazos, documentos duplicados, envíos seguros de clientes, avisos de la Bóveda o fuentes del radar caídas.",
     "Cuenta en la campana los avisos sin leer y te deja marcarlos todos como leídos.",
     "Al pulsar un aviso, lo marca como leído y abre la pantalla relacionada.",
     "Busca desde dos letras en clientes (nombre, nombre comercial, NIF o código), contactos, actividades CNAE e IAE, normativa, modelos, obligaciones, campañas, automatizaciones y correo.",
