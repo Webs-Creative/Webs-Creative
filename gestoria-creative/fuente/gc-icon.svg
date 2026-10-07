@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Gestoría Creative">
+  <defs>
+    <linearGradient id="gcOrange" x1="0.15" y1="0.1" x2="0.9" y2="0.95">
+      <stop offset="0" stop-color="#FFB05A"/>
+      <stop offset=".55" stop-color="#F8841A"/>
+      <stop offset="1" stop-color="#EE6F12"/>
+    </linearGradient>
+    <radialGradient id="gcGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".75"/>
+      <stop offset=".45" stop-color="#22D3EE" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#12161C"/>
+  <path d="M64.31 28.10 A27 27 0 1 0 77.00 51.00 L54 51.00" fill="none" stroke="url(#gcOrange)" stroke-width="10.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="74.5" cy="25.5" r="14" fill="url(#gcGlow)"/>
+  <circle cx="74.5" cy="25.5" r="6.2" fill="#22D3EE"/>
+  <circle cx="72.6" cy="23.6" r="2" fill="#B9F4FC" fill-opacity=".9"/>
+</svg>

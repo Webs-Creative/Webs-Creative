@@ -1,0 +1,543 @@
+{
+ "group": "Despacho",
+ "group_desc": "En «Despacho» configuras cómo trabaja tu asesoría: automatizaciones, catálogo de obligaciones y sectores, inteligencia artificial, ajustes, seguridad y el portal que usan tus clientes.",
+ "modules": [
+  {
+   "id": "automatizaciones",
+   "title": "Automatizaciones",
+   "menu": "Despacho › Automatizaciones",
+   "lead": "Le dices al programa «cuando pase esto, si se cumple aquello, haz esto otro» y lo hace solo o te lo propone. Cada acción queda con su porqué y se puede deshacer.",
+   "shots": [
+    {
+     "src": "capturas/despacho/automatizaciones-motor.png",
+     "url": "/#/automatizaciones",
+     "caption": "El motor: recetas escuchando, casos de la semana, lo hecho y lo que espera tu decisión, con las salvaguardas a la vista.",
+     "alt": "Pantalla Automatizaciones, pestaña El motor, con el esquema Cuando, Si, Entonces, cuatro indicadores y la lista de salvaguardas.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/automatizaciones-catalogo.png",
+     "url": "/#/automatizaciones?vista=catalogo",
+     "caption": "Catálogo de 82 recetas por categorías: cada ficha dice cuándo actúa, qué hace hoy y con qué modo se activa.",
+     "alt": "Catálogo de recetas con buscador, filtros, categorías y tarjetas de recetas con los botones Simular y Activar.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/automatizaciones-editor.png",
+     "url": "/#/automatizaciones/28",
+     "caption": "Editor de frases: cuando se da de alta un cliente, si tiene trabajadores, entonces va al equipo de laboral. A la derecha, cómo se lee.",
+     "alt": "Editor de una receta propia con los bloques Cuando, Si y Entonces, el resumen Así se lee y la elección de modo.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Escucha 41 disparadores: altas y cambios de clientes, documentos leídos, notificaciones, facturas, movimientos del banco, plazos, modelos presentados, BORME, correo y fechas programadas.",
+    "Comprueba las condiciones que pongas, con 12 operadores sobre los datos del cliente y del caso, antes de actuar.",
+    "Ejecuta 16 acciones: avisar, escalar, escribir o preguntar al cliente, proponer en «Tu día», poner notas, etiquetas y responsables, comprobar un NIF o calcular un recargo.",
+    "Encadena pasos dentro de una receta: esperar unos días, pedir aprobación, lanzar otra receta o parar.",
+    "Trabaja en tres modos: Proponer (decides tú), Automático (lo hace solo) y Simulación (apunta lo que haría sin tocar nada).",
+    "Aplica salvaguardas: 3 mensajes por cliente y semana, horario laboral, freno anti-bucles, primera semana en «Proponer» y un interruptor por cliente.",
+    "Simula cualquier receta sobre los últimos 90 días para que veas qué habría hecho antes de activarla."
+   ],
+   "ves": [
+    "Pestaña «El motor»: recetas activas, en automático, por decidir, hecho en 7 días y mensajes enviados, con un gráfico de los últimos 14 días.",
+    "Pestaña «Propuestas»: lo que espera tu decisión, con filtros y «Aplicar» o «Descartar» de una en una o en bloque.",
+    "Pestaña «Catálogo de recetas»: 82 recetas en 11 categorías; 33 se pueden activar hoy y las demás indican qué módulo necesitan.",
+    "Pestaña «Historial»: cada caso con su porqué, el paso a paso, lo que cambió y el botón «Deshacer».",
+    "Editor «Cuando · si · entonces» con desplegables, la receta leída en lenguaje normal mientras la escribes, modo, prioridad y versiones.",
+    "Panel «Ajustes»: mensajes por cliente y semana, horario y días laborables, festivos propios e interruptor general."
+   ],
+   "genera": [
+    "Avisos en la campana del equipo y escalados al responsable o al socio.",
+    "Mensajes en el portal del cliente, también por correo si lo tiene elegido, y preguntas que contesta con un toque.",
+    "Propuestas en «Tu día» con su porqué y un botón para aplicarlas.",
+    "Cambios en el expediente: notas, etiquetas, responsables, datos fiscales marcados o servicios dados de baja.",
+    "Un historial de ejecuciones con lo necesario para deshacer cada acción reversible.",
+    "Versiones de cada receta y entradas en la auditoría del despacho.",
+    "Simulaciones de 90 días guardadas, hasta las 40 últimas."
+   ],
+   "tip": "Al dar de alta tu despacho, las recetas del paquete de inicio quedan en «Proponer»: revisa sus propuestas unos días antes de pasar alguna a «Automático»."
+  },
+  {
+   "id": "obligaciones",
+   "title": "Catálogo de obligaciones",
+   "menu": "Despacho › Obligaciones",
+   "lead": "Es el catálogo con el que el motor decide qué presenta cada cliente y por qué. Reúne 594 obligaciones fiscales, laborales, mercantiles, sectoriales, autonómicas y locales, con sus plazos.",
+   "shots": [
+    {
+     "src": "capturas/despacho/obligaciones-catalogo.png",
+     "url": "/#/obligaciones/catalogo",
+     "caption": "El catálogo agrupado por ámbito, con filtros por organismo y periodicidad y el número de clientes que tiene cada obligación.",
+     "alt": "Pantalla Obligaciones con buscador, filtros de ámbito, organismo y periodicidad y tarjetas de modelos fiscales.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/obligaciones-ficha-303.png",
+     "url": "/#/obligaciones/catalogo?codigo=303",
+     "caption": "Ficha del modelo 303: quién lo tiene, plazo oficial y los periodos de 2026 con la fecha límite para domiciliar.",
+     "alt": "Panel lateral del modelo 303 con condiciones, texto del plazo y tabla de periodos con fechas desde, hasta y domiciliando.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/obligaciones-mapa-sector.png",
+     "url": "/#/obligaciones/catalogo?pestana=sectores",
+     "caption": "Mapa por sector: obligaciones propias de cada sección de la CNAE-2025; aquí, las 31 de hostelería.",
+     "alt": "Pestaña Mapa por sector con las 22 secciones de la CNAE-2025 y las obligaciones de la sección I, Hostelería.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Guarda 594 obligaciones en 9 ámbitos: fiscal, laboral y Seguridad Social, mercantil, sectorial, medioambiental, datos, blanqueo, autonómico y local.",
+    "Define para cada una quién la tiene (régimen, forma jurídica, territorio o actividad CNAE), su periodicidad y su plazo con la fuente oficial.",
+    "Alimenta el motor que calcula el perfil de obligaciones de cada cliente y lo recalcula cuando cambian sus datos o sus actividades.",
+    "Pasa al siguiente día hábil los plazos que caen en festivo, con los festivos nacionales del BOE y los que añadas tú.",
+    "Aplica una corrección de plazo, como una prórroga oficial o una caída de la Sede, a los vencimientos de todos los clientes de ese periodo.",
+    "Recibe las altas aceptadas en el radar normativo como obligaciones del despacho, que añades a mano a cada cliente."
+   ],
+   "ves": [
+    "Buscador («303, IVA, residuos, terraza…») y filtros por ámbito, organismo, periodicidad y «Con fecha en el calendario».",
+    "Tarjetas por obligación con su código, organismo, periodicidad y el número de clientes que la tienen.",
+    "Ficha lateral con las condiciones en lenguaje normal, el plazo, los periodos del año, los clientes, la normativa reciente y el enlace a la Sede.",
+    "Pestaña «Mapa por sector» con las 22 secciones de la CNAE-2025 y sus obligaciones propias, además de las 294 generales.",
+    "Pestaña «Festivos y plazos» con los festivos que cuentan, las correcciones de plazos y el botón para recalcular toda la cartera.",
+    "Pestaña «Recordatorios» con los días de aviso al responsable, el aviso de documentación y el recordatorio opcional al cliente."
+   ],
+   "genera": [
+    "El perfil de obligaciones de cada cliente, con la explicación de por qué tiene cada una.",
+    "Vencimientos del año en curso y del siguiente, por cliente, obligación y periodo, que ves en el calendario fiscal.",
+    "Avisos al asesor y al equipo cuando a un cliente le entra, le sale o le cambia una obligación.",
+    "Recordatorios a 15, 7, 3 y 1 días al responsable y, si lo activas, al cliente en su portal y por correo.",
+    "Marcas de revisión para el responsable de cada cliente afectado por un cambio aceptado del radar normativo."
+   ],
+   "tip": "Si sale una prórroga oficial, corrígela una vez en «Festivos y plazos» y la fecha nueva llega a los vencimientos de todos tus clientes."
+  },
+  {
+   "id": "sectores",
+   "title": "Sectores y actividades",
+   "menu": "Despacho › Sectores",
+   "lead": "Tiene los catálogos oficiales CNAE-2025, CNAE-2009 e IAE completos, con tu cartera encima. Así sabes a qué se dedica cada cliente y qué obligaciones le trae su actividad.",
+   "shots": [
+    {
+     "src": "capturas/despacho/sectores-resumen.png",
+     "url": "/#/sectores",
+     "caption": "Tu cartera por secciones de la CNAE-2025 y el gráfico «sol» con los clientes por sección y división.",
+     "alt": "Pantalla Sectores y actividades con cuatro indicadores, tarjetas de secciones CNAE con su número de clientes y un gráfico circular por sección y división.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/sectores-ficha.png",
+     "url": "/#/sectores?codigo=56.11",
+     "caption": "Árbol de la CNAE-2025 y ficha de la clase 56.11 Restaurantes: obligaciones del sector, equivalencia en la CNAE-2009, clientes y normativa.",
+     "alt": "Árbol de secciones de la CNAE-2025 con barras de clientes y ficha de la clase 56.11 con etiquetas de obligaciones, equivalencia, cliente y normativa reciente.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Incluye 1.060 códigos de la CNAE-2025, 1.010 de la CNAE-2009 con su correspondencia oficial y 1.427 rúbricas del IAE.",
+    "Busca por palabras o por código, también en lo que incluye cada clase, y te lleva a la actividad exacta.",
+    "Convierte lo escrito en los campos CNAE e IAE de la ficha del cliente en actividades del catálogo.",
+    "Guarda las actividades de cada cliente (principal, altas y bajas con fecha) en la pestaña «Actividades» del expediente.",
+    "Avisa a Obligaciones cuando cambian las actividades de un cliente para que recalcule su perfil."
+   ],
+   "ves": [
+    "Cifras de la cartera: clientes con sector, secciones con clientes, clases de la CNAE-2025 y epígrafes del IAE.",
+    "Tarjetas de las 22 secciones de la CNAE-2025 con cuántos clientes tienes en cada una y sus divisiones.",
+    "Gráfico «sol» de clientes por sección y división; al pulsar una parte, se abre su ficha.",
+    "Árbol navegable con selector CNAE-2025, IAE (empresariales, profesionales y artísticas) o CNAE-2009.",
+    "Ficha de cada actividad con su ruta en el catálogo, obligaciones del sector, equivalencias, clientes y normativa reciente."
+   ],
+   "genera": [
+    "Actividades del cliente con fecha, que usan el motor de obligaciones, el radar normativo y las automatizaciones.",
+    "La tarjeta «Cartera por sectores (CNAE-2025)» del panel de inicio.",
+    "Resultados de actividades en el buscador general del programa.",
+    "El disparador «Cambian las actividades del cliente» para tus recetas de automatización."
+   ],
+   "tip": "Busca por lo que hace el cliente, como «peluquería» o «cafetería»: el buscador encuentra la clase aunque no recuerdes el código."
+  },
+  {
+   "id": "inteligencia-artificial",
+   "title": "Inteligencia artificial",
+   "menu": "Despacho › Inteligencia artificial",
+   "lead": "La inteligencia artificial va incluida en tu cuota: tu despacho llega con Claude, de Anthropic, conectado desde el alta. Tú decides qué funciones lo usan, con qué modelo y qué datos salen del despacho.",
+   "shots": [
+    {
+     "src": "capturas/despacho/ia-conexion.png",
+     "url": "/#/ia",
+     "caption": "IA activa en el despacho: uso del mes, llamadas y tokens, la conexión ya hecha y los cuatro principios con los que trabaja.",
+     "alt": "Pantalla Inteligencia artificial con la IA activa, cuatro indicadores de uso, la conexión con Anthropic guardada y cifrada y la tarjeta Cómo trabaja.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/ia-funciones.png",
+     "url": "/#/ia",
+     "caption": "Las siete funciones con su interruptor y su modelo, listas para usarse; la lectura de documentos viene apagada porque envía el documento completo.",
+     "alt": "Siete tarjetas de funciones de IA con interruptor Activa o Apagada, el modelo de Claude de cada una y la marca Lista para usarse.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Usa Claude, de Anthropic, con la conexión que dejamos hecha y cifrada al dar de alta tu despacho; no necesitas cuenta ni clave propias.",
+    "Da servicio a la lectura y clasificación de Documentos, la conciliación de Bancos, el Correo y los borradores de circular del radar normativo.",
+    "Valida cada respuesta con un esquema estricto y después con las comprobaciones del módulo que la pide, como cuadres al céntimo, NIF o saldos.",
+    "Seudonimiza por defecto los NIF, IBAN, correos, teléfonos y nombres antes de enviar el texto, y los restaura en la respuesta.",
+    "Se para al llegar al límite de uso del mes de tu plan y avisa a los administradores; el programa sigue funcionando con sus reglas.",
+    "Reutiliza respuestas guardadas en caché, así un documento ya leído no vuelve a consumir uso."
+   ],
+   "ves": [
+    "Interruptor general «Activar la IA» y su estado: activa, desactivada o límite del mes alcanzado.",
+    "Indicadores de uso del mes, llamadas y tokens de 30 días y respuestas desde caché.",
+    "Siete funciones (lectura de documentos, conciliación, correo, normativa, clasificación rápida, redacción y asistente), cada una con su modelo de Claude.",
+    "La elección de privacidad: «Seudonimizar (recomendado)» o «Enviar tal cual».",
+    "El uso del mes frente al límite de tu plan y un gráfico 3D del uso por día y función.",
+    "Registro de llamadas filtrable por función y estado: cuándo, función, modelo, tokens, tiempo, quién y cliente."
+   ],
+   "genera": [
+    "Un registro de cada llamada con quién, para qué, modelo y tokens, sin guardar el contenido enviado.",
+    "Un aviso a los administradores cuando se llega al límite de uso del mes.",
+    "La tarjeta de la IA con el uso del mes en el panel de inicio.",
+    "Una prueba de extremo a extremo con «Probar ahora», que enseña el tiempo de respuesta."
+   ],
+   "tip": "Antes de activar la lectura de documentos, revisa tus encargos de tratamiento con los clientes: es la única función que envía el documento completo."
+  },
+  {
+   "id": "ajustes-despacho",
+   "title": "Ajustes del despacho",
+   "menu": "Despacho › Ajustes",
+   "lead": "Reúne en ocho secciones la configuración de la asesoría: datos e imagen, apariencia, equipo, permisos, seguridad, correo saliente, auditoría y estado del servicio.",
+   "shots": [
+    {
+     "src": "capturas/despacho/ajustes-despacho.png",
+     "url": "/#/ajustes?seccion=despacho",
+     "caption": "Despacho: datos de la asesoría con el NIF comprobado al escribirlo, y el logo y el color para el portal y los correos.",
+     "alt": "Ajustes, sección Despacho, con el menú lateral de ocho secciones y el formulario de datos del despacho.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/ajustes-usuarios.png",
+     "url": "/#/ajustes?seccion=usuarios",
+     "caption": "Usuarios: cada persona con su rol, sus clientes, el estado del 2FA y su último acceso.",
+     "alt": "Tabla de usuarios del despacho con rol, número de clientes, estado del 2FA (activo o sin 2FA) y último acceso.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/ajustes-auditoria.png",
+     "url": "/#/ajustes?seccion=auditoria",
+     "caption": "Auditoría: quién hizo qué, sobre qué elemento y cliente, con filtros por usuario, acción y fechas, y botón «Exportar».",
+     "alt": "Tabla de auditoría con fecha, usuario, acción, elemento, cliente y cambios, y filtros en la parte superior.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Guarda los datos del despacho (nombre, NIF, dirección y contacto), el logo y el color que usan el portal y los correos.",
+    "Da de alta usuarios con rol, cargo, coste por hora y la opción de que solo vean sus clientes asignados.",
+    "Define roles con 53 permisos agrupados por módulo, además de los cuatro roles de sistema.",
+    "Configura el correo saliente por SMTP con la contraseña cifrada, o el modo «Solo guardar» para pruebas.",
+    "Registra en la auditoría los cambios campo a campo, con IP y navegador, sin guardar nunca contraseñas.",
+    "Enseña el estado del servicio: versión, espacio usado, correos en cola y las tareas automáticas con su última ejecución."
+   ],
+   "ves": [
+    "Menú lateral con Despacho, Apariencia, Usuarios, Roles y permisos, Seguridad, Correo, Auditoría y Sistema.",
+    "Tabla de usuarios con los botones para editar, reiniciar el 2FA, cerrar sus sesiones y borrar.",
+    "Tarjetas de roles (Administrador del despacho, Asesor, Colaborador y Estación de lectura) con su matriz de permisos.",
+    "Seguridad: 2FA obligatorio, «Cada asesor solo ve sus clientes», intentos y minutos de bloqueo, cierre por inactividad y tamaño máximo de ficheros.",
+    "Auditoría en tabla con buscador, filtros y un panel de detalle con el valor anterior y el nuevo.",
+    "Sistema: versión, espacio usado, correos en cola, tareas automáticas con su resultado y módulos activos."
+   ],
+   "genera": [
+    "La exportación de la auditoría en Excel (.xlsx) o en CSV separado por «;».",
+    "Un correo de prueba para comprobar el servidor SMTP.",
+    "Los correos del despacho con tu logo y tu color de marca.",
+    "Una pasada inmediata de todas las tareas con «Ejecutar ahora», con su resultado en la tabla."
+   ],
+   "tip": "Configura el correo saliente con el servidor de tu despacho y envía una prueba: así los avisos y recordatorios salen con tu dirección."
+  },
+  {
+   "id": "apariencia",
+   "title": "Apariencia",
+   "menu": "Despacho › Ajustes › Apariencia y Mi perfil › Mi apariencia",
+   "lead": "Eliges el aspecto de todo el despacho y cada persona puede ajustar el suyo. Los cambios se ven al momento, antes de guardarlos.",
+   "shots": [
+    {
+     "src": "capturas/despacho/apariencia-despacho.png",
+     "url": "/#/ajustes?seccion=apariencia",
+     "caption": "Ajustes › Apariencia en modo claro: ocho temas de color, acento propio, modo, efectos 3D, fondo, esquinas y nivel de detalle.",
+     "alt": "Editor de apariencia del despacho en tema claro con ocho tarjetas de temas de color, el modo Claro elegido y selectores de efectos, fondo, esquinas y nivel de detalle.",
+     "mobile": false
+    },
+    {
+     "src": "capturas/despacho/apariencia-mi-perfil-oscuro.png",
+     "url": "/#/perfil",
+     "caption": "Mi perfil › Mi apariencia en modo oscuro: cada persona cambia solo lo que ve ella y lo demás sigue el aspecto del despacho.",
+     "alt": "Editor Mi apariencia en tema oscuro con los temas de color, el modo Oscuro elegido y los controles de efectos, fondo, esquinas, densidad, cristal y tamaño del texto.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Fija la apariencia por defecto del despacho, la que ve todo el equipo.",
+    "Deja que cada usuario cambie la suya en «Mi perfil» o vuelva a la del despacho con un botón.",
+    "Aplica cada cambio al momento para que lo veas antes de guardarlo.",
+    "Gradúa los efectos 3D y las animaciones, de «Espectacular» a «Sin efectos», y respeta la opción de reducir el movimiento del sistema.",
+    "Cambia entre la vista «Sencillo» y la «Experto», que enseña además puntuaciones, detalles técnicos y costes."
+   ],
+   "ves": [
+    "Ocho temas de color: Creative (naranja), Cian neón, Violeta galaxia, Esmeralda, Rubí, Océano, Oro y Grafito sobrio.",
+    "Un color de acento propio con su selector de color.",
+    "Modo oscuro, claro o automático, y el botón de sol y luna de la barra superior para cambiarlo al vuelo.",
+    "Fondo (ambiente, aurora, rejilla o liso), esquinas, densidad, efecto cristal y tamaño del texto del 85 % al 125 %.",
+    "Una vista previa con un indicador, botones, estados, una insignia de modelo y un gráfico."
+   ],
+   "genera": [
+    "La apariencia guardada del despacho, que se aplica a todo el equipo.",
+    "Las preferencias de cada usuario, guardadas en su perfil.",
+    "El aspecto del portal del cliente, que parte de la apariencia del despacho con su color de marca como acento.",
+    "El modo elegido con el botón de sol y luna, que se recuerda en ese navegador."
+   ],
+   "tip": "Deja un aspecto del despacho sobrio y que cada persona suba el tamaño del texto o quite efectos en su perfil si lo necesita."
+  },
+  {
+   "id": "acceso-seguridad",
+   "title": "Acceso y seguridad",
+   "menu": "Pantalla de acceso, Mi perfil y Despacho › Ajustes › Seguridad",
+   "lead": "Protege la entrada al programa y limita lo que ve cada persona. Combina contraseña, verificación en dos pasos, permisos por rol y un registro de todo lo que pasa.",
+   "shots": [
+    {
+     "src": "capturas/despacho/acceso-despacho.png",
+     "url": "/",
+     "caption": "Pantalla de acceso del despacho con el nombre de tu asesoría, correo, contraseña y «He olvidado mi contraseña».",
+     "alt": "Pantalla de acceso de Gestoría Creative en tema claro, con el lema y una escena 3D a la izquierda y el formulario de correo y contraseña a la derecha.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Pide correo y contraseña, de al menos 10 caracteres con letras y números, y bloquea la cuenta tras 5 intentos fallidos, un valor que puedes cambiar.",
+    "Pide un código TOTP de una aplicación de autenticación a quien tiene el 2FA, con 10 códigos de recuperación de un solo uso.",
+    "Obliga a todo el equipo a configurar el 2FA al entrar si activas «Verificación en dos pasos obligatoria».",
+    "Envía por correo un enlace de un solo uso, válido 60 minutos, para recuperar la contraseña.",
+    "Limita a cada asesor a sus clientes asignados o de su equipo, y a cada usuario del portal a sus empresas.",
+    "Protege cada cambio con un token CSRF y cierra la sesión tras el tiempo de inactividad que fijes."
+   ],
+   "ves": [
+    "Dos accesos con el mismo diseño, el del despacho y el del portal («Tu portal»), con el nombre de tu asesoría.",
+    "En «Mi perfil», tus datos, el alta del 2FA con código QR, el cambio de contraseña y tus sesiones abiertas.",
+    "La lista de sesiones con dispositivo, IP y última actividad, con «Cerrar» y «Cerrar las demás».",
+    "En Ajustes › Usuarios, quién tiene el 2FA activo y quién está bloqueado.",
+    "En Ajustes › Roles y permisos, una matriz de 53 permisos con interruptores agrupados por módulo."
+   ],
+   "genera": [
+    "Entradas de auditoría de cada acceso, acceso fallido y cambio, con IP y navegador.",
+    "Códigos de recuperación del 2FA para guardar fuera del ordenador.",
+    "Correos de recuperación de contraseña con un enlace de un solo uso.",
+    "Sesiones registradas que puedes cerrar en remoto, tú o un administrador."
+   ],
+   "tip": "Activa «Verificación en dos pasos obligatoria» en Ajustes › Seguridad: la bóveda de credenciales, además, la exige a cada persona."
+  }
+ ],
+ "portal_modules": [
+  {
+   "id": "portal-cliente",
+   "title": "Portal del cliente",
+   "menu": "Portal del cliente (dirección /portal)",
+   "lead": "Tus clientes entran desde el móvil o el ordenador a un portal con tu logo y tu color. Ven lo pendiente, sus impuestos y sus datos, y hablan con su asesor.",
+   "shots": [
+    {
+     "src": "capturas/despacho/portal-movil-inicio.png",
+     "url": "/portal/#/",
+     "caption": "Inicio en el móvil: saludo, lo pendiente con la asesoría y accesos; abajo, la barra con cuatro secciones y «Más».",
+     "alt": "Portal del cliente en un móvil con el saludo Buenos días, Ana, tres avisos pendientes, accesos y la barra inferior.",
+     "mobile": true
+    },
+    {
+     "src": "capturas/despacho/portal-web-inicio.png",
+     "url": "/portal/#/",
+     "caption": "El mismo inicio en el ordenador, con las secciones del portal en la barra superior.",
+     "alt": "Portal del cliente en pantalla ancha con la barra de secciones arriba, tres avisos pendientes y accesos en dos columnas.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Se instala como app (PWA) en el móvil con el nombre «Mi asesoría» y un acceso directo a «Enviar documentos».",
+    "Muestra a cada cliente solo su empresa; si lleva varias, cambia de una a otra con un selector.",
+    "Reúne en el inicio lo pendiente que aportan los módulos: impuestos que se acercan, dudas de la asesoría y declaraciones por revisar.",
+    "Enseña en «Mis datos» la ficha de la empresa tal como la tiene la asesoría, en solo lectura y con el IBAN enmascarado.",
+    "Deja contestar en «Preguntas de tu asesoría» con un toque o con un comentario.",
+    "Permite conectar su programa de facturación (Holded, Dolibarr, FacturaScripts u Odoo) en solo lectura y desconectarlo cuando quiera.",
+    "Ofrece un «Envío seguro» para mandar el certificado digital o unas claves cifrados en su propio navegador."
+   ],
+   "ves": [
+    "Una cabecera con el logo o el nombre de tu despacho y el menú de su cuenta.",
+    "En el móvil, la barra inferior con Inicio, Enviar, Impuestos, Preguntas y «Más»; en el ordenador, la barra superior.",
+    "Las tarjetas «Tus impuestos», con los modelos que le presentas, y «Tu asesor», con botones para escribir o llamar.",
+    "«Mi cuenta», con modo oscuro o claro, el alta del 2FA y el cambio de contraseña.",
+    "Las pantallas «Conecta tu programa», «Envío seguro», «Mis datos» y «Preguntas de tu asesoría»."
+   ],
+   "genera": [
+    "Respuestas del cliente a tus preguntas, que pueden lanzar automatizaciones.",
+    "Un sobre cifrado en la bóveda del despacho con el certificado o las claves que envía.",
+    "La conexión de su programa, que trae sus facturas a tu bandeja sin que te las mande.",
+    "Su acceso propio con contraseña y 2FA opcional, con las mismas protecciones que el despacho."
+   ],
+   "tip": "Invita al cliente desde la pestaña «Portal y conectores» de su expediente y pídele que añada el portal a la pantalla de inicio del móvil."
+  },
+  {
+   "id": "portal-envios-impuestos",
+   "title": "Portal: envíos, impuestos y declaraciones",
+   "menu": "Portal del cliente › Enviar, Impuestos y Modelos",
+   "lead": "Desde el portal, el cliente te manda sus facturas con una foto, sigue sus impuestos del año y revisa y aprueba las declaraciones que le preparas.",
+   "shots": [
+    {
+     "src": "capturas/despacho/portal-movil-impuestos.png",
+     "url": "/portal/#/mis-obligaciones",
+     "caption": "«Tus impuestos» en el móvil: lo próximo con su estado, la documentación que falta y el año mes a mes.",
+     "alt": "Pantalla Tus impuestos en un móvil con el próximo vencimiento del 20 de octubre, un aviso de documentación y un gráfico de barras por meses.",
+     "mobile": true
+    },
+    {
+     "src": "capturas/despacho/portal-movil-declaraciones.png",
+     "url": "/portal/#/declaraciones",
+     "caption": "«Mis declaraciones» en el móvil: las pendientes de revisar, con el importe a ingresar, los días que quedan y «Ver y aprobar».",
+     "alt": "Pantalla Mis declaraciones en un móvil con los modelos 111 y 303 del tercer trimestre, sus importes a ingresar, los días que quedan y el botón Ver y aprobar.",
+     "mobile": true
+    },
+    {
+     "src": "capturas/despacho/portal-web-declaracion-303.png",
+     "url": "/portal/#/declaraciones?id=9",
+     "caption": "Borrador del 303 del 3T en el portal: resultado, casillas explicadas, plazo, PDF y el botón para aprobarlo.",
+     "alt": "Detalle del modelo 303 en el portal con 161,20 euros a ingresar, tres casillas explicadas, el plazo, Descargar el PDF y el botón Está bien, apruébala.",
+     "mobile": false
+    }
+   ],
+   "hace": [
+    "Escanea con la cámara: encuadra el documento, dispara sola cuando está quieto y nítido, endereza la perspectiva y limpia la imagen.",
+    "Hace un PDF por documento y lo sube a tu bandeja de Documentos con el origen «portal» y la empresa del cliente.",
+    "Acepta también PDF, fotos y facturas electrónicas XML, elegidos o arrastrados, varios a la vez.",
+    "Guarda en el dispositivo lo escaneado sin conexión y lo envía solo cuando vuelve la conexión con el portal abierto.",
+    "Explica al cliente qué impuestos tiene y por qué, en una línea por obligación, con su calendario y lo ya presentado.",
+    "Le enseña los borradores que le envías, con el resultado y las casillas explicadas, para que los apruebe o pregunte antes de presentarlos."
+   ],
+   "ves": [
+    "«Enviar documentos», con «Escanear con la cámara», «Elegir archivos», una zona para arrastrar y «Lo que has enviado» con sus estados.",
+    "«Tus impuestos», con lo próximo, el aviso de documentación, «Tu año», «Lo que viene», «Por qué tienes cada uno» y «Ya presentados».",
+    "«Mis declaraciones», con las pendientes de revisar, el importe a ingresar o a devolver y los días que quedan.",
+    "En cada declaración, las casillas en lenguaje llano, el plazo, «Descargar el PDF», un comentario y «Está bien, apruébala».",
+    "Un hilo «¿Alguna duda?» para preguntar sobre la declaración y el historial con el justificante de lo presentado."
+   ],
+   "genera": [
+    "Documentos en tu bandeja (el PDF del escáner, fotos o XML) asignados a la empresa del cliente.",
+    "La aprobación del borrador con su comentario, o la pregunta del cliente, en el módulo de Modelos.",
+    "El PDF del borrador y el justificante de presentación, que el cliente descarga.",
+    "El estado de cada envío (recibido, leído o revisado), que el cliente sigue desde su portal."
+   ],
+   "tip": "Manda el borrador al portal con margen antes de que acabe el plazo para domiciliar: el cliente lo aprueba desde el móvil y lo presentas con su visto bueno."
+  }
+ ],
+ "generated_outputs": [
+  {
+   "name": "Exportación de la auditoría",
+   "format": "XLSX y CSV",
+   "where": "Despacho › Ajustes › Auditoría",
+   "desc": "Registro de accesos y cambios filtrado por usuario, acción y fechas, en Excel o CSV separado por «;»."
+  },
+  {
+   "name": "Avisos de las automatizaciones",
+   "format": "aviso",
+   "where": "Campana del equipo",
+   "desc": "Avisos y escalados que lanzan las recetas, con el enlace al caso."
+  },
+  {
+   "name": "Propuestas de las automatizaciones",
+   "format": "aviso",
+   "where": "Inicio › Tu día y Automatizaciones › Propuestas",
+   "desc": "Lo que una receta propone hacer, con su porqué y un botón para aplicarlo o descartarlo."
+  },
+  {
+   "name": "Mensajes y preguntas al cliente",
+   "format": "aviso y correo",
+   "where": "Portal del cliente (inicio y «Preguntas de tu asesoría»)",
+   "desc": "Lo que las recetas escriben o preguntan al cliente, en su portal y por correo si lo tiene elegido."
+  },
+  {
+   "name": "Historial de ejecuciones",
+   "format": "registro",
+   "where": "Automatizaciones › Historial",
+   "desc": "Cada caso con su porqué, paso a paso, lo que cambió y cómo deshacerlo."
+  },
+  {
+   "name": "Simulación de 90 días",
+   "format": "informe en pantalla",
+   "where": "Automatizaciones (catálogo y editor)",
+   "desc": "Lo que una receta habría hecho con lo ocurrido en los últimos 90 días, sin tocar nada."
+  },
+  {
+   "name": "Perfil de obligaciones y vencimientos",
+   "format": "registro",
+   "where": "Expediente del cliente y Calendario fiscal",
+   "desc": "Qué presenta cada cliente y por qué, con un vencimiento por obligación y periodo del año en curso y del siguiente."
+  },
+  {
+   "name": "Recordatorios de vencimientos",
+   "format": "aviso y correo",
+   "where": "Responsable del vencimiento y, si se activa, portal del cliente",
+   "desc": "Avisos a 15, 7, 3 y 1 días, de documentación que falta, de último día para domiciliar y de lo que queda fuera de plazo."
+  },
+  {
+   "name": "Aviso de cambio de obligaciones",
+   "format": "aviso",
+   "where": "Campana del asesor y del equipo del cliente",
+   "desc": "Cuando a un cliente le entra, le sale o le cambia de periodicidad una obligación."
+  },
+  {
+   "name": "Registro de llamadas a la IA",
+   "format": "registro",
+   "where": "Despacho › Inteligencia artificial",
+   "desc": "Quién, para qué, modelo, tokens y tiempo de cada llamada, sin guardar el contenido."
+  },
+  {
+   "name": "Aviso de límite de IA alcanzado",
+   "format": "aviso",
+   "where": "Campana de los administradores",
+   "desc": "Se manda una vez al mes al llegar al límite de uso del plan; la IA se para y los módulos siguen con sus reglas."
+  },
+  {
+   "name": "Correo de prueba",
+   "format": "correo",
+   "where": "Despacho › Ajustes › Correo",
+   "desc": "Comprueba que el servidor SMTP del despacho envía bien."
+  },
+  {
+   "name": "Enlace de recuperación de contraseña",
+   "format": "correo",
+   "where": "Pantalla de acceso del despacho y del portal",
+   "desc": "Enlace de un solo uso, válido 60 minutos, para elegir una contraseña nueva."
+  },
+  {
+   "name": "Códigos de recuperación del 2FA",
+   "format": "códigos en pantalla",
+   "where": "Mi perfil y Portal › Mi cuenta",
+   "desc": "Diez códigos de un solo uso para entrar si se pierde el móvil."
+  },
+  {
+   "name": "PDF del documento escaneado",
+   "format": "PDF",
+   "where": "Portal › Enviar documentos y bandeja de Documentos",
+   "desc": "Un PDF por documento, enderezado y limpio, que llega a la bandeja con la empresa del cliente."
+  },
+  {
+   "name": "Aprobación del borrador por el cliente",
+   "format": "registro",
+   "where": "Portal › Mis declaraciones y módulo Modelos",
+   "desc": "El visto bueno del cliente, con su comentario, antes de presentar la declaración."
+  },
+  {
+   "name": "PDF del borrador y justificante",
+   "format": "PDF",
+   "where": "Portal › Mis declaraciones",
+   "desc": "El cliente descarga el borrador que le preparas y, después, el justificante de presentación."
+  },
+  {
+   "name": "Envío seguro del cliente",
+   "format": "sobre cifrado",
+   "where": "Portal › Envío seguro y Bóveda del despacho",
+   "desc": "Certificado o claves cifrados en el navegador del cliente que solo abren las personas que llevan sus asuntos."
+  }
+ ]
+}

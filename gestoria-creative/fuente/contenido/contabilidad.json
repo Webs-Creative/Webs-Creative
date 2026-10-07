@@ -1,0 +1,468 @@
+{
+ "group": "Contabilidad",
+ "group_desc": "Contabilidad reúne la entrada de documentos, la conexión con los programas de facturación de tus clientes y la conciliación bancaria de todos ellos.",
+ "modules": [
+  {
+   "id": "documentos-bandeja",
+   "title": "Bandeja de documentos",
+   "menu": "Contabilidad › Documentos",
+   "lead": "Es la entrada única de todo lo que te mandan los clientes: facturas, nóminas, notificaciones, justificantes, extractos o DNI. Cada documento se clasifica, se lee y se comprueba solo, y te espera listo para llevarlo a su sitio.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/documentos-bandeja.png",
+     "url": "/#/documentos",
+     "caption": "Cabecera de la bandeja con los contadores, los botones de subir y escanear, y el aviso de lo que espera lectura.",
+     "alt": "Bandeja de documentos con cuatro contadores (por revisar, listas para registrar, leyendo y automatización a 30 días) y un aviso de un documento pendiente de leer."
+    },
+    {
+     "src": "capturas/contabilidad/documentos-lista.png",
+     "url": "/#/documentos",
+     "caption": "Lista de pendientes con su tipo, plazo o caducidad, destino propuesto y confianza de la lectura.",
+     "alt": "Lista de documentos pendientes: un XML con error, un requerimiento con plazo, un certificado y un DNI con caducidad y un extracto bancario, con filtros por tipo."
+    },
+    {
+     "src": "capturas/contabilidad/documentos-ajustes.png",
+     "url": "/#/documentos",
+     "caption": "Ajustes de la lectura: qué facturas se registran solas y qué destinos se aplican sin tu clic.",
+     "alt": "Panel lateral Ajustes de la lectura con las opciones Solo las exactas, Todas las listas y Nunca, la segunda opinión de la IA y los destinos automáticos."
+    }
+   ],
+   "hace": [
+    "Recoge lo que llega por subida en lote, escáner, portal del cliente, correo y programas conectados, y asigna cada documento a su cliente por el NIF.",
+    "Lee las facturas en cascada: factura electrónica (Facturae, UBL, CII o Factur-X), QR tributario, texto del PDF y, si la activas, la IA de Claude.",
+    "Clasifica el resto en 13 tipos, entre ellos nóminas, notificaciones, justificantes, extractos, DNI, certificados, contratos y pólizas, y lee cada uno con su esquema.",
+    "Comprueba cuadres al céntimo, NIF, tipos de IVA vigentes y duplicados, también entre clientes, y avisa si un proveedor pide el pago en otro IBAN.",
+    "Coteja el QR de cada factura con la AEAT en segundo plano, respetando el límite diario de consultas de la Agencia.",
+    "Registra solas en el libro las facturas exactas (XML o QR con desglose que cuadra) y deja el resto en «Listas» para registrarlas de un golpe.",
+    "Se maneja con el teclado: J y K para moverte, Intro para abrir, S para subir, A para registrar las listas y / para buscar."
+   ],
+   "ves": [
+    "Cuatro contadores: por revisar, listas para registrar, leyendo y el porcentaje de facturas registradas solas en los últimos 30 días.",
+    "Pestañas de estado: pendientes, por revisar, listas, leyendo, errores, registradas, repetidas, descartadas y todas, cada una con su número.",
+    "Filtros por tipo (facturas, nóminas, notificaciones, justificantes, identidad, banco y otros), la casilla «Sin cliente» y un buscador por proveedor, NIF, número o cliente.",
+    "En cada fila, emisor, cliente, importe, vía de lectura, confianza en porcentaje y etiquetas de plazo, caducidad, destino y cotejo con la AEAT.",
+    "A la derecha, cómo se lee cada documento, los lotes recientes con su avance, el resumen del cotejo con la AEAT y un gráfico de documentos por día.",
+    "Un aviso cuando hay documentos esperando lectura, con el botón «Leerlos en este navegador»."
+   ],
+   "genera": [
+    "Facturas registradas en el libro de emitidas o recibidas de cada cliente, con impuestos y vencimientos, que después usan Modelos y Conciliación.",
+    "Destinos aplicados con un clic: movimientos en Bancos, retenciones al 111 y al 190, presentación registrada, plazo en el calendario o caducidad vigilada.",
+    "Avisos en «Tu día» y en el panel de inicio: facturas listas para registrar, documentos por revisar, errores de lectura y notificaciones con plazo.",
+    "El resultado del cotejo de cada QR con la AEAT: encontrada, no encontrada o en cola.",
+    "Una entrada en la auditoría por cada factura registrada, documento descartado, cliente asignado o destino aplicado."
+   ],
+   "tip": "Deja «Registrar solas en el libro» en «Solo las exactas»: lo que llega en XML o con QR que cuadra entra solo y el resto lo validas en bloque."
+  },
+  {
+   "id": "documentos-revisar",
+   "title": "Revisar un documento",
+   "menu": "Contabilidad › Documentos › abrir un documento",
+   "lead": "Al abrir un documento tienes el original a la izquierda y lo leído a la derecha, con cada comprobación marcada. Corriges lo que falte y lo llevas a su sitio con un clic.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/documentos-revisar-factura.png",
+     "url": "/#/documentos/20",
+     "caption": "Factura por revisar: visor del PDF, comprobaciones y cotejo del QR con la AEAT.",
+     "alt": "Revisión de una factura de Mensajería Rápida Express: PDF a la izquierda y, a la derecha, el cliente, tres comprobaciones y el cotejo con la AEAT en verde."
+    },
+    {
+     "src": "capturas/contabilidad/documentos-datos-factura.png",
+     "url": "/#/documentos/20",
+     "caption": "Factura propuesta editable con impuestos, retenciones, vencimientos y el cuadre en vivo.",
+     "alt": "Formulario Datos de la factura con tipo, sentido, número leído del QR, fechas, NIF, línea de IVA al 21 %, totales, vencimiento y el mensaje de cuadre correcto."
+    },
+    {
+     "src": "capturas/contabilidad/documentos-notificacion.png",
+     "url": "/#/documentos/39",
+     "caption": "Requerimiento de la AEAT con el plazo calculado en días hábiles, listo para llevarlo al calendario.",
+     "alt": "Revisión de un requerimiento de la Agencia Tributaria con el destino Crear el plazo hasta el 19/10/2026 y el bloque Plazo con siete días hábiles restantes."
+    }
+   ],
+   "hace": [
+    "Muestra el PDF, la foto o el XML con zoom y resalta sobre el papel dónde se ha leído cada dato.",
+    "Propone la factura completa: tipo, sentido, serie, número, fechas, NIF de emisor y destinatario, impuestos (IVA, IGIC o IPSI), retenciones y vencimientos.",
+    "Recalcula los cuadres mientras escribes: base por tipo igual a cuota, suma igual al total y vencimientos iguales al total a pagar.",
+    "Te deja cambiar de cliente, descartar con motivo o registrar con errores indicando por qué, y todo queda en la auditoría.",
+    "En nóminas, notificaciones, justificantes o extractos, enseña los datos de su tipo, la doble lectura y el destino propuesto con su botón.",
+    "Calcula el plazo de una notificación en días hábiles, sin sábados, domingos ni festivos nacionales, y lo compara con la fecha que trae el documento.",
+    "Con la IA activada, el botón «Leer con IA» vuelve a leer el documento con Claude."
+   ],
+   "ves": [
+    "Arriba, el tipo de documento, el estado, la vía de lectura, la confianza y de dónde llegó: portal, correo, programa del cliente o subida.",
+    "El visor con número de páginas, zoom y un botón para abrir el original en otra pestaña.",
+    "Los bloques de cliente, comprobaciones en verde, ámbar o rojo, cotejo con la AEAT y «Cómo se ha leído».",
+    "El formulario de la factura con la marca «del QR» o «leído» y su porcentaje en los campos con evidencia.",
+    "En los demás tipos, el destino con su detalle, el tipo con «Cambiar tipo» y los datos leídos con las diferencias entre lecturas.",
+    "Una barra fija abajo con «Descartar» y el botón principal: «Registrar en el libro» o la acción del destino."
+   ],
+   "genera": [
+    "La factura en el libro del cliente y sus vencimientos como partidas pendientes en Conciliación.",
+    "Un vencimiento puntual en el calendario, con recordatorios a 15, 7, 3 y 1 días y aviso al responsable, cuando es una notificación.",
+    "Las retenciones de las nóminas sumadas al 111 del trimestre del pago y el perceptor en el 190.",
+    "La presentación registrada en Modelos, con CSV y NRC, cuando el documento es un justificante.",
+    "La caducidad de DNI, NIE, certificados o pólizas, con avisos a 60, 30 y 7 días.",
+    "Un documento descartado con su motivo, que no se borra y se puede consultar."
+   ],
+   "tip": "Registra con Ctrl + Intro: la pantalla salta sola al siguiente documento pendiente y Esc te devuelve a la bandeja."
+  },
+  {
+   "id": "documentos-escanear",
+   "title": "Escanear documentos",
+   "menu": "Contabilidad › Documentos › Escanear",
+   "lead": "Convierte la cámara del móvil, la tableta o el portátil en un escáner de facturas y tiques. Cada documento sube a la bandeja como un PDF ya enderezado, y tus clientes tienen el mismo escáner en su portal.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/escanear.png",
+     "url": "/#/documentos/escanear",
+     "caption": "Primera pantalla del escáner: cliente de destino, cámara o fotos ya hechas, y tres consejos.",
+     "alt": "Pantalla Escanear documentos con el selector ¿De qué cliente son?, los botones Abrir el escáner y Elegir fotos, y consejos de luz, fondo y QR tributario."
+    }
+   ],
+   "hace": [
+    "Detecta el papel en vivo y hace la foto sola cuando el documento está quieto y nítido.",
+    "Endereza la perspectiva, limpia la imagen y junta las páginas de cada documento en un solo PDF.",
+    "Antes de subir te deja girar, ajustar las esquinas y elegir el acabado: automático, documento, grises u original.",
+    "Lee el QR tributario al momento, para que la bandeja coteje la factura con la AEAT.",
+    "Asigna los documentos al cliente que elijas o, en automático, a cada uno por su NIF.",
+    "Guarda en el dispositivo lo escaneado sin conexión y lo envía cuando vuelve la red, con la aplicación abierta."
+   ],
+   "ves": [
+    "La pregunta «¿De qué cliente son?» con un buscador y, por defecto, «Asignar por NIF (automático)».",
+    "Los botones «Abrir el escáner» y «Elegir fotos».",
+    "Tres consejos: buena luz, fondo que contraste y QR tributario.",
+    "Un aviso con los documentos que esperan en el dispositivo a que vuelva la conexión, si los hay.",
+    "La lista «Enviados ahora» con cada documento subido, su número de páginas y el botón «Abrir»."
+   ],
+   "genera": [
+    "Un PDF por documento, enderezado y mejorado, en la bandeja de documentos.",
+    "La lectura hecha en el navegador (texto y QR), que acompaña al PDF para que la bandeja lo procese sin esperar.",
+    "Un lote en la bandeja cuando subes varios documentos a la vez.",
+    "Avisos de «Documento en la bandeja» o «Guardado sin conexión» al terminar cada envío."
+   ],
+   "tip": "Pon el papel blanco sobre una mesa oscura y sin flash directo: el borde se detecta al instante y no salen reflejos."
+  },
+  {
+   "id": "estacion-lectura",
+   "title": "Estación de lectura",
+   "menu": "Despacho › Estación de lectura",
+   "lead": "Pone a trabajar un ordenador del despacho para leer los documentos que llegan sin pasar por un navegador, como los del correo o la API. Lo dejas abierto y lee solo, en segundo plano.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/estacion-lectura.png",
+     "url": "/#/lector",
+     "caption": "Estación parada, con la cola de documentos, los equipos activos y lo leído hoy.",
+     "alt": "Pantalla Estación de lectura con el botón de arranque, el nombre del equipo, las capacidades Texto de PDF y QR tributario, el OCR local pendiente y cuatro contadores."
+    }
+   ],
+   "hace": [
+    "Pide trabajo a la cola cada 15 segundos y lee el texto de los PDF, con sus posiciones, y los QR tributarios.",
+    "Devuelve lo leído al servidor, que sigue con la interpretación, las comprobaciones y el cotejo con la AEAT.",
+    "Reserva cada documento mientras lo lee, con latidos y hasta 3 intentos, para que dos equipos no lean el mismo.",
+    "Admite varias estaciones a la vez y mantiene la pantalla encendida mientras trabaja.",
+    "Puede funcionar con el rol «Estación de lectura», un usuario técnico que no ve clientes ni la bóveda.",
+    "Descarga cada documento solo a la memoria del navegador mientras lo lee, sin guardarlo en el equipo."
+   ],
+   "ves": [
+    "Un botón grande para poner en marcha o parar la estación y el nombre de este equipo.",
+    "Las capacidades del equipo: texto de PDF y QR tributario, y el OCR local, que hoy aparece como pendiente de instalar.",
+    "Cuatro contadores: en cola y cuántos necesitan OCR, leyéndose, leídos hoy en todas las estaciones y lo hecho por esta.",
+    "Los equipos que leen ahora y lo último leído por esta estación, con su resultado y su tiempo."
+   ],
+   "genera": [
+    "La lectura de cada documento (texto con posiciones y QR), que vuelve a la bandeja para seguir su curso.",
+    "Documentos que pasan de «Esperando lectura» a por revisar, listos o registrados, según lo leído.",
+    "El recuento de documentos leídos hoy y de los equipos que están leyendo.",
+    "El error de cada trabajo que no se puede leer, que la cola reintenta hasta tres veces."
+   ],
+   "tip": "Si no quieres dejar un equipo dedicado, lee la cola desde la propia bandeja con «Leerlos en este navegador»."
+  },
+  {
+   "id": "conectores",
+   "title": "Conectores con los programas de los clientes",
+   "menu": "Contabilidad › Conectores",
+   "lead": "Conecta el programa de facturación de cada cliente para que sus facturas lleguen solas a la bandeja como datos exactos, sin OCR. Todo entra como propuesta y pasa las mismas comprobaciones que cualquier documento.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/conectores-catalogo.png",
+     "url": "/#/conectores?vista=catalogo",
+     "caption": "Catálogo de programas con lo disponible hoy y cómo se conecta cada uno.",
+     "alt": "Catálogo de programas con las fichas de Holded, Dolibarr, FacturaScripts, Odoo, el importador Excel/CSV y el buzón de facturas, con los botones Pedírselo al cliente y Conectar."
+    },
+    {
+     "src": "capturas/contabilidad/conectores-conexiones.png",
+     "url": "/#/conectores",
+     "caption": "Conexiones de los clientes con su estado: por volver a autorizar, con errores, conectada, en carga o en pausa.",
+     "alt": "Lista de siete conexiones con Odoo, Holded, FacturaScripts, Dolibarr y Sage 50, cada una con su estado, facturas recibidas y botón Detalle."
+    },
+    {
+     "src": "capturas/contabilidad/conectores-detalle.png",
+     "url": "/#/conectores",
+     "caption": "Detalle de una conexión de Holded: qué comparte, avisos al momento y últimas lecturas.",
+     "alt": "Panel lateral de la conexión Holded de Panadería La Espiga Dorada con última lectura, próxima, facturas recibidas, datos compartidos, webhook activo y últimas lecturas."
+    },
+    {
+     "src": "capturas/contabilidad/conectores-expediente.png",
+     "url": "/#/clientes/2?pestana=conectores",
+     "caption": "Pestaña Conectores del expediente: pedir conexión, conectar, importar Excel o crear el token del módulo.",
+     "alt": "Expediente de Raúl Domínguez Prieto en la pestaña Conectores con Dolibarr conectado por su módulo, y los bloques de avisos y dudas e invitaciones."
+    }
+   ],
+   "hace": [
+    "Lee por su API Holded, Dolibarr (20 a 24), FacturaScripts (2024 en adelante) y Odoo (17, 18 y 19).",
+    "Recibe lo que manda el módulo instalado en Dolibarr, FacturaScripts u Odoo: facturas, PDF, cobros y movimientos del banco, con un token por cliente.",
+    "Importa Excel o CSV con asistente de columnas: libros registro de la AEAT, Sage 50, Holded, FacturaScripts o cualquier listado, y guarda el mapeo del cliente.",
+    "Lee cada 60 minutos en horario laboral, cada 240 de noche y cada 15 en las dos últimas semanas de los plazos trimestrales.",
+    "Comprueba la empresa y el NIF del otro lado antes de guardar, y guarda la clave cifrada sin volver a enseñarla.",
+    "Si la clave deja de valer, avisa al cliente por el portal y por correo para que vuelva a autorizar.",
+    "Nunca cambia sola una factura ya registrada: una versión nueva o una anulación entra como documento por revisar."
+   ],
+   "ves": [
+    "La red de programas conectados y cuatro contadores: funcionando, atención, facturas recibidas en 30 días y lecturas en 24 horas.",
+    "La lista de conexiones con cliente, programa, vía (lee su API, su programa lo manda o Excel), estado y facturas recibidas.",
+    "El catálogo de 77 programas: 15 disponibles hoy y el resto en próximas oleadas, bajo demanda o descartados.",
+    "El detalle de cada conexión: última lectura, próxima, qué comparte, renovar la clave, dirección de avisos y últimas lecturas.",
+    "La pestaña Actividad con cada lectura y cada envío, su resultado y las facturas nuevas y cambiadas.",
+    "En el expediente, las invitaciones, los avisos y dudas para su programa y las importaciones de Excel con sus mapeos."
+   ],
+   "genera": [
+    "Las facturas del programa del cliente en la bandeja de Documentos, con la vía «Programa del cliente».",
+    "Una representación en PDF rotulada cuando el programa no manda el original, que se sustituye cuando llega.",
+    "Un correo al cliente con un enlace de un solo uso, válido 7 días, para conectar su programa desde el portal.",
+    "El token y la dirección para el módulo de su programa, que se enseñan una sola vez.",
+    "Avisos y dudas que el cliente ve en su programa, si tiene el módulo, y en su portal.",
+    "Avisos en «Tu día»: conexiones por volver a autorizar, conexiones con errores con «Reintentar ahora» e invitaciones sin respuesta."
+   ],
+   "tip": "Lo más rápido suele ser «Pedírselo al cliente»: le llega un enlace y conecta su programa en tres pasos con una clave de solo lectura."
+  },
+  {
+   "id": "conciliacion",
+   "title": "Conciliación bancaria",
+   "menu": "Contabilidad › Conciliación",
+   "lead": "Reúne los movimientos bancarios de todos tus clientes y los casa con sus facturas y con los impuestos presentados. Cada noche el motor concilia solo lo seguro y te deja el resto explicado.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/conciliacion-despacho.png",
+     "url": "/#/bancos",
+     "caption": "Resumen del despacho: por conciliar, propuestas seguras, porcentaje conciliado y alertas.",
+     "alt": "Pantalla Conciliación bancaria con cuatro contadores, un gráfico 3D de conciliaciones por día y origen, y la tarjeta Cómo concilia el motor."
+    },
+    {
+     "src": "capturas/contabilidad/conciliacion-clientes.png",
+     "url": "/#/bancos",
+     "caption": "Una tarjeta por cliente con su porcentaje conciliado en 90 días, pendientes, seguras y alertas.",
+     "alt": "Rejilla de tarjetas de clientes, cada una con un anillo de porcentaje, número de cuentas, último movimiento y las cifras por conciliar, seguras y alertas."
+    },
+    {
+     "src": "capturas/contabilidad/conciliacion-expediente.png",
+     "url": "/#/clientes/1?pestana=conciliacion",
+     "caption": "Pestaña Conciliación del expediente: cuentas con saldo, continuidad de saldos y límite para conciliar solo.",
+     "alt": "Expediente de Elena Vázquez Moreno en la pestaña Conciliación con contadores y dos cuentas con IBAN, saldo, Saldos continuos y automático hasta 3.000 euros."
+    }
+   ],
+   "hace": [
+    "Importa extractos en Norma 43, camt.053 y camt.054, MT940, OFX, QIF, CSV y Excel, y crea cada cuenta sola por su IBAN.",
+    "Comprueba que los saldos encadenan y avisa si falta un extracto o si uno no cuadra con sus saldos.",
+    "Pasa el motor cada noche por los clientes con movimientos pendientes, y también al importar o al pulsar «Conciliar ahora».",
+    "Concilia solo con prueba de identidad (IBAN conocido, NIF, nombre, factura citada o mandato SEPA) y si el importe no pasa del límite de la cuenta.",
+    "Espera el cargo o la devolución de cada modelo presentado en Modelos y lo casa por su NRC.",
+    "Detecta los recibos devueltos de cobros ya conciliados y te deja deshacer el cobro con un clic."
+   ],
+   "ves": [
+    "Cuatro contadores: movimientos por conciliar, propuestas seguras, porcentaje conciliado en 90 días con lo que hizo el motor solo, y alertas abiertas.",
+    "Un gráfico 3D de conciliaciones por día y por quién las hizo: automático, por regla, asesor, IA, cliente o en bloque.",
+    "Una tarjeta por cliente con su anillo de porcentaje, cuentas, último movimiento, pendientes, seguras y alertas, con buscador y cuatro órdenes.",
+    "En el expediente, cada cuenta con su IBAN, saldo, continuidad de saldos, movimientos y límite para conciliar solo.",
+    "Las alertas del cliente, como recibos devueltos, extractos descuadrados o cargos de la AEAT sin declaración."
+   ],
+   "genera": [
+    "Conciliaciones automáticas selladas en una cadena de huellas firmadas, que se pueden comprobar y deshacer.",
+    "Alertas: extracto descuadrado, recibo devuelto, cargo de la AEAT o de la Seguridad Social sin declaración y modelo anulado ya conciliado.",
+    "Avisos en «Tu día»: conciliaciones seguras listas para aceptar en bloque, avisos del banco y movimientos por conciliar.",
+    "El cobro o el pago aplicado a cada factura del libro cuando se concilia su vencimiento.",
+    "Movimientos nuevos sin duplicados en cada importación, con el resumen de lo conciliado solo."
+   ],
+   "tip": "Pide a tus clientes el Norma 43 o el camt.053 de su banca: traen IBAN y saldos, y el motor reparte solo cada cuenta."
+  },
+  {
+   "id": "conciliador",
+   "title": "Conciliador de un cliente",
+   "menu": "Contabilidad › Conciliación › elegir un cliente",
+   "lead": "Es la mesa de trabajo de la conciliación de un cliente: cada movimiento con su mejor propuesta y el porqué en lenguaje claro. Aceptas, rechazas o casas a mano, casi todo con el teclado.",
+   "shots": [
+    {
+     "src": "capturas/contabilidad/conciliador.png",
+     "url": "/#/bancos/1",
+     "caption": "Conciliador de un cliente con sus cuentas, contadores y la lista de movimientos con su propuesta.",
+     "alt": "Conciliador de Elena Vázquez Moreno con dos cuentas, los botones Importar extracto, Integridad, Conciliar ahora y Aceptar seguras, contadores y lista de movimientos."
+    },
+    {
+     "src": "capturas/contabilidad/conciliador-propuestas.png",
+     "url": "/#/bancos/1",
+     "caption": "Un cobro con comisión: propuesta uno a uno con ajuste a la 626 y la alternativa de pago parcial.",
+     "alt": "Movimiento de Ferretería Castilla de 3.999,32 euros con dos propuestas: uno a uno con comisión bancaria de 3,99 euros a la cuenta 626 y pago parcial, cada una con su explicación."
+    },
+    {
+     "src": "capturas/contabilidad/conciliador-recibo.png",
+     "url": "/#/bancos/1",
+     "caption": "Recibo de puntuación en bits de una propuesta, visible con el nivel de detalle «Experto».",
+     "alt": "Propuesta uno a uno con margen de 41,79 bits y el recibo de puntuación: importe exacto, IBAN conocido, nombre, factura citada, día del vencimiento y forma de pago."
+    }
+   ],
+   "hace": [
+    "Busca por pasadas: identificadores (referencia SEPA, RF, NRC o remesa), cargos de la AEAT, traspasos entre cuentas propias, importe exacto y diferencias explicables.",
+    "Casa también un pago con varias facturas, varios pagos con una factura, pagos parciales, lotes con desglose y cobros en otra divisa.",
+    "Convierte cada diferencia en una línea con su cuenta: comisión (626), redondeo (669 o 769), retención (473), pronto pago o diferencia de cambio (668 o 768).",
+    "Aplica las reglas del despacho, como llevar las comisiones de mantenimiento a la 626 o proponer los intereses deudores en la 6623.",
+    "Puntúa cada propuesta y la explica: qué juega a favor, qué en contra y por qué no se concilia sola.",
+    "Te deja conciliar a mano con buscador de partidas y cuadre en vivo, o preguntar a la IA si la tienes activada.",
+    "Deshace cualquier conciliación sin borrarla: lo deshecho no vuelve solo y el IBAN aprendido con ella se olvida."
+   ],
+   "ves": [
+    "Las cuentas del cliente con IBAN, saldo y pendientes, y los botones Importar extracto, Integridad, Conciliar ahora y Aceptar seguras.",
+    "Cuatro contadores: por conciliar y cuántos tienen propuesta, conciliados con la hora de la última pasada, partidas abiertas y alertas.",
+    "Pestañas por conciliar, seguras, sin propuesta, conciliados y todos, con filtro por cuenta y buscador de concepto, tercero o importe.",
+    "En cada movimiento, la fecha, el importe, la probabilidad y la factura propuesta, con botones para aceptar y rechazar.",
+    "A la derecha, el movimiento con su tipo, tercero, IBAN y referencias, y cada propuesta con sus facturas, ajustes y explicación.",
+    "El historial del movimiento con quién concilió, cuándo, su sello y el botón «Deshacer».",
+    "Con el nivel de detalle «Experto», la pasada, el margen en bits y el recibo de puntuación de cada propuesta."
+   ],
+   "genera": [
+    "Conciliaciones confirmadas por ti, por el motor, por una regla o en bloque, cada una verificada al céntimo y sellada.",
+    "Líneas de ajuste con su cuenta contable por cada diferencia que aceptas.",
+    "Conciliaciones fuera de los límites, solo con el motivo que escribas.",
+    "Un informe de integridad que comprueba al céntimo las conciliaciones y la cadena de sellos del cliente.",
+    "La factura marcada como cobrada o pagada, del todo o en parte, en el libro del cliente.",
+    "Lo aprendido de cada conciliación: el IBAN habitual de cada tercero, que después cuenta como prueba de identidad."
+   ],
+   "tip": "Trabaja con el teclado: J y K para moverte, Intro para aceptar, X para rechazar, M para conciliar a mano y A para aceptar las seguras."
+  }
+ ],
+ "generated_outputs": [
+  {
+   "name": "Factura registrada en el libro del cliente",
+   "format": "registro",
+   "where": "Documentos (revisar o «Registrar listas»)",
+   "desc": "Guarda la factura emitida o recibida con impuestos y vencimientos, y alimenta los borradores de Modelos y las partidas de Conciliación."
+  },
+  {
+   "name": "PDF del documento escaneado",
+   "format": "PDF",
+   "where": "Documentos › Escanear (y portal del cliente)",
+   "desc": "Un PDF enderezado y mejorado por documento, que entra en la bandeja con su lectura de texto y QR."
+  },
+  {
+   "name": "Representación en PDF de una factura del programa del cliente",
+   "format": "PDF",
+   "where": "Documentos (facturas llegadas por Conectores)",
+   "desc": "Enseña los datos recibidos cuando el programa no manda el original, rotulada como copia, y se sustituye al llegar el original."
+  },
+  {
+   "name": "Plazo de una notificación en el calendario",
+   "format": "vencimiento con recordatorios",
+   "where": "Documentos › revisar una notificación",
+   "desc": "Crea el vencimiento con la fecha límite en días hábiles, recordatorios a 15, 7, 3 y 1 días y aviso al responsable."
+  },
+  {
+   "name": "Retenciones de nóminas en el 111 y el 190",
+   "format": "datos del borrador",
+   "where": "Documentos › revisar una nómina",
+   "desc": "Suma las retenciones al 111 del trimestre del pago y añade el perceptor de clave A al 190."
+  },
+  {
+   "name": "Presentación registrada desde el justificante",
+   "format": "registro",
+   "where": "Documentos › revisar un justificante",
+   "desc": "Marca el modelo como presentado con su CSV y su NRC, y Conciliación espera el cargo o la devolución."
+  },
+  {
+   "name": "Caducidad vigilada",
+   "format": "aviso",
+   "where": "Documentos (DNI, NIE, pasaporte, certificado o póliza)",
+   "desc": "Avisa a 60, 30 y 7 días de que caduca un documento del cliente para pedirle el nuevo."
+  },
+  {
+   "name": "Movimientos importados desde un extracto en PDF",
+   "format": "registro",
+   "where": "Documentos › revisar un extracto",
+   "desc": "Lleva a Bancos los movimientos de un extracto cuyos saldos cuadran, sin duplicar los que ya estaban."
+  },
+  {
+   "name": "Cotejo del QR con la AEAT",
+   "format": "estado del documento",
+   "where": "Documentos (en segundo plano)",
+   "desc": "Indica si la AEAT tiene registrada la factura del QR: encontrada, no encontrada o en cola."
+  },
+  {
+   "name": "Avisos de «Tu día» y tarjetas del panel",
+   "format": "aviso",
+   "where": "Documentos, Conectores y Conciliación",
+   "desc": "Reúne lo pendiente de hoy con acciones de un clic, como registrar las facturas listas o aceptar las conciliaciones seguras."
+  },
+  {
+   "name": "Invitación para conectar el programa",
+   "format": "correo",
+   "where": "Conectores (catálogo o expediente)",
+   "desc": "Manda al cliente un enlace de un solo uso, válido 7 días, para conectar su programa desde el portal."
+  },
+  {
+   "name": "Token del módulo del programa",
+   "format": "token y dirección",
+   "where": "Expediente › Conectores › Módulo",
+   "desc": "Credencial por cliente para que el módulo de Dolibarr, FacturaScripts u Odoo mande facturas, PDF y movimientos."
+  },
+  {
+   "name": "Aviso o duda para el programa del cliente",
+   "format": "mensaje",
+   "where": "Expediente › Conectores",
+   "desc": "Pregunta o avisa al cliente sobre sus facturas; lo ve en su programa, si tiene el módulo, y en su portal."
+  },
+  {
+   "name": "Aviso «Vuelve a conectar»",
+   "format": "aviso en el portal y correo",
+   "where": "Conectores (automático)",
+   "desc": "Pide al cliente que renueve la clave cuando su programa deja de aceptarla."
+  },
+  {
+   "name": "Mapeo de columnas guardado",
+   "format": "registro",
+   "where": "Expediente › Conectores › Importar Excel",
+   "desc": "Recuerda qué columna es cada dato en el Excel o CSV de ese cliente para la próxima importación."
+  },
+  {
+   "name": "Registro de lecturas de los conectores",
+   "format": "tabla en pantalla",
+   "where": "Conectores › Actividad",
+   "desc": "Lista cada lectura y cada envío con su resultado y las facturas nuevas y cambiadas."
+  },
+  {
+   "name": "Conciliación sellada",
+   "format": "registro",
+   "where": "Conciliación y conciliador",
+   "desc": "Cada conciliación queda verificada al céntimo y enlazada en una cadena de huellas firmadas, y se puede deshacer."
+  },
+  {
+   "name": "Líneas de ajuste con cuenta contable",
+   "format": "registro",
+   "where": "Conciliador",
+   "desc": "Recoge cada diferencia aceptada en su cuenta: 626, 669 o 769, 473, 706 o 606, y 668 o 768."
+  },
+  {
+   "name": "Alertas del banco",
+   "format": "aviso",
+   "where": "Conciliación",
+   "desc": "Avisan de recibos devueltos, extractos descuadrados, cargos de la AEAT o la Seguridad Social sin declaración y modelos anulados ya conciliados."
+  },
+  {
+   "name": "Comprobación de integridad",
+   "format": "informe en pantalla",
+   "where": "Conciliador › Integridad",
+   "desc": "Recalcula las conciliaciones del cliente y la cadena de sellos, y dice si todo cuadra o qué ha cambiado."
+  },
+  {
+   "name": "Cobro o pago aplicado a la factura",
+   "format": "registro",
+   "where": "Conciliación",
+   "desc": "Deja la factura del libro cobrada o pagada, del todo o en parte, al conciliar su vencimiento."
+  }
+ ]
+}

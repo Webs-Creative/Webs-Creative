@@ -1,0 +1,77 @@
+{
+ "fps": 30,
+ "ancho": 1920,
+ "alto": 1080,
+ "escenas": [
+  {
+   "id": "gancho",
+   "dur": 4.692,
+   "voz": "01",
+   "texto": "¿Tu gestoría sigue persiguiendo papeles, plazos y certificados?",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "logo",
+   "dur": 3.638,
+   "voz": "02",
+   "texto": "Te presentamos Gestoría Creative.",
+   "voz_desfase": 0.45
+  },
+  {
+   "id": "panel",
+   "dur": 5.998,
+   "voz": "03",
+   "texto": "Todo tu despacho en una sola pantalla. Cada mañana, lo urgente primero.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "modelos",
+   "dur": 4.509,
+   "voz": "04",
+   "texto": "Los modelos se preparan solos con las facturas de tus clientes.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "documentos",
+   "dur": 4.562,
+   "voz": "05",
+   "texto": "Cada factura se lee, se comprueba y se coteja con Hacienda.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "bancos",
+   "dur": 5.241,
+   "voz": "06",
+   "texto": "El banco se concilia solo cada noche, con el porqué de cada propuesta.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "normativa",
+   "dur": 5.058,
+   "voz": "07",
+   "texto": "Vigila el BOE por ti y te avisa solo de lo que afecta a tus clientes.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "boveda",
+   "dur": 5.476,
+   "voz": "08",
+   "texto": "Y los certificados de tus clientes, en una bóveda que ni nosotros podemos abrir.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "portal",
+   "dur": 3.673,
+   "voz": "09",
+   "texto": "Tus clientes te lo envían todo desde el móvil.",
+   "voz_desfase": 0.25
+  },
+  {
+   "id": "cierre",
+   "dur": 7.445,
+   "voz": "10",
+   "texto": "Gestoría Creative. En la nube y con inteligencia artificial incluida. Pide tu demo hoy.",
+   "voz_desfase": 0.6
+  }
+ ]
+}

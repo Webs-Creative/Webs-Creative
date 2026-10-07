@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Gestoría Creative · vídeo</title>
+<style>
+@font-face { font-family: "Montserrat"; font-weight: 900; src: url("fuentes/montserrat-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("fuentes/montserrat-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url("fuentes/montserrat-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 600; src: url("fuentes/figtree-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 500; src: url("fuentes/figtree-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 600; src: url("fuentes/jetbrains-mono-latin-600-normal.woff2") format("woff2"); }
+
+:root { --ink: #07090C; --ink2: #12161C; --or: #F8841A; --or2: #FFB05A; --tq: #22D3EE; --tx: #F4F6F8; --mut: #A9B3C1; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #000; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); font-family: "Figtree", sans-serif; color: var(--tx); }
+#bg { position: absolute; inset: 0; }
+.scene { position: absolute; inset: 0; display: none; will-change: opacity, transform; }
+
+/* --------- gancho --------- */
+.papel { position: absolute; width: 150px; height: 196px; border-radius: 10px; background: linear-gradient(160deg, #20262F, #151A21); border: 1px solid rgba(255,255,255,.10); box-shadow: 0 20px 40px -18px rgba(0,0,0,.8); padding: 18px 16px; }
+.papel i { display: block; height: 7px; border-radius: 4px; background: rgba(255,255,255,.14); margin-bottom: 11px; }
+.papel i:nth-child(1) { width: 60%; background: rgba(248,132,26,.55); }
+.papel i:nth-child(3) { width: 80%; } .papel i:nth-child(5) { width: 45%; }
+.papel b { position: absolute; right: 12px; bottom: 12px; font: 700 15px "JetBrains Mono", monospace; color: var(--tq); }
+.kw { position: absolute; left: 0; right: 0; text-align: center; font: 900 104px/1 "Montserrat", sans-serif; letter-spacing: -.01em; text-transform: uppercase; color: var(--tx); text-shadow: 0 8px 40px rgba(0,0,0,.7); }
+.kw.or { color: var(--or); text-shadow: 0 0 60px rgba(248,132,26,.45); }
+
+/* --------- logo y cierre --------- */
+.logo-icon { position: absolute; left: 50%; width: 300px; height: 300px; margin-left: -150px; filter: drop-shadow(0 0 50px rgba(248,132,26,.45)) drop-shadow(0 0 30px rgba(34,211,238,.25)); }
+.word { position: absolute; left: 0; right: 0; text-align: center; font: 900 112px/.95 "Montserrat", sans-serif; text-transform: uppercase; }
+.word span { display: block; }
+.word .c { color: var(--or); }
+.tagline { position: absolute; left: 0; right: 0; text-align: center; font: 800 38px "Montserrat", sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--tx); }
+.pills { position: absolute; left: 0; right: 0; display: flex; justify-content: center; gap: 22px; }
+.pills span { font: 600 26px "Figtree", sans-serif; padding: 12px 26px; border-radius: 999px; border: 1px solid rgba(34,211,238,.55); color: #CFF7FD; background: rgba(34,211,238,.08); }
+.cta { position: absolute; left: 50%; transform: translateX(-50%); padding: 26px 60px; border-radius: 18px; font: 900 40px "Montserrat", sans-serif; letter-spacing: .06em; color: #1A0D02; background: linear-gradient(135deg, #FFB05A, #F8841A 55%, #EE6F12); text-transform: uppercase; white-space: nowrap; }
+.contacto { position: absolute; left: 0; right: 0; text-align: center; font: 600 28px "JetBrains Mono", monospace; color: var(--mut); letter-spacing: .04em; }
+.contacto b { color: var(--tx); font-weight: 600; }
+
+/* --------- escenas con pantalla --------- */
+.pantalla { position: absolute; width: 1000px; border-radius: 18px; overflow: hidden; background: #0E1116; border: 1px solid rgba(255,255,255,.14); box-shadow: 0 50px 120px -40px rgba(0,0,0,.9), 0 0 0 1px rgba(248,132,26,.10), 0 0 80px -10px rgba(34,211,238,.18); transform-origin: 50% 50%; }
+.barra { height: 46px; display: flex; align-items: center; gap: 14px; padding: 0 18px; background: #151A21; border-bottom: 1px solid rgba(255,255,255,.08); }
+.barra i { width: 13px; height: 13px; border-radius: 50%; background: #39414C; display: inline-block; }
+.barra i:nth-child(1) { background: var(--or); } .barra i:nth-child(2) { background: var(--tq); }
+.barra span { flex: 1; margin-left: 6px; height: 28px; border-radius: 8px; background: #0E1116; border: 1px solid rgba(255,255,255,.08); font: 600 15px/28px "JetBrains Mono", monospace; color: #8C97A6; padding: 0 14px; }
+.vista { position: relative; width: 1000px; height: 625px; overflow: hidden; }
+.vista img { position: absolute; inset: 0; width: 100%; height: 100%; transform-origin: 0 0; }
+.foco { position: absolute; border: 3px solid var(--tq); border-radius: 16px; box-shadow: 0 0 0 9999px rgba(7,9,12,.0), 0 0 40px rgba(34,211,238,.6), inset 0 0 30px rgba(34,211,238,.25); opacity: 0; }
+.escaner { position: absolute; left: 0; right: 0; height: 140px; background: linear-gradient(180deg, rgba(34,211,238,0), rgba(34,211,238,.20) 70%, rgba(34,211,238,.9) 98%, rgba(255,255,255,.95)); mix-blend-mode: screen; opacity: 0; }
+
+.rotulo { position: absolute; width: 900px; }
+.rotulo .ceja { font: 600 26px "JetBrains Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--tq); margin-bottom: 18px; }
+.rotulo .linea { overflow: hidden; }
+.rotulo .linea span { display: block; font: 900 74px/1.04 "Montserrat", sans-serif; text-transform: uppercase; letter-spacing: -.005em; }
+.rotulo .linea.or span { color: var(--or); text-shadow: 0 0 40px rgba(248,132,26,.35); }
+.rotulo .marco { position: absolute; left: -34px; top: -26px; right: -10px; bottom: -26px; pointer-events: none; }
+.marco::before, .marco::after { content: ""; position: absolute; width: 46px; height: 46px; border: 3px solid var(--tq); filter: drop-shadow(0 0 10px rgba(34,211,238,.7)); }
+.marco::before { left: 0; top: 0; border-right: 0; border-bottom: 0; border-radius: 10px 0 0 0; }
+.marco::after { right: 0; bottom: 0; border-left: 0; border-top: 0; border-radius: 0 0 10px 0; }
+.extras { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px 14px; }
+.chip { font: 600 28px "JetBrains Mono", monospace; padding: 8px 16px; border-radius: 10px; border: 1px solid rgba(248,132,26,.6); color: #FFC489; background: rgba(248,132,26,.10); }
+.chip.tq { border-color: rgba(34,211,238,.6); color: #BDF4FC; background: rgba(34,211,238,.08); }
+.check { display: flex; align-items: center; gap: 14px; font: 600 34px "Figtree", sans-serif; color: var(--tx); width: 100%; }
+.check em { font-style: normal; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(34,211,238,.15); border: 2px solid var(--tq); color: var(--tq); font: 900 22px "Montserrat"; flex: none; }
+.llave { display: flex; align-items: center; gap: 16px; width: 100%; font: 600 34px "Figtree", sans-serif; }
+.llave em { font-style: normal; width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; color: #1A0D02; background: linear-gradient(135deg, #FFB05A, #F8841A); font: 900 24px "Montserrat"; flex: none; box-shadow: 0 0 24px rgba(248,132,26,.45); }
+
+.movil { position: absolute; width: 410px; border-radius: 46px; padding: 12px; background: #0A0C10; border: 2px solid #2A313B; box-shadow: 0 50px 100px -30px rgba(0,0,0,.9), 0 0 60px -10px rgba(34,211,238,.25); }
+.movil img { display: block; width: 100%; border-radius: 36px; }
+
+/* --------- comunes --------- */
+#marca { position: absolute; left: 60px; top: 120px; display: flex; align-items: center; gap: 14px; opacity: 0; }
+#marca img { width: 58px; height: 58px; }
+#marca div { font: 900 23px/.95 "Montserrat", sans-serif; text-transform: uppercase; }
+#marca div b { display: block; color: var(--or); }
+#sub { position: absolute; left: 50%; bottom: 270px; transform: translateX(-50%); width: 960px; text-align: center; font: 600 38px/1.3 "Figtree", sans-serif; color: #fff; padding: 12px 30px; border-radius: 14px; background: rgba(7,9,12,.62); text-shadow: 0 2px 10px rgba(0,0,0,.6); opacity: 0; white-space: normal; }
+#barrido { position: absolute; top: -200px; bottom: -200px; width: 520px; left: 0; background: linear-gradient(90deg, rgba(34,211,238,0), rgba(34,211,238,.55) 40%, rgba(255,255,255,.9) 50%, rgba(248,132,26,.6) 60%, rgba(248,132,26,0)); transform: skewX(-18deg); mix-blend-mode: screen; opacity: 0; filter: blur(6px); }
+#viñeta { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%); pointer-events: none; }
+#destello { position: absolute; inset: 0; background: radial-gradient(circle at 50% 35%, rgba(255,220,180,.85), rgba(248,132,26,.25) 30%, rgba(0,0,0,0) 60%); mix-blend-mode: screen; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="bg" width="1080" height="1920"></canvas>
+
+  <div class="scene" id="s-gancho">
+    <div id="papeles"></div>
+    <div class="kw" id="kw1" style="top:640px">Papeles</div>
+    <div class="kw" id="kw2" style="top:780px">Plazos</div>
+    <div class="kw or" id="kw3" style="top:920px">Certificados</div>
+  </div>
+
+  <div class="scene" id="s-logo">
+    <img class="logo-icon" id="lg-icon" src="gc-icon.svg" style="top:500px;width:340px;height:340px;margin-left:-170px" alt="">
+    <div class="word" id="lg-word" style="top:900px;font-size:118px"><span class="g">Gestoría</span><span class="c">Creative</span></div>
+  </div>
+
+  <div class="scene feat" id="s-panel" data-lado="der" data-img="pantallas/panel.png" data-url="gestion.tu-asesoria.es/#/"
+       data-ceja="Inicio · Tu día" data-l1="Todo tu despacho" data-l2="en una pantalla"></div>
+  <div class="scene feat" id="s-modelos" data-lado="izq" data-img="pantallas/modelo-borrador.png" data-url="gestion.tu-asesoria.es/#/modelos/9"
+       data-ceja="Modelos tributarios" data-l1="Modelos que" data-l2="se preparan solos" data-zoom="0.771,0.268,0.9825,0.398"
+       data-chips="303,130,111,115,349,347,390,180,190,202,309"></div>
+  <div class="scene feat" id="s-documentos" data-lado="der" data-img="pantallas/documento-factura.png" data-url="gestion.tu-asesoria.es/#/documentos/20"
+       data-ceja="Documentos" data-l1="Facturas leídas" data-l2="y comprobadas" data-escaner="1"
+       data-checks="QR tributario leído|Cuadra al céntimo|Cotejada con Hacienda"></div>
+  <div class="scene feat" id="s-bancos" data-lado="izq" data-img="pantallas/conciliador.png" data-url="gestion.tu-asesoria.es/#/bancos/1"
+       data-ceja="Conciliación bancaria" data-l1="El banco se" data-l2="concilia solo" data-zoom="0.631,0.634,0.981,0.80"
+       data-checks="Prueba de identidad|Explica cada propuesta|Se puede deshacer"></div>
+  <div class="scene feat" id="s-normativa" data-lado="der" data-img="pantallas/normativa.png" data-url="gestion.tu-asesoria.es/#/normativa"
+       data-ceja="Radar normativo" data-l1="Vigila el BOE" data-l2="por ti" data-chips="BOE,BORME,AEAT,RED,DOUE,Autonómicos" data-chipclase="tq"></div>
+  <div class="scene feat" id="s-boveda" data-lado="izq" data-img="pantallas/boveda-bloqueo.png" data-img2="pantallas/boveda-detalle.png" data-url="gestion.tu-asesoria.es/boveda"
+       data-ceja="Bóveda de certificados" data-l1="Certificados" data-l2="bajo tres llaves"
+       data-llaves="Contraseña maestra|Clave secreta|Código de doble factor"></div>
+  <div class="scene" id="s-portal">
+    <div class="rotulo" id="pt-rot" style="left:90px;top:1265px"><div class="marco"></div><div class="ceja">Portal del cliente</div>
+      <div class="linea"><span>Tus clientes,</span></div><div class="linea or"><span>desde el móvil</span></div></div>
+    <div class="movil" id="pt-m1" style="left:90px;top:250px"><img src="pantallas/portal-inicio.png" alt=""></div>
+    <div class="movil" id="pt-m2" style="left:580px;top:300px"><img src="pantallas/portal-declaraciones.png" alt=""></div>
+  </div>
+
+  <div class="scene" id="s-cierre">
+    <img class="logo-icon" id="ci-icon" src="gc-icon.svg" style="top:330px;width:270px;height:270px;margin-left:-135px" alt="">
+    <div class="word" id="ci-word" style="top:650px;font-size:112px"><span class="g">Gestoría</span><span class="c">Creative</span></div>
+    <div class="tagline" id="ci-tag" style="top:900px;font-size:34px;letter-spacing:.14em">El software para tu gestoría</div>
+    <div class="pills" id="ci-pills" style="top:985px;flex-wrap:wrap;padding:0 60px"><span>En la nube</span><span>IA incluida</span><span>Servidores en España</span></div>
+    <div class="cta" id="ci-cta" style="top:1180px">Pide tu demo hoy</div>
+    <div class="contacto" id="ci-con" style="top:1330px"><b>webscreative.es</b> · 608 567 883</div>
+  </div>
+
+  <div id="destello"></div>
+  <div id="barrido"></div>
+  <div id="marca"><img src="gc-icon.svg" alt=""><div>Gestoría<b>Creative</b></div></div>
+  <div id="viñeta"></div>
+  <div id="sub"></div>
+</div>
+
+<script>
+// ------------------------------------------------------------------ utilidades
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lin = (u, a, b) => cl((u - a) / (b - a));
+const eOut = (x) => 1 - Math.pow(1 - x, 3);
+const eIn = (x) => x * x * x;
+const eIO = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const eBack = (x) => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+function rng(seed) { let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+const $ = (s) => document.querySelector(s);
+
+// ------------------------------------------------------------------ montaje de escenas con pantalla
+function montarFeat(el) {
+  const d = el.dataset, der = d.lado === 'der';
+  const frameLeft = 40, rotLeft = 90;
+  let extras = '';
+  if (d.chips) extras = '<div class="extras">' + d.chips.split(',').map((c) => `<span class="chip ${d.chipclase || ''}">${c}</span>`).join('') + '</div>';
+  if (d.checks) extras = '<div class="extras">' + d.checks.split('|').map((c) => `<div class="check"><em>✓</em>${c}</div>`).join('') + '</div>';
+  if (d.llaves) extras = '<div class="extras">' + d.llaves.split('|').map((c, i) => `<div class="llave"><em>${i + 1}</em>${c}</div>`).join('') + '</div>';
+  el.innerHTML = `
+    <div class="pantalla" style="left:${frameLeft}px;top:280px"><div class="barra"><i></i><i></i><i></i><span>https://${d.url}</span></div>
+      <div class="vista"><img class="im1" src="${d.img}">${d.img2 ? `<img class="im2" src="${d.img2}" style="opacity:0">` : ''}
+      ${d.zoom ? '<div class="foco"></div>' : ''}${d.escaner ? '<div class="escaner"></div>' : ''}</div></div>
+    <div class="rotulo" style="left:${rotLeft}px;top:1015px"><div class="marco"></div><div class="ceja">${d.ceja}</div>
+      <div class="linea"><span>${d.l1}</span></div><div class="linea or"><span>${d.l2}</span></div>${extras}</div>`;
+}
+document.querySelectorAll('.scene.feat').forEach(montarFeat);
+
+// papeles del gancho
+(() => {
+  const r = rng(7), cont = $('#papeles'), etiquetas = ['303', '111', 'IVA', 'NIF', '.p12', '130', 'SEPA', '347', 'BOE', 'RED', 'IRPF', '190', 'N43', '115'];
+  for (let i = 0; i < 14; i++) {
+    const p = document.createElement('div');
+    p.className = 'papel';
+    p.innerHTML = '<i></i><i></i><i></i><i></i><i></i><b>' + etiquetas[i] + '</b>';
+    p.dataset.x = (r() * 1080 - 75).toFixed(0); p.dataset.y = (r() * 1920 - 98).toFixed(0);
+    p.dataset.vx = ((r() - .5) * 90).toFixed(1); p.dataset.vy = ((r() - .5) * 70).toFixed(1);
+    p.dataset.r0 = ((r() - .5) * 50).toFixed(1); p.dataset.vr = ((r() - .5) * 30).toFixed(1);
+    p.dataset.z = (0.6 + r() * 0.7).toFixed(2);
+    cont.appendChild(p);
+  }
+})();
+
+// ------------------------------------------------------------------ fondo (canvas)
+const cv = $('#bg'), g = cv.getContext('2d');
+const PART = (() => { const r = rng(42); return Array.from({ length: 200 }, () => ({ x: r() * 1080, y: r() * 1920, s: 0.6 + r() * 2.2, v: 8 + r() * 26, c: r() < 0.45 ? '248,132,26' : r() < 0.85 ? '34,211,238' : '255,255,255', f: r() * 6.28 })); })();
+const RAYOS = (() => { const r = rng(9); return Array.from({ length: 140 }, () => ({ a: r() * Math.PI * 2, l: 0.3 + r() * 0.7, w: 0.6 + r() * 2.2, c: r() < 0.5 ? '248,132,26' : '34,211,238', o: r() })); })();
+function fondo(t, burst) {
+  const gr = g.createRadialGradient(540, 700, 50, 540, 900, 1400);
+  gr.addColorStop(0, '#16202B'); gr.addColorStop(0.45, '#0C1117'); gr.addColorStop(1, '#05070A');
+  g.fillStyle = gr; g.fillRect(0, 0, 1080, 1920);
+  // malla de puntos en perspectiva (suelo)
+  g.save();
+  for (let row = 0; row < 14; row++) {
+    const z = ((row + (t * 0.6) % 1) / 14);
+    const y = 1350 + Math.pow(z, 1.6) * 570;
+    const a = 0.05 + z * 0.12;
+    g.fillStyle = `rgba(34,211,238,${a})`;
+    const sp = 40 + z * 110;
+    for (let x = 540 % sp; x < 1080; x += sp) { g.fillRect(x, y, 1.5 + z * 2, 1.5 + z * 2); }
+  }
+  g.restore();
+  // partículas
+  for (const p of PART) {
+    const y = (p.y - t * p.v + 1920 * 4) % 1920, x = p.x + Math.sin(t * 0.5 + p.f) * 18;
+    const tw = 0.35 + 0.65 * (0.5 + 0.5 * Math.sin(t * 2 + p.f));
+    g.fillStyle = `rgba(${p.c},${0.55 * tw})`;
+    g.beginPath(); g.arc(x, y, p.s, 0, 6.283); g.fill();
+  }
+  // estelas diagonales
+  for (let i = 0; i < 5; i++) {
+    const per = 3.4 + i * 0.9, ph = ((t + i * 1.37) % per) / per;
+    const x = -600 + ph * 2300, y = 200 + i * 330;
+    const lg = g.createLinearGradient(x - 500, y + 160, x, y);
+    const col = i % 2 ? '34,211,238' : '248,132,26';
+    lg.addColorStop(0, `rgba(${col},0)`); lg.addColorStop(1, `rgba(${col},0.55)`);
+    g.strokeStyle = lg; g.lineWidth = 2; g.beginPath(); g.moveTo(x - 500, y + 160); g.lineTo(x, y); g.stroke();
+  }
+  // salto a la velocidad de la luz (logo y cierre)
+  if (burst > 0.001) {
+    g.save(); g.translate(540, 670);
+    for (const r of RAYOS) {
+      const k = (r.o + t * 0.9) % 1;
+      const r0 = 60 + k * 900, r1 = r0 + 80 + r.l * 520 * burst;
+      g.strokeStyle = `rgba(${r.c},${0.75 * burst * (1 - k)})`; g.lineWidth = r.w;
+      g.beginPath(); g.moveTo(Math.cos(r.a) * r0, Math.sin(r.a) * r0); g.lineTo(Math.cos(r.a) * r1, Math.sin(r.a) * r1); g.stroke();
+    }
+    const halo = g.createRadialGradient(0, 0, 0, 0, 0, 520);
+    halo.addColorStop(0, `rgba(248,132,26,${0.30 * burst})`); halo.addColorStop(0.5, `rgba(34,211,238,${0.10 * burst})`); halo.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = halo; g.fillRect(-540, -670, 1080, 1920);
+    g.restore();
+  }
+}
+
+// ------------------------------------------------------------------ línea de tiempo
+let ESC = [];
+function preparar(datos) {
+  let t = 0;
+  ESC = datos.escenas.map((e) => { const s = { ...e, start: t, end: t + e.dur }; t += e.dur; return s; });
+  return t;
+}
+const vis = (el, o) => { el.style.display = o > 0.001 ? 'block' : 'none'; el.style.opacity = o; };
+
+function envolvente(u, dur, a = 0.35, b = 0.32) { return Math.min(eOut(lin(u, 0, a)), 1 - eIn(lin(u, dur - b, dur))); }
+
+function escenaGancho(el, u, dur) {
+  vis(el, 1 - eIn(lin(u, dur - 0.35, dur)));
+  el.style.transform = `scale(${1 + 0.08 * eIn(lin(u, dur - 0.45, dur))})`;
+  el.querySelectorAll('.papel').forEach((p) => {
+    const d = p.dataset, z = +d.z;
+    const x = +d.x + d.vx * u, y = +d.y + d.vy * u, r = +d.r0 + d.vr * u;
+    const caos = 1 + 0.25 * Math.sin(u * 3 + z * 7);
+    p.style.transform = `translate(${x}px,${y}px) rotate(${r}deg) scale(${z * caos})`;
+    p.style.opacity = (0.25 + 0.4 * z) * eOut(lin(u, 0, 0.6));
+    p.style.filter = `blur(${(1.3 - z) * 3}px)`;
+  });
+  [['#kw1', 0.15], ['#kw2', 1.05], ['#kw3', 1.95]].forEach(([s, t0]) => {
+    const k = $(s), p = lin(u, t0, t0 + 0.32), e = eOut(p);
+    k.style.opacity = e;
+    const shake = p >= 1 ? Math.sin(u * 40) * 2 * Math.max(0, 1 - (u - t0 - 0.32) * 4) : 0;
+    k.style.transform = `translateX(${shake}px) scale(${1.5 - 0.5 * e})`;
+    k.style.filter = `blur(${(1 - e) * 14}px)`;
+  });
+}
+
+function escenaLogo(el, u, dur) {
+  vis(el, envolvente(u, dur, 0.15, 0.3));
+  const ic = $('#lg-icon'), w = $('#lg-word');
+  const p = eBack(lin(u, 0.05, 0.75));
+  ic.style.transform = `scale(${0.3 + 0.7 * p}) rotate(${(1 - p) * -40}deg)`;
+  ic.style.opacity = cl(lin(u, 0.05, 0.3));
+  const q = eOut(lin(u, 0.45, 1.05));
+  w.style.opacity = q; w.style.letterSpacing = `${(1 - q) * 0.35}em`; w.style.transform = `translateY(${(1 - q) * 40}px)`;
+  el.style.transform = `scale(${1 + 0.05 * lin(u, 0, dur)})`;
+}
+
+function escenaFeat(el, u, dur) {
+  const der = el.dataset.lado === 'der', sg = der ? 1 : -1;
+  vis(el, envolvente(u, dur, 0.3, 0.3));
+  const pan = el.querySelector('.pantalla');
+  const ent = eOut(lin(u, 0, 0.9)), sal = eIn(lin(u, dur - 0.35, dur));
+  const ry = sg * (-14 * (1 - ent) - 6 * ent - 3 * lin(u, 0.9, dur));
+  const ty = 260 * (1 - ent) - 80 * sal;
+  const sc = 0.93 + 0.07 * ent + 0.03 * lin(u, 0.9, dur) + 0.04 * sal;
+  pan.style.transform = `perspective(2000px) translateY(${ty}px) rotateY(${ry}deg) rotateX(${16 * (1 - ent) + 4}deg) scale(${sc})`;
+  // zoom al detalle
+  const d = el.dataset, vista = el.querySelector('.vista'), im = vista.querySelector('.im1');
+  if (d.zoom) {
+    const [x0, y0, x1, y1] = d.zoom.split(',').map(Number);
+    const z = eIO(lin(u, 1.5, 2.6)), W = 1000, H = 625;
+    const cx = (x0 + x1) / 2 * W, cy = (y0 + y1) / 2 * H;
+    const S = 1 + 0.75 * z;
+    const ox = (W / 2 - cx * S) * z, oy = (H / 2 - cy * S) * z;
+    const tf = `translate(${ox}px,${oy}px) scale(${S})`;
+    im.style.transform = tf;
+    const f = vista.querySelector('.foco');
+    f.style.left = (x0 * W * S + ox - 8) + 'px'; f.style.top = (y0 * H * S + oy - 8) + 'px';
+    f.style.width = ((x1 - x0) * W * S + 16) + 'px'; f.style.height = ((y1 - y0) * H * S + 16) + 'px';
+    f.style.opacity = eOut(lin(u, 2.4, 2.8)) * (0.75 + 0.25 * Math.sin(u * 6));
+  }
+  if (d.escaner) {
+    const s = vista.querySelector('.escaner'), k = lin(u, 0.8, 3.2);
+    s.style.top = (-140 + k * 765) + 'px'; s.style.opacity = k > 0 && k < 1 ? 0.9 : 0;
+  }
+  if (d.img2) {
+    const im2 = vista.querySelector('.im2'), c = eIO(lin(u, 2.3, 2.9));
+    im2.style.opacity = c; im.style.opacity = 1 - c;
+  }
+  // rótulo
+  const rot = el.querySelector('.rotulo');
+  rot.querySelectorAll('.linea span').forEach((s, i) => {
+    const e = eOut(lin(u, 0.35 + i * 0.14, 0.85 + i * 0.14));
+    s.style.transform = `translateY(${(1 - e) * 110}%)`;
+  });
+  const ce = rot.querySelector('.ceja'), ec = eOut(lin(u, 0.25, 0.7));
+  ce.style.opacity = ec; ce.style.transform = `translateX(${(1 - ec) * -30 * sg}px)`;
+  const mc = rot.querySelector('.marco'), em = eOut(lin(u, 0.5, 1.0));
+  mc.style.opacity = em; mc.style.transform = `scale(${1.15 - 0.15 * em})`;
+  rot.querySelectorAll('.extras > *').forEach((x, i) => {
+    const step = x.classList.contains('chip') ? 0.11 : 0.45;
+    const e = eBack(lin(u, 1.15 + i * step, 1.55 + i * step));
+    x.style.opacity = cl(e); x.style.transform = `translateY(${(1 - e) * 24}px) scale(${0.85 + 0.15 * e})`;
+  });
+  rot.style.transform = `translateY(${40 * sal}px)`;
+}
+
+function escenaPortal(el, u, dur) {
+  vis(el, envolvente(u, dur, 0.3, 0.3));
+  const rot = $('#pt-rot');
+  rot.querySelectorAll('.linea span').forEach((s, i) => { const e = eOut(lin(u, 0.3 + i * 0.14, 0.8 + i * 0.14)); s.style.transform = `translateY(${(1 - e) * 110}%)`; });
+  const ce = rot.querySelector('.ceja'); ce.style.opacity = eOut(lin(u, 0.2, 0.6));
+  const mc = rot.querySelector('.marco'), em = eOut(lin(u, 0.45, 0.95)); mc.style.opacity = em; mc.style.transform = `scale(${1.15 - 0.15 * em})`;
+  [['#pt-m1', 0.1, -7], ['#pt-m2', 0.45, 5]].forEach(([s, t0, r]) => {
+    const m = $(s), e = eOut(lin(u, t0, t0 + 0.9));
+    const flot = Math.sin((u + t0) * 1.6) * 8;
+    m.style.transform = `translateY(${(1 - e) * 700 + flot}px) rotate(${r * e}deg)`;
+  });
+}
+
+function escenaCierre(el, u, dur) {
+  vis(el, cl(lin(u, 0, 0.3)));
+  const ic = $('#ci-icon'), p = eBack(lin(u, 0.05, 0.75));
+  ic.style.transform = `scale(${0.4 + 0.6 * p})`; ic.style.opacity = cl(lin(u, 0.05, 0.3));
+  const w = $('#ci-word'), q = eOut(lin(u, 0.35, 0.95));
+  w.style.opacity = q; w.style.letterSpacing = `${(1 - q) * 0.3}em`;
+  const tg = $('#ci-tag'), r = eOut(lin(u, 0.85, 1.35)); tg.style.opacity = r; tg.style.transform = `translateY(${(1 - r) * 20}px)`;
+  $('#ci-pills').querySelectorAll('span').forEach((s, i) => { const e = eBack(lin(u, 1.3 + i * 0.18, 1.7 + i * 0.18)); s.style.opacity = cl(e); s.style.transform = `scale(${0.8 + 0.2 * e})`; s.style.display = 'inline-block'; });
+  const cta = $('#ci-cta'), c = eBack(lin(u, 2.0, 2.5)), pulso = 1 + 0.035 * Math.max(0, Math.sin((u - 2.5) * 4)) * (u > 2.5 ? 1 : 0);
+  cta.style.opacity = cl(c); cta.style.transform = `translateX(-50%) scale(${(0.7 + 0.3 * c) * pulso})`;
+  cta.style.boxShadow = `0 0 ${40 + 30 * Math.max(0, Math.sin(u * 4))}px rgba(248,132,26,.55), 0 20px 50px -20px rgba(0,0,0,.8)`;
+  const con = $('#ci-con'), k = eOut(lin(u, 2.4, 2.9)); con.style.opacity = k;
+}
+
+const ESCENAS_FN = { gancho: escenaGancho, logo: escenaLogo, cierre: escenaCierre, portal: escenaPortal };
+
+function render(t) {
+  // intensidad del salto de luz: logo y cierre
+  let burst = 0;
+  for (const s of ESC) {
+    if (s.id === 'logo') burst = Math.max(burst, Math.max(0, 1 - Math.abs(t - s.start - 0.4) / 1.6));
+    if (s.id === 'cierre') burst = Math.max(burst, 0.55 * Math.max(0, 1 - Math.abs(t - s.start - 0.3) / 1.4), 0.18);
+  }
+  if (t < (ESC.find((s) => s.id === 'cierre') || { start: 1e9 }).start) burst = Math.max(burst, 0);
+  fondo(t, Math.min(1, burst));
+  for (const s of ESC) {
+    const el = document.getElementById('s-' + s.id);
+    if (t >= s.start && t < s.end) {
+      const fn = ESCENAS_FN[s.id] || escenaFeat;
+      fn(el, t - s.start, s.dur);
+    } else { el.style.display = 'none'; }
+  }
+  // destello al aparecer el logo
+  const lg = ESC.find((s) => s.id === 'logo');
+  $('#destello').style.opacity = lg ? Math.max(0, 1 - Math.abs(t - lg.start - 0.12) / 0.35) : 0;
+  // barrido de luz en cada cambio de escena
+  let bo = 0, bx = 0;
+  for (let i = 1; i < ESC.length; i++) {
+    const b = ESC[i].start, k = (t - (b - 0.3)) / 0.6;
+    if (k >= 0 && k <= 1) { bo = Math.sin(k * Math.PI); bx = -900 + k * 2700; }
+  }
+  const br = $('#barrido'); br.style.opacity = bo * 0.9; br.style.left = bx + 'px';
+  // marca pequeña
+  const p0 = ESC.find((s) => s.id === 'panel'), c0 = ESC.find((s) => s.id === 'cierre');
+  $('#marca').style.opacity = p0 && c0 ? Math.min(eOut(lin(t, p0.start + 0.2, p0.start + 0.8)), 1 - lin(t, c0.start - 0.3, c0.start)) : 0;
+  // subtítulo
+  const sub = $('#sub');
+  const act = ESC.find((s) => t >= s.start && t < s.end);
+  if (act && act.texto && act.id !== 'cierre') {
+    const u = t - act.start;
+    sub.textContent = act.texto;
+    sub.style.opacity = Math.min(eOut(lin(u, 0.2, 0.5)), 1 - lin(u, act.dur - 0.3, act.dur - 0.05));
+  } else if (act && act.id === 'cierre') {
+    sub.style.opacity = 0;
+  }
+}
+window.__preparar = preparar;
+window.__render = render;
+</script>
+</body>
+</html>

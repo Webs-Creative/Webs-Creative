@@ -1,0 +1,369 @@
+{
+ "hero": "capturas/principal/inicio-tu-dia.png",
+ "boveda_shots": [
+  {
+   "src": "capturas/boveda/claro-boveda-8-detalle.png",
+   "url": "/boveda",
+   "caption": "La bóveda abierta: el acceso a la AEAT de un cliente con la contraseña oculta y el código de doble factor en vivo, firmado y verificado.",
+   "alt": "Bóveda con tres elementos y el detalle de un acceso a la AEAT con su código TOTP"
+  },
+  {
+   "src": "capturas/boveda/claro-boveda-cert-detalle.png",
+   "url": "/boveda",
+   "caption": "Ficha de un certificado: titular, NIF, emisor, tipo, número de serie y días hasta que caduca, con la firma verificada en tu navegador.",
+   "alt": "Detalle de un certificado digital en la bóveda con sus datos y la firma verificada"
+  },
+  {
+   "src": "capturas/boveda/claro-boveda-9-certificado.png",
+   "url": "/boveda",
+   "caption": "Guardar un certificado .p12: se lee en el navegador, se comprueba la contraseña y salen titular, NIF, emisor y caducidad.",
+   "alt": "Formulario de nuevo certificado digital con los datos leídos del fichero .p12"
+  },
+  {
+   "src": "capturas/boveda/claro-boveda-10-salud.png",
+   "url": "/boveda",
+   "caption": "Salud de la bóveda: contraseñas débiles, repetidas o caducadas, credenciales con una sola persona con acceso y envíos del cliente por revisar.",
+   "alt": "Ventana de salud de la bóveda con su puntuación y los avisos"
+  }
+ ],
+ "base": {
+  "meta": {
+   "title": "Guía de Gestoría Creative",
+   "description": "Guía completa de Gestoría Creative para asesorías y gestorías: cada sección del programa con capturas reales, qué hace, qué ves y qué genera.",
+   "icon": "marca/gestoria-creative-icono.svg",
+   "kicker": "Guía del programa · Octubre de 2026",
+   "headline_html": "La asesoría entera, <em>en un solo programa</em>",
+   "lead": "Clientes, obligaciones, documentos, bancos, modelos, correo, normativa y el portal de tus clientes. Esta guía recorre cada sección con capturas reales y te cuenta qué hace, qué ves y qué genera.",
+   "cover_meta": [
+    [
+     "Para",
+     "asesorías y gestorías"
+    ],
+    [
+     "Versión",
+     "octubre de 2026"
+    ],
+    [
+     "Hecho por",
+     "Webs Creative"
+    ]
+   ],
+   "hero_alt": "Panel de inicio de Gestoría Creative en tema claro, con la lista «Tu día» de lo más urgente",
+   "url_base": "https://gestion.tu-asesoria.es"
+  },
+  "intro": {
+   "eyebrow": "Qué es",
+   "title": "Un programa web hecho para el trabajo de una asesoría",
+   "paragraphs": [
+    "Gestoría Creative reúne en una sola aplicación el expediente de cada cliente, su perfil de obligaciones, el calendario fiscal, los documentos, los bancos y la conciliación, los modelos tributarios, el correo del despacho, el radar normativo y un portal para tus clientes.",
+    "Es un **servicio en la nube por suscripción**: entras con tu cuenta desde el navegador o el móvil, sin instalar nada. Nosotros lo alojamos en servidores en España, lo actualizamos y hacemos las copias de seguridad. Una tarea programada hace el trabajo de fondo: lee los boletines oficiales, prepara los borradores de los modelos, concilia lo que es seguro y te avisa de lo urgente.",
+    "Cada sección de esta guía tiene tres bloques. **Qué hace** explica el trabajo que te quita. **Qué ves** describe la pantalla. **Qué genera** lista lo que sale de ella: ficheros, documentos, avisos y registros.",
+    "Las capturas son de la cuenta de demostración, con 40 clientes ficticios de «Asesoría Ejemplo». Nombres, NIF, importes y actos del BORME son inventados."
+   ],
+   "facts": [
+    [
+     "594",
+     "obligaciones en el catálogo, de fiscales a locales, con sus plazos"
+    ],
+    [
+     "11",
+     "modelos que se calculan solos: 303, 130, 111, 115, 349, 347, 390, 180, 190, 202 y 309"
+    ],
+    [
+     "8",
+     "formatos de extracto bancario, de la Norma 43 al camt.053"
+    ],
+    [
+     "82",
+     "recetas de automatización «cuando pase esto, haz esto otro»"
+    ],
+    [
+     "3.497",
+     "actividades de la CNAE-2025, la CNAE-2009 y el IAE"
+    ],
+    [
+     "15",
+     "programas de facturación de tus clientes que se conectan hoy"
+    ]
+   ]
+  },
+  "bands_before": [
+   {
+    "id": "como-encaja",
+    "eyebrow": "Cómo encaja todo",
+    "title": "Lo que entra, lo que hace el programa y lo que sale",
+    "paragraphs": [
+     "Todo lo que llega al despacho entra por un sitio conocido y acaba en el expediente de su cliente. Desde ahí, cada módulo usa lo que ya está dentro: las facturas registradas alimentan los modelos y la conciliación, y los modelos presentados avisan a Obligaciones y a Bancos."
+    ],
+    "trio": [
+     [
+      "t-ves",
+      "Entra",
+      [
+       "Fotos, PDF y facturas XML que sube el cliente desde su portal o su móvil.",
+       "Correos de los buzones del despacho, con sus adjuntos.",
+       "Facturas de los programas de tus clientes: Holded, Dolibarr, FacturaScripts, Odoo o Excel.",
+       "Extractos del banco en Norma 43, camt.053, MT940, OFX, CSV o Excel.",
+       "Boletines oficiales: BOE, BORME, AEAT, Boletín RED, DOUE y autonómicos."
+      ]
+     ],
+     [
+      "t-hace",
+      "Trabaja",
+      [
+       "Expediente de cada cliente con su perfil de obligaciones calculado por actividad y situación.",
+       "Lectura, clasificación y comprobación de cada documento, con cotejo del QR con la AEAT.",
+       "Conciliación bancaria nocturna con prueba de identidad y explicación de cada propuesta.",
+       "Borradores de los modelos con cada casilla trazada hasta sus facturas.",
+       "Automatizaciones y radar normativo que cruzan cada novedad con tu cartera."
+      ]
+     ],
+     [
+      "t-gen",
+      "Sale",
+      [
+       "Borradores en PDF y ficheros en formato BOE para importar en la Sede.",
+       "Declaraciones revisadas y aprobadas por el cliente desde su portal.",
+       "Facturas registradas en el libro y cobros y pagos conciliados.",
+       "Avisos y recordatorios al equipo y al cliente, con su plazo.",
+       "Registro de auditoría de cada acceso y cada cambio."
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "boveda-destacada",
+    "eyebrow": "Certificados y claves de tus clientes",
+    "title": "Una bóveda que ni nosotros podemos abrir",
+    "paragraphs": [
+     "Los certificados digitales de tus clientes y sus claves de la AEAT, la Seguridad Social o la banca se guardan en la Bóveda, cifrados en tu navegador antes de salir hacia el servidor. Aunque el servicio lo alojamos nosotros, solo pueden abrirlos las personas de tu despacho que tienen acceso. Lo ves en detalle en las dos secciones de la Bóveda."
+    ],
+    "trio": [
+     [
+      "t-hace",
+      "Tres llaves",
+      [
+       "Una contraseña maestra que solo sabes tú.",
+       "Una Clave secreta de 128 bits que genera tu navegador y guardas en papel.",
+       "El código de tu aplicación de doble factor en cada apertura."
+      ]
+     ],
+     [
+      "t-ves",
+      "Nadie más la lee",
+      [
+       "El servidor, las copias de seguridad y Webs Creative solo ven datos cifrados.",
+       "La llave privada de cada certificado nunca se descifra.",
+       "Cada persona abre solo lo que tiene compartido y de sus clientes."
+      ]
+     ],
+     [
+      "t-gen",
+      "Todo registrado",
+      [
+       "Un registro encadenado de cada apertura, verificado cada día.",
+       "Avisos de caducidad de los certificados a 60, 30, 15 y 7 días.",
+       "Envío seguro desde el portal: el cliente te manda su certificado cifrado, sin correo ni WhatsApp."
+      ]
+     ]
+    ]
+   }
+  ],
+  "toc_title": "Las secciones del programa",
+  "toc_lead": "El orden sigue el menú lateral de la aplicación. Al final están el portal del cliente, todo lo que genera el programa, la seguridad y cómo funciona el servicio.",
+  "bands_after": [
+   {
+    "id": "seguridad",
+    "eyebrow": "Seguridad y protección de datos",
+    "title": "Tus datos, en España y bajo llave",
+    "paragraphs": [
+     "Cada despacho tiene su propia instalación, con su base de datos y sus ficheros separados de los demás, en servidores en España. El programa no depende de servicios externos para funcionar. Solo sale información si activas la inteligencia artificial, y entonces se seudonimiza por defecto."
+    ],
+    "trio": [
+     [
+      "t-hace",
+      "Acceso",
+      [
+       "Contraseñas guardadas con hash seguro y bloqueo de la cuenta tras varios intentos fallidos.",
+       "Verificación en dos pasos (TOTP) con códigos de recuperación, obligatoria para todo el equipo si lo decides.",
+       "53 permisos por rol; cada asesor puede ver solo sus clientes y cada cliente, solo sus empresas.",
+       "Token CSRF en cada cambio, cierre por inactividad y cabeceras de seguridad (CSP, HSTS con HTTPS)."
+      ]
+     ],
+     [
+      "t-ves",
+      "Datos y ficheros",
+      [
+       "Cada despacho en su propia instalación, con su base de datos y sus ficheros, separado de los demás.",
+       "Contraseñas de correo y credenciales de conectores cifradas con AES-256-GCM.",
+       "Ficheros guardados fuera de la parte pública, con comprobación del tipo real y huella SHA-256.",
+       "Auditoría de accesos y cambios campo a campo, exportable a Excel o CSV."
+      ]
+     ],
+     [
+      "t-gen",
+      "Bóveda e IA",
+      [
+       "Bóveda con cifrado de extremo a extremo en tu navegador: ni el servidor ni Webs Creative pueden leerla.",
+       "Registro encadenado de aperturas y cambios, verificado cada día.",
+       "La IA seudonimiza NIF, IBAN, correos, teléfonos y nombres antes de enviar nada.",
+       "Cada llamada a la IA queda registrada, sin guardar el contenido enviado."
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "servicio",
+    "eyebrow": "Cómo funciona el servicio",
+    "title": "Tú trabajas; del programa nos ocupamos nosotros",
+    "paragraphs": [
+     "Gestoría Creative se contrata por suscripción: un alta inicial para ponerlo en marcha y una cuota mensual según el número de clientes de tu despacho. El programa sigue siendo de Webs Creative; tú tienes acceso a tu cuenta mientras dure la suscripción y tus datos son siempre tuyos. Pídenos presupuesto.",
+     "Los certificados y las claves de tus clientes van en la Bóveda, cifrados en tu navegador: aunque alojemos el servicio, no podemos abrirla."
+    ],
+    "trio": [
+     [
+      "t-ves",
+      "Tu acceso",
+      [
+       "Entras con tu cuenta desde el navegador del ordenador, la tableta o el móvil, en la dirección propia de tu despacho.",
+       "No instalas nada; si quieres, añades el despacho y el portal como app (PWA) a la pantalla de inicio.",
+       "Cada persona del equipo tiene su usuario, con su rol y verificación en dos pasos.",
+       "Tus clientes entran a su portal con tu logo y tu color."
+      ]
+     ],
+     [
+      "t-hace",
+      "Lo que hacemos nosotros",
+      [
+       "Alojamos tu despacho en servidores en España, en una instalación propia separada de los demás despachos.",
+       "Lo actualizamos con cada versión nueva sin que tengas que hacer nada.",
+       "Hacemos las copias de seguridad y vigilamos que las tareas automáticas funcionen.",
+       "Ponemos la inteligencia artificial: va incluida en la cuota, con un límite de uso al mes según tu plan."
+      ]
+     ],
+     [
+      "t-gen",
+      "Alta y suscripción",
+      [
+       "Alta con la puesta en marcha: importamos tu cartera de clientes desde Excel o los listados de a3, Sage o Contasol.",
+       "Cuota mensual según el número de clientes activos de tu despacho.",
+       "Firmamos contigo el contrato de encargo del tratamiento que exige el RGPD.",
+       "Si un día te das de baja, te entregamos tus datos y tus ficheros."
+      ]
+     ]
+    ]
+   }
+  ],
+  "closing": {
+   "headline_html": "¿Lo vemos <em>en tu despacho</em>?",
+   "lead": "Pídenos una demostración y un presupuesto: te enseñamos el programa funcionando con una cuenta de prueba y preparamos el alta de tu despacho.",
+   "contacts": [
+    [
+     "Web",
+     "webscreative.es"
+    ],
+    [
+     "Correo",
+     "info@webscreative.es"
+    ],
+    [
+     "Teléfono y WhatsApp",
+     "608 567 883"
+    ]
+   ],
+   "legal": "Gestoría Creative · © 2026 Webs Creative LLC. Todos los derechos reservados. Servicio por suscripción: se cede el uso del programa, no el software. Las capturas son de una cuenta de demostración con datos ficticios. Funciones descritas según la versión de octubre de 2026."
+  }
+ },
+ "portal_extra_shots": {
+  "portal-cliente": [
+   {
+    "src": "capturas/boveda/claro-portal-deposito-certificado.png",
+    "url": "/boveda/deposito",
+    "caption": "Envío seguro: el cliente elige su certificado, se comprueba en su navegador y se cifra antes de salir hacia tu bóveda.",
+    "alt": "Pantalla de envío seguro del portal con un certificado comprobado"
+   }
+  ]
+ },
+ "outputs_skip": [
+  "Petición de documentación",
+  "Token de conector",
+  "Vencimientos exportados"
+ ],
+ "outputs_where": {
+  "Exportación de vencimientos": "Campañas › Exportar y Calendario fiscal › Exportar"
+ },
+ "extra_modules": [
+  {
+   "after": "boveda",
+   "module": {
+    "id": "boveda-seguridad",
+    "title": "Bóveda: seguridad de alto nivel",
+    "menu": "Trabajo diario › Bóveda",
+    "lead": "La bóveda está hecha para lo más delicado que guarda una asesoría: los certificados digitales y las claves de sus clientes. Todo se cifra de extremo a extremo en tu navegador y hacen falta tres llaves para abrirla; ni el servidor ni Webs Creative pueden leerla.",
+    "shots": [
+     {
+      "src": "capturas/boveda/claro-boveda-13-bloqueo.png",
+      "url": "/boveda",
+      "caption": "Para abrir la bóveda hacen falta tres llaves: tu contraseña maestra, tu Clave secreta y el código de tu aplicación de doble factor.",
+      "alt": "Pantalla de desbloqueo de la bóveda con contraseña maestra, Clave secreta y código de verificación"
+     },
+     {
+      "src": "capturas/boveda/claro-boveda-3-kit.png",
+      "url": "/boveda",
+      "caption": "El Kit de emergencia con la Clave secreta de 128 bits, que genera tu navegador y no sale de él. Se imprime y se guarda fuera del ordenador.",
+      "alt": "Paso del Kit de emergencia del asistente de la llave, con la Clave secreta"
+     },
+     {
+      "src": "capturas/boveda/claro-boveda-recuperacion.png",
+      "url": "/boveda",
+      "caption": "Recuperación del despacho repartida entre socios: hacen falta 2 de las 3 partes, y el servidor no guarda ninguna.",
+      "alt": "Pantalla de recuperación del despacho con el quórum de 2 de 3 custodios"
+     },
+     {
+      "src": "capturas/boveda/claro-boveda-personas.png",
+      "url": "/boveda",
+      "caption": "Personas y llaves: quién tiene llave, su huella, su último desbloqueo y sus aperturas, con el botón de pánico.",
+      "alt": "Tabla de personas y llaves de la bóveda con el botón de pánico"
+     },
+     {
+      "src": "capturas/boveda/claro-boveda-politica.png",
+      "url": "/boveda",
+      "caption": "Política de seguridad: bloqueo por inactividad, duración máxima, límite de aperturas, cierre si cambia la IP y aviso fuera de horario.",
+      "alt": "Formulario de la política de seguridad de la bóveda"
+     },
+     {
+      "src": "capturas/boveda/claro-boveda-registro-verificado.png",
+      "url": "/boveda",
+      "caption": "Registro encadenado verificado: cada entrada lleva la huella de la anterior, así que cualquier cambio se detecta.",
+      "alt": "Registro encadenado de la bóveda con la cadena verificada como íntegra"
+     }
+    ],
+    "hace": [
+     "Cifra y descifra cada elemento en tu navegador con su criptografía nativa (WebCrypto): el servidor, las copias de seguridad y el alojamiento solo ven datos cifrados.",
+     "Saca tu llave de dos secretos, la contraseña maestra (PBKDF2 con 1.000.000 de iteraciones) y la Clave secreta de 128 bits, y pide además el código de doble factor en cada apertura.",
+     "Da a cada elemento su propia llave y un sobre cifrado por cada persona con acceso; compartir solo lo hace un navegador que ya tiene acceso, nunca el servidor.",
+     "Firma cada elemento (ECDSA P-384) y comprueba la firma al guardarlo y al abrirlo, así que un cambio hecho en el servidor se detecta.",
+     "Lee el certificado .p12 o .pfx en el navegador y comprueba su contraseña sin descifrar nunca su llave privada.",
+     "Bloquea 15 minutos tras 5 intentos fallidos y frena las aperturas masivas (25 cada 10 minutos), con aviso a los administradores.",
+     "Cierra la sesión de la bóveda tras 10 minutos sin uso, a las 8 horas o si cambia la dirección IP, según tu política."
+    ],
+    "ves": [
+     "La pantalla de desbloqueo con contraseña maestra, Clave secreta y código de verificación.",
+     "El asistente de la llave en cuatro pasos y el Kit de emergencia, para imprimirlo o descargarlo en texto.",
+     "Personas y llaves: llave activa o sin llave, la huella de cada persona, su último desbloqueo y sus aperturas de 30 días.",
+     "Recuperación: cuántas partes hacen falta, quién las custodia y la huella de la llave de recuperación.",
+     "La política de seguridad: minutos de bloqueo, duración máxima, aperturas permitidas, papelera y horario laboral.",
+     "El registro encadenado con el botón «Verificar la cadena» y su resultado."
+    ],
+    "genera": [
+     "El Kit de emergencia de cada persona, con su Clave secreta, para guardarlo en papel.",
+     "Las partes impresas de la recuperación, una por socio custodio.",
+     "Avisos a los administradores: desbloqueos fallidos, bloqueos, aperturas fuera de horario, posibles fugas masivas, uso de la recuperación y revocaciones.",
+     "Un plan de rotación al revocar a alguien: la lista exacta de credenciales que abrió, para cambiarlas.",
+     "El registro encadenado con HMAC, verificado cada día y exportable para auditorías de blanqueo o de RGPD."
+    ],
+    "tip": "Activa la bóveda con 2 de 3 socios como custodios y guarda cada parte y cada Kit de emergencia en un sitio distinto, fuera del ordenador."
+   }
+  }
+ ]
+}
