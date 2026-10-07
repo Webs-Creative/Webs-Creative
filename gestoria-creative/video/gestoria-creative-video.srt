@@ -1,39 +1,39 @@
 1
-00:00:00,250 --> 00:00:04,500
+00:00:00,250 --> 00:00:04,592
 ¿Tu gestoría sigue persiguiendo papeles, plazos y certificados?
 
 2
-00:00:04,850 --> 00:00:07,700
+00:00:05,142 --> 00:00:08,230
 Te presentamos Gestoría Creative.
 
 3
-00:00:08,050 --> 00:00:12,500
+00:00:08,580 --> 00:00:14,228
 Todo tu despacho en una sola pantalla. Cada mañana, lo urgente primero.
 
 4
-00:00:12,850 --> 00:00:17,100
+00:00:14,578 --> 00:00:18,737
 Los modelos se preparan solos con las facturas de tus clientes.
 
 5
-00:00:17,450 --> 00:00:21,700
+00:00:19,087 --> 00:00:23,299
 Cada factura se lee, se comprueba y se coteja con Hacienda.
 
 6
-00:00:22,050 --> 00:00:26,700
+00:00:23,649 --> 00:00:28,540
 El banco se concilia solo cada noche, con el porqué de cada propuesta.
 
 7
-00:00:27,050 --> 00:00:31,700
+00:00:28,890 --> 00:00:33,598
 Vigila el BOE por ti y te avisa solo de lo que afecta a tus clientes.
 
 8
-00:00:32,050 --> 00:00:37,100
+00:00:33,948 --> 00:00:39,074
 Y los certificados de tus clientes, en una bóveda que ni nosotros podemos abrir.
 
 9
-00:00:37,450 --> 00:00:41,100
+00:00:39,424 --> 00:00:42,747
 Tus clientes te lo envían todo desde el móvil.
 
 10
-00:00:41,450 --> 00:00:47,300
+00:00:43,447 --> 00:00:50,192
 Gestoría Creative. En la nube y con inteligencia artificial incluida. Pide tu demo hoy.

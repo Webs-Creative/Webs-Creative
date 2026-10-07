@@ -5,12 +5,12 @@ const { chromium } = require('playwright-core');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const V = path.join(__dirname, '..', 'video');
+const V = process.env.CARPETA || path.join(__dirname, '..', 'video');
 
 (async () => {
   const [modo, salida, ...resto] = process.argv.slice(2);
   const datos = JSON.parse(fs.readFileSync(path.join(V, process.env.ESCENAS || 'escenas.json'), 'utf8'));
-  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--allow-file-access-from-files'] });
+  const b = await chromium.launch({ executablePath: process.env.CHROME || '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--allow-file-access-from-files'] });
   const ancho = +(process.env.ANCHO || 1920), alto = +(process.env.ALTO || 1080);
   const p = await b.newPage({ viewport: { width: ancho, height: alto }, deviceScaleFactor: 1 });
   p.on('pageerror', (e) => console.error('ERR', e.message));

@@ -47,7 +47,7 @@ for html, ancho, alto, nombre in (("video.html", 1920, 1080, "video-voz-sin-audi
     if SIN_RENDER:
         continue
     subprocess.run(["node", str(T / "render-video.js"), "completo", str(V / nombre)], check=True,
-                   env={**os.environ, "ESCENAS": "escenas-voz.json", "HTML": html, "ANCHO": str(ancho), "ALTO": str(alto)})
+                   env={**os.environ, "CARPETA": str(V.resolve()), "ESCENAS": "escenas-voz.json", "HTML": html, "ANCHO": str(ancho), "ALTO": str(alto)})
 subprocess.run(["python3", str(T / "musica.py"), str(V / "escenas-voz.json"), str(V / "musica-voz.wav")], check=True)
 subprocess.run(["python3", str(T / "srt.py"), str(V / "escenas-voz.json"), str(V / "gestoria-creative-video.srt")], check=True)
 
