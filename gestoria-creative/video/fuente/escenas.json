@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "ancho": 1920,
+ "alto": 1080,
+ "escenas": [
+  {"id": "gancho", "dur": 4.6, "voz": "01", "texto": "¿Tu gestoría sigue persiguiendo papeles, plazos y certificados?"},
+  {"id": "logo", "dur": 3.2, "voz": "02", "texto": "Te presentamos Gestoría Creative."},
+  {"id": "panel", "dur": 4.8, "voz": "03", "texto": "Todo tu despacho en una sola pantalla. Cada mañana, lo urgente primero."},
+  {"id": "modelos", "dur": 4.6, "voz": "04", "texto": "Los modelos se preparan solos con las facturas de tus clientes."},
+  {"id": "documentos", "dur": 4.6, "voz": "05", "texto": "Cada factura se lee, se comprueba y se coteja con Hacienda."},
+  {"id": "bancos", "dur": 5.0, "voz": "06", "texto": "El banco se concilia solo cada noche, con el porqué de cada propuesta."},
+  {"id": "normativa", "dur": 5.0, "voz": "07", "texto": "Vigila el BOE por ti y te avisa solo de lo que afecta a tus clientes."},
+  {"id": "boveda", "dur": 5.4, "voz": "08", "texto": "Y los certificados de tus clientes, en una bóveda que ni nosotros podemos abrir."},
+  {"id": "portal", "dur": 4.0, "voz": "09", "texto": "Tus clientes te lo envían todo desde el móvil."},
+  {"id": "cierre", "dur": 6.2, "voz": "10", "texto": "Gestoría Creative. En la nube y con inteligencia artificial incluida. Pide tu demo hoy."}
+ ]
+}
