@@ -1,6 +1,6 @@
-# Instructions for Claude
+# Instrucciones para Claude
 
-## Language
+## Idioma
 
-- Always talk to the user in English, in every reply, even when they write in Spanish.
-- This applies to chat only. Client-facing deliverables (documents, emails, web copy, this profile's README) use the language the user asks for; Webs Creative's clients are Spanish, so those are usually in Spanish.
+- Habla siempre con el usuario en español, en todas las respuestas.
+- Los entregables para clientes (documentos, correos, textos web, el README de este perfil) van en el idioma que pida el usuario; los clientes de Webs Creative son españoles, así que normalmente en español.
