@@ -8,10 +8,20 @@ reales del programa y cierre con «Pide tu demo hoy».
 |---|---|
 | Vídeo horizontal con voz y música | [`gestoria-creative-video.mp4`](gestoria-creative-video.mp4) |
 | Vídeo vertical con voz y música | [`gestoria-creative-video-vertical.mp4`](gestoria-creative-video-vertical.mp4) |
+| Vídeo horizontal, versión clara | [`gestoria-creative-video-claro.mp4`](gestoria-creative-video-claro.mp4) |
+| Vídeo vertical, versión clara | [`gestoria-creative-video-vertical-claro.mp4`](gestoria-creative-video-vertical-claro.mp4) |
 | Subtítulos | [`gestoria-creative-video.srt`](gestoria-creative-video.srt) |
 | Escenas, textos y tiempos | [`fuente/escenas.json`](fuente/escenas.json) (base) y [`fuente/escenas-voz.json`](fuente/escenas-voz.json) (ajustados a la voz) |
 | Voces de ElevenLabs (01–10) | [`fuente/voces/`](fuente/voces/) |
 | Animación (HTML) y pantallas usadas | [`fuente/`](fuente/) |
+
+## Versión clara
+
+Misma voz, música, tiempos y animaciones, con fondo crema, pantallas del programa en tema claro
+([`fuente/pantallas-claro/`](fuente/pantallas-claro/)) y los efectos (partículas, estelas, destello y barridos) en
+tonos claros. `video-claro.html` y `video-vertical-claro.html` se generan a partir de los oscuros con
+`python3 fuente/herramientas/tema-claro.py fuente/video.html fuente/video-claro.html` (y lo mismo con el vertical),
+así que cualquier cambio de textos o tiempos se hace en los oscuros y se vuelve a generar el claro.
 
 ## Textos de la voz (ElevenLabs)
 
@@ -35,7 +45,7 @@ Similarity 75 %, Style 25–35 %). La versión montada usa la voz «Martin Osbor
 
 Para cambiar una frase, sustituye su archivo en `fuente/voces/` y ejecuta
 `python3 fuente/herramientas/montar-voz.py fuente/voces fuente`. Mide cada frase,
-ajusta su escena, vuelve a generar las dos versiones y la música, baja la música mientras se habla y normaliza a
+ajusta su escena, vuelve a generar las cuatro versiones (oscura y clara, en horizontal y vertical) y la música, baja la música mientras se habla y normaliza a
 −14 LUFS.
 
 Requisitos: ffmpeg, Python con numpy y scipy, y Node con `playwright-core` (`npm i playwright-core` dentro de
