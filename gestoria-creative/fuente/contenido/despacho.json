@@ -56,7 +56,7 @@
     "Versiones de cada receta y entradas en la auditoría del despacho.",
     "Simulaciones de 90 días guardadas, hasta las 40 últimas."
    ],
-   "tip": "Al instalar, las recetas del paquete de inicio quedan en «Proponer»: revisa sus propuestas unos días antes de pasar alguna a «Automático»."
+   "tip": "Al dar de alta tu despacho, las recetas del paquete de inicio quedan en «Proponer»: revisa sus propuestas unos días antes de pasar alguna a «Automático»."
   },
   {
    "id": "obligaciones",
@@ -158,44 +158,44 @@
    "id": "inteligencia-artificial",
    "title": "Inteligencia artificial",
    "menu": "Despacho › Inteligencia artificial",
-   "lead": "Conectas tu cuenta de Anthropic y decides qué funciones usan Claude, con qué modelo, cuánto puedes gastar al mes y qué datos salen del despacho.",
+   "lead": "La inteligencia artificial va incluida en tu cuota: tu despacho llega con Claude, de Anthropic, conectado desde el alta. Tú decides qué funciones lo usan, con qué modelo y qué datos salen del despacho.",
    "shots": [
     {
      "src": "capturas/despacho/ia-conexion.png",
      "url": "/#/ia",
-     "caption": "Estado, gasto del mes, llamadas y tokens, la conexión con Anthropic y los cuatro principios con los que trabaja la IA.",
-     "alt": "Pantalla Inteligencia artificial con el aviso Falta la clave de Anthropic, cuatro indicadores a cero, el campo de la clave y la tarjeta Cómo trabaja.",
+     "caption": "IA activa en el despacho: uso del mes, llamadas y tokens, la conexión ya hecha y los cuatro principios con los que trabaja.",
+     "alt": "Pantalla Inteligencia artificial con la IA activa, cuatro indicadores de uso, la conexión con Anthropic guardada y cifrada y la tarjeta Cómo trabaja.",
      "mobile": false
     },
     {
      "src": "capturas/despacho/ia-funciones.png",
      "url": "/#/ia",
-     "caption": "Las siete funciones con su interruptor y su modelo; la lectura de documentos viene apagada porque envía el documento completo.",
-     "alt": "Siete tarjetas de funciones de IA con interruptor Activa o Apagada y un desplegable con el modelo de Claude de cada una.",
+     "caption": "Las siete funciones con su interruptor y su modelo, listas para usarse; la lectura de documentos viene apagada porque envía el documento completo.",
+     "alt": "Siete tarjetas de funciones de IA con interruptor Activa o Apagada, el modelo de Claude de cada una y la marca Lista para usarse.",
      "mobile": false
     }
    ],
    "hace": [
-    "Usa Claude, de Anthropic, con la clave de la API de tu propia cuenta, que se comprueba antes de guardarla y se guarda cifrada.",
+    "Usa Claude, de Anthropic, con la conexión que dejamos hecha y cifrada al dar de alta tu despacho; no necesitas cuenta ni clave propias.",
     "Da servicio a la lectura y clasificación de Documentos, la conciliación de Bancos, el Correo y los borradores de circular del radar normativo.",
     "Valida cada respuesta con un esquema estricto y después con las comprobaciones del módulo que la pide, como cuadres al céntimo, NIF o saldos.",
     "Seudonimiza por defecto los NIF, IBAN, correos, teléfonos y nombres antes de enviar el texto, y los restaura en la respuesta.",
-    "Para la IA al llegar al presupuesto mensual y avisa a los administradores; el programa sigue funcionando con sus reglas.",
-    "Reutiliza respuestas guardadas en caché, así un documento ya leído no se vuelve a pagar."
+    "Se para al llegar al límite de uso del mes de tu plan y avisa a los administradores; el programa sigue funcionando con sus reglas.",
+    "Reutiliza respuestas guardadas en caché, así un documento ya leído no vuelve a consumir uso."
    ],
    "ves": [
-    "Interruptor general «Activar la IA» y su estado: falta la clave, desactivada, activa o presupuesto agotado.",
-    "Indicadores de gasto del mes, llamadas y tokens de 30 días y respuestas desde caché.",
+    "Interruptor general «Activar la IA» y su estado: activa, desactivada o límite del mes alcanzado.",
+    "Indicadores de uso del mes, llamadas y tokens de 30 días y respuestas desde caché.",
     "Siete funciones (lectura de documentos, conciliación, correo, normativa, clasificación rápida, redacción y asistente), cada una con su modelo de Claude.",
     "La elección de privacidad: «Seudonimizar (recomendado)» o «Enviar tal cual».",
-    "Presupuesto mensual en dólares con su indicador, precios por modelo editables y gráfico 3D del coste por día y función.",
-    "Registro de llamadas filtrable por función y estado: cuándo, función, modelo, tokens, coste, tiempo, quién y cliente."
+    "El uso del mes frente al límite de tu plan y un gráfico 3D del uso por día y función.",
+    "Registro de llamadas filtrable por función y estado: cuándo, función, modelo, tokens, tiempo, quién y cliente."
    ],
    "genera": [
-    "Un registro de cada llamada con quién, para qué, modelo, tokens y coste, sin guardar el contenido enviado.",
-    "Un aviso a los administradores cuando se agota el presupuesto del mes.",
-    "La tarjeta «IA · gasto del mes» en el panel de inicio.",
-    "Una prueba de extremo a extremo con «Probar ahora», que enseña el tiempo y el coste de la respuesta."
+    "Un registro de cada llamada con quién, para qué, modelo y tokens, sin guardar el contenido enviado.",
+    "Un aviso a los administradores cuando se llega al límite de uso del mes.",
+    "La tarjeta de la IA con el uso del mes en el panel de inicio.",
+    "Una prueba de extremo a extremo con «Probar ahora», que enseña el tiempo de respuesta."
    ],
    "tip": "Antes de activar la lectura de documentos, revisa tus encargos de tratamiento con los clientes: es la única función que envía el documento completo."
   },
@@ -203,7 +203,7 @@
    "id": "ajustes-despacho",
    "title": "Ajustes del despacho",
    "menu": "Despacho › Ajustes",
-   "lead": "Reúne en ocho secciones la configuración de la asesoría: datos e imagen, apariencia, equipo, permisos, seguridad, correo saliente, auditoría y estado del sistema.",
+   "lead": "Reúne en ocho secciones la configuración de la asesoría: datos e imagen, apariencia, equipo, permisos, seguridad, correo saliente, auditoría y estado del servicio.",
    "shots": [
     {
      "src": "capturas/despacho/ajustes-despacho.png",
@@ -225,13 +225,6 @@
      "caption": "Auditoría: quién hizo qué, sobre qué elemento y cliente, con filtros por usuario, acción y fechas, y botón «Exportar».",
      "alt": "Tabla de auditoría con fecha, usuario, acción, elemento, cliente y cambios, y filtros en la parte superior.",
      "mobile": false
-    },
-    {
-     "src": "capturas/despacho/ajustes-sistema.png",
-     "url": "/#/ajustes?seccion=sistema",
-     "caption": "Sistema: las 21 tareas programadas del cron con su frecuencia, última ejecución y resultado.",
-     "alt": "Tabla de tareas programadas con nombre, frecuencia, última vez y resultado.",
-     "mobile": false
     }
    ],
    "hace": [
@@ -240,7 +233,7 @@
     "Define roles con 53 permisos agrupados por módulo, además de los cuatro roles de sistema.",
     "Configura el correo saliente por SMTP con la contraseña cifrada, o el modo «Solo guardar» para pruebas.",
     "Registra en la auditoría los cambios campo a campo, con IP y navegador, sin guardar nunca contraseñas.",
-    "Comprueba los requisitos del servidor y te da la orden exacta del cron para Plesk o la dirección del «cron web»."
+    "Enseña el estado del servicio: versión, espacio usado, correos en cola y las tareas automáticas con su última ejecución."
    ],
    "ves": [
     "Menú lateral con Despacho, Apariencia, Usuarios, Roles y permisos, Seguridad, Correo, Auditoría y Sistema.",
@@ -248,16 +241,15 @@
     "Tarjetas de roles (Administrador del despacho, Asesor, Colaborador y Estación de lectura) con su matriz de permisos.",
     "Seguridad: 2FA obligatorio, «Cada asesor solo ve sus clientes», intentos y minutos de bloqueo, cierre por inactividad y tamaño máximo de ficheros.",
     "Auditoría en tabla con buscador, filtros y un panel de detalle con el valor anterior y el nuevo.",
-    "Sistema: versión, PHP, espacio usado en almacen/, correos en cola, estado del cron, tareas, requisitos y módulos instalados."
+    "Sistema: versión, espacio usado, correos en cola, tareas automáticas con su resultado y módulos activos."
    ],
    "genera": [
     "La exportación de la auditoría en Excel (.xlsx) o en CSV separado por «;».",
     "Un correo de prueba para comprobar el servidor SMTP.",
     "Los correos del despacho con tu logo y tu color de marca.",
-    "La orden del cron y la dirección del «cron web» con su token secreto, listas para copiar.",
     "Una pasada inmediata de todas las tareas con «Ejecutar ahora», con su resultado en la tabla."
    ],
-   "tip": "Pega en Plesk la orden del cron que ves en «Sistema»: sin ella no salen los correos, los recordatorios ni las automatizaciones."
+   "tip": "Configura el correo saliente con el servidor de tu despacho y envía una prueba: así los avisos y recordatorios salen con tu dirección."
   },
   {
    "id": "apariencia",
@@ -497,13 +489,13 @@
    "name": "Registro de llamadas a la IA",
    "format": "registro",
    "where": "Despacho › Inteligencia artificial",
-   "desc": "Quién, para qué, modelo, tokens, coste y tiempo de cada llamada, sin guardar el contenido."
+   "desc": "Quién, para qué, modelo, tokens y tiempo de cada llamada, sin guardar el contenido."
   },
   {
-   "name": "Aviso de presupuesto de IA agotado",
+   "name": "Aviso de límite de IA alcanzado",
    "format": "aviso",
    "where": "Campana de los administradores",
-   "desc": "Se manda una vez al mes al llegar al límite; la IA se para y los módulos siguen con sus reglas."
+   "desc": "Se manda una vez al mes al llegar al límite de uso del plan; la IA se para y los módulos siguen con sus reglas."
   },
   {
    "name": "Correo de prueba",
@@ -546,115 +538,6 @@
    "format": "sobre cifrado",
    "where": "Portal › Envío seguro y Bóveda del despacho",
    "desc": "Certificado o claves cifrados en el navegador del cliente que solo abren las personas que llevan sus asuntos."
-  },
-  {
-   "name": "Orden del cron y cron web",
-   "format": "texto para copiar",
-   "where": "Despacho › Ajustes › Sistema",
-   "desc": "La orden exacta para la tarea programada de Plesk y la dirección con token para el «cron web»."
   }
- ],
- "platform_facts": {
-  "requisitos": [
-   "PHP 8.1 a 8.4 con pdo_mysql, zip, openssl, mbstring, gd, curl, fileinfo, dom y xml; intl y bcmath, recomendadas.",
-   "MySQL 5.7 o superior, o MariaDB 10.3 o superior: la base de datos de tu propio hosting.",
-   "Un dominio o subdominio con HTTPS; el certificado Let's Encrypt de Plesk vale.",
-   "PHP con memory_limit de 256 MB o más y upload_max_filesize y post_max_size de 25 MB o más.",
-   "Sin Docker, sin Node y sin procesos permanentes: solo PHP y una tarea programada cada minuto.",
-   "La bóveda y el envío seguro del portal necesitan HTTPS para cifrar en el navegador."
-  ],
-  "instalacion": [
-   "Creas la base de datos en Plesk y subes y extraes el ZIP en la carpeta del dominio.",
-   "Apuntas la raíz del documento a public/; si el hosting no deja cambiarla, el index.php y el .htaccess de la raíz reenvían allí y bloquean el resto.",
-   "Abres /instalar: comprueba el servidor, pide la base de datos, los datos del despacho y el primer administrador, y queda bloqueado al terminar.",
-   "Si quieres enseñarla, marcas «Cargar datos de demostración» y tienes 40 clientes ficticios en segundos.",
-   "Creas en Plesk la tarea programada cada minuto con la orden que ves en Ajustes › Sistema, o un «cron web» con token si el hosting no admite PHP.",
-   "Configuras el SMTP en Ajustes › Correo, envías una prueba y activas el 2FA obligatorio en Ajustes › Seguridad.",
-   "Para actualizar, copias la base de datos y la carpeta almacen/, extraes el ZIP nuevo encima sin borrar almacen/ y aplicas las migraciones."
-  ],
-  "seguridad": [
-   "Contraseñas con password_hash, bloqueo tras intentos fallidos y 2FA TOTP con códigos de recuperación, obligatorio si lo decides.",
-   "Token CSRF en cada cambio y cabeceras de seguridad: CSP, nosniff, X-Frame-Options, Referrer-Policy y HSTS con HTTPS.",
-   "Permisos por rol con 53 permisos, asesores limitados a sus clientes y portal limitado a sus empresas, comprobado también en la API.",
-   "Secretos como la contraseña SMTP, la clave de la IA o las credenciales de conectores, cifrados con AES-256-GCM con la clave de la instalación.",
-   "Ficheros fuera de la carpeta pública, con comprobación de extensión y tipo real, huella SHA-256, XML sin entidades y antivirus ClamAV opcional.",
-   "Auditoría de accesos y cambios campo a campo, sin contraseñas, exportable a Excel o CSV.",
-   "Bóveda con cifrado de extremo a extremo en el navegador (AES-256-GCM y firmas ECDSA P-384) y registro encadenado con HMAC.",
-   "Tokens de conector guardados como hash, con ámbitos, caducidad y revocación.",
-   "La IA seudonimiza los datos personales y registra cada llamada sin guardar el contenido.",
-   "Sin CDN en funcionamiento: todas las librerías se sirven desde tu propio servidor."
-  ],
-  "cifras": [
-   [
-    "594",
-    "obligaciones en el catálogo"
-   ],
-   [
-    "9",
-    "ámbitos de obligaciones, de fiscal a local"
-   ],
-   [
-    "22",
-    "secciones de la CNAE-2025 con su mapa de obligaciones"
-   ],
-   [
-    "1.060",
-    "códigos de la CNAE-2025"
-   ],
-   [
-    "1.010",
-    "códigos de la CNAE-2009 con su correspondencia oficial"
-   ],
-   [
-    "1.427",
-    "rúbricas del IAE"
-   ],
-   [
-    "82",
-    "recetas en el catálogo de automatizaciones (33 activables hoy)"
-   ],
-   [
-    "41",
-    "disparadores en el editor de recetas"
-   ],
-   [
-    "16",
-    "acciones en el editor de recetas"
-   ],
-   [
-    "7",
-    "funciones de IA configurables"
-   ],
-   [
-    "15",
-    "módulos instalados"
-   ],
-   [
-    "21",
-    "tareas programadas en el cron"
-   ],
-   [
-    "53",
-    "permisos configurables por rol"
-   ],
-   [
-    "8",
-    "temas de color"
-   ],
-   [
-    "9",
-    "pantallas en el portal del cliente"
-   ]
-  ],
-  "otros": [
-   "Pago único y autoalojada: la asesoría la instala en su propio hosting y los datos se quedan en su servidor.",
-   "Licencia propietaria de Webs Creative LLC; las librerías de terceros son MIT, BSD, Apache-2.0 u OFL y están listadas en TERCEROS.md.",
-   "No trae copias automáticas: la copia se hace desde Plesk exportando la base de datos y copiando la carpeta almacen/, con la configuración y los ficheros.",
-   "Herramientas de línea de órdenes: cron.php, migrar.php, crear_admin.php para recuperar el acceso y demo.php para los datos de demostración.",
-   "El despacho y el portal se pueden instalar como app (PWA); el service worker solo guarda la carcasa del programa, nunca datos de clientes.",
-   "Pruebas automáticas propias (php pruebas/ejecutar.php) y un recorrido de todas las pantallas en navegador, en oscuro y claro, a 1440 y 390 px.",
-   "Para el RGPD hoy cuentan los datos en tu servidor, la seudonimización ante la IA, el IBAN enmascarado en el portal y la auditoría; el módulo de cumplimiento está pendiente.",
-   "Según el plan, aún faltan módulos como Tareas, Honorarios, Laboral, Notificaciones y Cumplimiento (blanqueo y RGPD)."
-  ]
- }
+ ]
 }

@@ -152,7 +152,7 @@ for g in data["groups"]:
         n += 1
         mod["_n"] = f"{n:02d}"
         toc.append(f'<li><a href="#{e(mod["id"])}"><span class="toc-n">{mod["_n"]}</span><span class="toc-t">{e(mod["title"])}</span><span class="toc-g">{e(g["name"])}</span></a></li>')
-extra_toc = [("genera", "Todo lo que genera"), ("seguridad", "Seguridad y protección de datos"), ("instalacion", "Instalación y requisitos")]
+extra_toc = [("genera", "Todo lo que genera"), ("seguridad", "Seguridad y protección de datos"), ("servicio", "Cómo funciona el servicio")]
 for i, (anchor, t) in enumerate(extra_toc):
     toc.append(f'<li><a href="#{anchor}"><span class="toc-n">{chr(65 + i)}</span><span class="toc-t">{e(t)}</span><span class="toc-g">Anexo</span></a></li>')
 H.append(f'''<section class="band" id="indice"><div class="wrap">

@@ -59,6 +59,10 @@ for clave, nombre in (("principal", "Inicio y clientes"), ("trabajo", "Trabajo d
     for m in mods:
         if m["id"] == "boveda" and boveda_shots:
             m["shots"] = [preparar({"shots": [dict(s)]})["shots"][0] for s in boveda_shots]
+    for x in extra.get("extra_modules", []):
+        ids = [mm["id"] for mm in mods]
+        if x["after"] in ids:
+            mods.insert(ids.index(x["after"]) + 1, preparar(json.loads(json.dumps(x["module"]))))
     groups.append({"name": nombre, "desc": g.get("group_desc", ""), "modules": mods})
 
 portal = grupos["despacho"].get("portal_modules", [])

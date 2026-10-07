@@ -5,7 +5,7 @@ y tres bloques, **Qué hace**, **Qué ves** y **Qué genera**. Edición de octub
 
 | Qué | Dónde |
 |---|---|
-| Guía en PDF (A4, 89 páginas) para enviar o imprimir | [`Gestoria-Creative-Guia-del-programa.pdf`](Gestoria-Creative-Guia-del-programa.pdf) |
+| Guía en PDF (A4, 93 páginas) para enviar o imprimir | [`Gestoria-Creative-Guia-del-programa.pdf`](Gestoria-Creative-Guia-del-programa.pdf) |
 | Guía web (se abre en el navegador; las capturas se amplían al pulsarlas) | [`guia/index.html`](guia/index.html) |
 | Logos de Gestoría Creative en SVG y PNG | [`marca/`](marca/) |
 | Textos y generador de la guía | [`fuente/`](fuente/) |
@@ -13,14 +13,14 @@ y tres bloques, **Qué hace**, **Qué ves** y **Qué genera**. Edición de octub
 ## Contenido
 
 - Portada, qué es el programa y cómo encaja todo (lo que entra, lo que hace y lo que sale).
-- 34 secciones en el orden del menú: Inicio y clientes, Trabajo diario, Contabilidad, Despacho y Portal del cliente.
-- Anexos: todo lo que genera el programa (ficheros, avisos y registros), seguridad y protección de datos, e
-  instalación y requisitos.
+- Un apartado destacado sobre la Bóveda: los certificados de los clientes, bajo tres llaves y cifrados de extremo a extremo.
+- 35 secciones en el orden del menú: Inicio y clientes, Trabajo diario, Contabilidad, Despacho y Portal del cliente.
+- Anexos: todo lo que genera el programa (ficheros, avisos y registros), seguridad y protección de datos, y cómo
+  funciona el servicio por suscripción (acceso, alojamiento en España, IA incluida, alta y baja).
 
 El documento va sobre fondo crema y las capturas están en el modo claro del programa (salvo una vista del modo
-oscuro en la sección Apariencia). Las capturas son de la instalación de demostración (40 clientes ficticios de
-«Asesoría Ejemplo»). Nombres, NIF,
-importes y actos del BORME son inventados. Los textos describen solo lo que el programa hace hoy; lo que aún está en
+oscuro en la sección Apariencia). Las capturas son de la cuenta de demostración (40 clientes ficticios de
+«Asesoría Ejemplo»). Nombres, NIF, importes y actos del BORME son inventados. Los textos describen solo lo que el programa hace hoy; lo que aún está en
 desarrollo (por ejemplo, los libros contables con pantalla propia, la facturación de honorarios o el módulo de
 cumplimiento) no aparece como función.
 

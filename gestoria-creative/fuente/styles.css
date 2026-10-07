@@ -208,7 +208,11 @@ td:nth-child(2) { width: 9.5rem; } td:nth-child(3) { width: 30%; color: var(--in
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 
 /* ---------- Print / PDF (A4) ---------- */
-@page { size: A4; margin: 14mm 13mm 16mm; }
+@page {
+  size: A4; margin: 14mm 13mm 16mm; background: #FBF6EE;
+  @bottom-left { content: "GESTORÍA CREATIVE · Guía del programa"; font: 600 7pt "JetBrains Mono", monospace; color: #6E665B; letter-spacing: .04em; }
+  @bottom-right { content: counter(page) " / " counter(pages); font: 600 7pt "JetBrains Mono", monospace; color: #6E665B; }
+}
 @page :first { margin: 0; }
 @media print {
   html, body { background: var(--paper); }
@@ -235,8 +239,6 @@ td:nth-child(2) { width: 9.5rem; } td:nth-child(3) { width: 30%; color: var(--in
   .group-list { display: grid; gap: 0; margin-top: 10mm; }
   .group-list a { border: 0; background: none; border-bottom: 1px solid var(--line); border-radius: 0; padding: 3mm 0; font-size: 11pt; width: 100%; }
   .group-wrap + .mod { break-before: avoid; }
-  .mod { display: flex; flex-direction: column; }
-  .mod > .mod-head { order: 0; } .mod > .shot, .mod > .shots-mix { order: 1; } .mod > .shots-2 { order: 2; } .mod > .trio { order: 3; } .mod > .tip { order: 4; }
   .trio > div { break-inside: auto; } .trio li { break-inside: avoid; }
   .trio h3 { break-after: avoid; } .trio ul { break-before: avoid; } .trio li:nth-child(-n+2) { break-before: avoid; }
   .tip { break-before: avoid; }
