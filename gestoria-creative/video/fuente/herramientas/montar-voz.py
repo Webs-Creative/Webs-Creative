@@ -5,7 +5,7 @@ Uso: python3 montar-voz.py <carpeta-voces> <carpeta-video>
   1. Mide cada voz y ajusta la duración de su escena (escenas-voz.json).
   2. Vuelve a generar el vídeo y la música con esos tiempos.
   3. Coloca cada voz en su escena, baja la música mientras se habla y normaliza a -14 LUFS.
-Salida: <carpeta-video>/gestoria-creative-video.mp4 y .srt
+Salida: <carpeta-video>/gestoria-creative-video.mp4 (16:9), gestoria-creative-video-vertical.mp4 (9:16) y .srt
 """
 import json, pathlib, subprocess, sys
 
@@ -41,7 +41,13 @@ datos = dict(base, escenas=escenas)
 (V / "escenas-voz.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"Duración total: {t:.2f} s")
 
-subprocess.run(["node", str(T / "render-video.js"), "completo", str(V / "video-voz-sin-audio.mp4")], check=True, env={**__import__('os').environ, "ESCENAS": "escenas-voz.json"})
+import os
+SIN_RENDER = os.environ.get("PRUEBA_SIN_RENDER") == "1"  # solo para probar la mezcla de audio
+for html, ancho, alto, nombre in (("video.html", 1920, 1080, "video-voz-sin-audio.mp4"), ("video-vertical.html", 1080, 1920, "video-vertical-voz-sin-audio.mp4")):
+    if SIN_RENDER:
+        continue
+    subprocess.run(["node", str(T / "render-video.js"), "completo", str(V / nombre)], check=True,
+                   env={**os.environ, "ESCENAS": "escenas-voz.json", "HTML": html, "ANCHO": str(ancho), "ALTO": str(alto)})
 subprocess.run(["python3", str(T / "musica.py"), str(V / "escenas-voz.json"), str(V / "musica-voz.wav")], check=True)
 subprocess.run(["python3", str(T / "srt.py"), str(V / "escenas-voz.json"), str(V / "gestoria-creative-video.srt")], check=True)
 
@@ -57,12 +63,14 @@ filtros.append("".join(f"[v{i}]" for i in range(len(entradas))) + f"amix=inputs=
 cmd += ["-filter_complex", ";".join(filtros), "-map", "[voz]", str(V / "voz.wav")]
 subprocess.run(cmd, check=True)
 
-# Mezcla: la música baja cuando habla la voz
+# Mezcla: la música baja cuando habla la voz (una sola pista para las dos versiones)
 subprocess.run([
-    "ffmpeg", "-y", "-v", "error", "-i", str(V / "video-voz-sin-audio.mp4"), "-i", str(V / "musica-voz.wav"), "-i", str(V / "voz.wav"),
+    "ffmpeg", "-y", "-v", "error", "-i", str(V / "musica-voz.wav"), "-i", str(V / "voz.wav"),
     "-filter_complex",
-    "[1:a]volume=0.55[m];[2:a]asplit=2[v1][v2];[m][v1]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=350[md];"
+    "[0:a]volume=0.55[m];[1:a]asplit=2[v1][v2];[m][v1]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=350[md];"
     "[md][v2]amix=inputs=2:normalize=0:weights=1 1.6,loudnorm=I=-14:TP=-1.5:LRA=11[a]",
-    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart",
-    str(V / "gestoria-creative-video.mp4")], check=True)
-print("Vídeo con voz:", V / "gestoria-creative-video.mp4")
+    "-map", "[a]", "-ar", "48000", str(V / "mezcla.wav")], check=True)
+for video, salida in ([] if SIN_RENDER else (("video-voz-sin-audio.mp4", "gestoria-creative-video.mp4"), ("video-vertical-voz-sin-audio.mp4", "gestoria-creative-video-vertical.mp4"))):
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(V / video), "-i", str(V / "mezcla.wav"), "-map", "0:v", "-map", "1:a",
+                    "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(V / salida)], check=True)
+    print("Vídeo con voz:", V / salida)

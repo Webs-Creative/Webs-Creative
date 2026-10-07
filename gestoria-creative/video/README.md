@@ -1,11 +1,13 @@
 # Vídeo de captación · Gestoría Creative
 
-Vídeo de 47 segundos (1920×1080, 30 fps) para captar gestorías: gancho, presentación del logo, ocho pantallas
+Vídeo de 47 segundos para captar gestorías, en horizontal 16:9 (1920×1080) y vertical 9:16 (1080×1920) para Reels,
+TikTok y Stories, a 30 fps: gancho, presentación del logo, ocho pantallas
 reales del programa y cierre con «Pide tu demo hoy».
 
 | Qué | Archivo |
 |---|---|
-| Vídeo con música (sin voz) | [`gestoria-creative-video.mp4`](gestoria-creative-video.mp4) |
+| Vídeo horizontal con música (sin voz) | [`gestoria-creative-video.mp4`](gestoria-creative-video.mp4) |
+| Vídeo vertical con música (sin voz) | [`gestoria-creative-video-vertical.mp4`](gestoria-creative-video-vertical.mp4) |
 | Subtítulos | [`gestoria-creative-video.srt`](gestoria-creative-video.srt) |
 | Escenas, textos y tiempos | [`fuente/escenas.json`](fuente/escenas.json) |
 | Animación (HTML) y pantallas usadas | [`fuente/`](fuente/) |
@@ -31,7 +33,8 @@ Similarity 75 %, Style 25–35 %).
 ## Montar las voces
 
 Con las voces en una carpeta: `python3 fuente/herramientas/montar-voz.py <carpeta-voces> fuente`. Mide cada frase,
-ajusta su escena, vuelve a generar la animación y la música, baja la música mientras se habla y normaliza a −14 LUFS.
+ajusta su escena, vuelve a generar las dos versiones y la música, baja la música mientras se habla y normaliza a
+−14 LUFS.
 
 La música es original (generada con `musica.py`), sin derechos de terceros. Las pantallas son de la cuenta de
 demostración con datos ficticios.
