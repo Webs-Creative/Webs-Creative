@@ -1,0 +1,652 @@
+{
+ "group": "Principal",
+ "group_desc": "Lo que abres cada día: el inicio con tus pendientes, la cartera de clientes con su expediente completo y los plazos de hoy, de la semana y del calendario fiscal.",
+ "modules": [
+  {
+   "id": "inicio-tu-dia",
+   "title": "Inicio: tu día y el pulso del despacho",
+   "menu": "Inicio",
+   "lead": "Es la primera pantalla al entrar. Junta en una sola lista lo urgente de todos los módulos y, debajo, las cifras y los gráficos de tu cartera, para que decidas por dónde empezar.",
+   "shots": [
+    {
+     "src": "capturas/principal/inicio-tu-dia.png",
+     "url": "/#/",
+     "caption": "Cabecera con el saludo y los accesos rápidos, y la lista «Tu día» ordenada de lo más urgente a lo que puede esperar.",
+     "alt": "Panel de inicio con el saludo a Carmen y tarjetas de pendientes: actos del BORME, una conexión por autorizar, borradores por revisar y conciliaciones seguras."
+    },
+    {
+     "src": "capturas/principal/inicio-indicadores.png",
+     "url": "/#/",
+     "caption": "Las tarjetas de indicadores: clientes activos, vencimientos de la semana, en riesgo, trimestre en curso, correo, documentos, modelos, conciliación y más.",
+     "alt": "Rejilla de quince tarjetas con cifras como 39 clientes activos, 17 vencimientos esta semana, 116 movimientos por conciliar y 6915 euros de cuotas al mes."
+    },
+    {
+     "src": "capturas/principal/inicio-graficos.png",
+     "url": "/#/",
+     "caption": "Vencimientos de los próximos 30 días, progreso de la campaña del 3T y la cartera en 3D por tipo de cliente y régimen de IVA.",
+     "alt": "Gráfico de barras de vencimientos, indicador circular del 47 por ciento, gráfico de barras en 3D y gráfico de dona con 39 clientes."
+    },
+    {
+     "src": "capturas/principal/inicio-graficos2.png",
+     "url": "/#/",
+     "caption": "Modelos que presenta la cartera, sectores CNAE-2025, radar normativo, clientes por asesor, altas del año y actividad reciente.",
+     "alt": "Parte baja del inicio con gráficos de barras, una línea de altas por mes y la lista de actividad reciente con autor y hora."
+    }
+   ],
+   "hace": [
+    "Reúne en «Tu día» lo pendiente de todos los módulos: vencimientos, borradores de modelos, conciliaciones, correo, documentos, normativa, conectores y automatizaciones.",
+    "Ordena cada pendiente por prioridad (Hoy sin falta, Hoy, Esta semana, Cuando puedas) y, a igual prioridad, pone primero lo que más acumula.",
+    "Te deja resolver algunos pendientes con un clic, con confirmación cuando hace falta, como aceptar las conciliaciones seguras o reintentar una conexión con errores.",
+    "Calcula los indicadores del despacho y enlaza cada tarjeta con la pantalla donde se trabaja ese asunto.",
+    "Respeta los permisos: si tu rol solo ve sus clientes asignados, las cifras y la actividad se limitan a ellos."
+   ],
+   "ves": [
+    "La fecha, el saludo y los botones Nuevo cliente, Ver clientes y Buscar con el atajo Ctrl K.",
+    "Cada pendiente de «Tu día» con su icono, su etiqueta de prioridad, una línea de detalle y los botones Abrir o la acción directa.",
+    "Hasta quince tarjetas: clientes activos, vencimientos, en riesgo, trimestre, correo, documentos, modelos, conciliación, conectores, normativa, cuotas, portal, automatizaciones e IA.",
+    "Gráficos de vencimientos a 30 días, progreso de la campaña, cartera en 3D, cartera por tipo y por sector, modelos, radar normativo, carga por asesor y altas.",
+    "La actividad reciente escrita en frases normales, con quién hizo qué y hace cuánto."
+   ],
+   "genera": [
+    "No crea documentos: es una pantalla de consulta y de acceso rápido.",
+    "Las acciones de un clic dejan su resultado en el módulo que toca, por ejemplo las conciliaciones aceptadas en Conciliación.",
+    "Un aviso en pantalla con el resultado de cada acción, incluidas las que no se han podido hacer o ya estaban registradas.",
+    "Cada acción queda en el registro de auditoría y aparece después en «Actividad reciente»."
+   ],
+   "tip": "Empieza la mañana por «Tu día»: cada línea te lleva directa a la pantalla donde se resuelve."
+  },
+  {
+   "id": "avisos-y-buscador",
+   "title": "Avisos y buscador global",
+   "menu": "Barra superior (campana y Buscar)",
+   "lead": "La barra superior está en todas las pantallas. La campana te cuenta lo que ha pasado y el buscador te lleva a cualquier cliente, norma o pantalla sin pasar por el menú.",
+   "shots": [
+    {
+     "src": "capturas/principal/inicio-avisos.png",
+     "url": "/#/",
+     "caption": "La campana abierta con los avisos sin leer: un documento duplicado, una fuente del radar que no responde y una norma en tramitación.",
+     "alt": "Desplegable de avisos con tres entradas, cada una con icono de nivel, título, texto y hace cuánto llegó, y el botón Marcar todo como leído."
+    },
+    {
+     "src": "capturas/principal/inicio-buscador.png",
+     "url": "/#/",
+     "caption": "El buscador con «pana»: el cliente, sus actividades CNAE y la normativa relacionada, agrupados por tipo.",
+     "alt": "Ventana del buscador con el texto pana y resultados agrupados en Cliente, Actividad y Normativa, con atajos de teclado al pie."
+    }
+   ],
+   "hace": [
+    "Recoge los avisos que generan los módulos: recordatorios de plazos, documentos duplicados, fuentes del radar caídas o propuestas de cambio del catálogo.",
+    "Cuenta en la campana los avisos sin leer y te deja marcarlos todos como leídos.",
+    "Al pulsar un aviso, lo marca como leído y abre la pantalla relacionada.",
+    "Busca desde dos letras en clientes (nombre, nombre comercial, NIF o código), contactos, actividades CNAE e IAE, normativa, modelos, obligaciones, campañas, automatizaciones y correo.",
+    "Ofrece también accesos directos a Nuevo cliente, Importar clientes y a las pantallas del menú."
+   ],
+   "ves": [
+    "La campana con el número de avisos pendientes, junto al cambio de tema claro u oscuro y tu usuario.",
+    "Los últimos 30 avisos con icono por nivel (información, éxito, aviso o peligro), título, texto y hace cuánto llegó.",
+    "El buscador en una ventana central que se abre con Ctrl+K (Cmd+K en Mac) o pulsando la barra de búsqueda.",
+    "Resultados agrupados por tipo (Cliente, Contacto, Actividad, Normativa…) con una línea de detalle como NIF, código y municipio.",
+    "Atajos al pie de la ventana: flechas para moverte, Intro para abrir y Esc para cerrar."
+   ],
+   "genera": [
+    "No crea documentos: la campana y el buscador consultan y te llevan a otras pantallas.",
+    "Guarda por persona qué avisos has leído, así cada miembro del equipo ve su propio contador.",
+    "Recibe los recordatorios automáticos que el calendario manda al responsable de cada vencimiento a 15, 7, 3 y 1 días del final.",
+    "Muestra los avisos del radar normativo, de la bandeja de documentos y de los conectores cuando hay algo que revisar."
+   ],
+   "tip": "Pulsa Ctrl+K en cualquier pantalla y escribe parte del nombre, del NIF o del código del cliente para abrir su expediente."
+  },
+  {
+   "id": "clientes-lista",
+   "title": "Clientes: la cartera",
+   "menu": "Clientes",
+   "lead": "Es la lista de todos los expedientes del despacho. Te deja buscar, filtrar por régimen o por modelo, cambiar varios clientes a la vez y sacar la lista a Excel.",
+   "shots": [
+    {
+     "src": "capturas/principal/clientes-lista.png",
+     "url": "/#/clientes",
+     "caption": "Vista de tabla: código, cliente, NIF, tipo, obligaciones, asesor, etiquetas y estado, con los segmentos por estado encima.",
+     "alt": "Tabla de clientes con avatares de color, NIF, tipo, etiquetas de modelos como 100, 111T y 303T, asesor, etiquetas del despacho y estado Activo."
+    },
+    {
+     "src": "capturas/principal/clientes-filtros.png",
+     "url": "/#/clientes",
+     "caption": "Panel de filtros: tipo, régimen de IVA, asesor, etiqueta, forma jurídica y modelo que presenta.",
+     "alt": "Panel con seis desplegables de filtro y el botón Quitar filtros sobre la tabla de clientes."
+    },
+    {
+     "src": "capturas/principal/clientes-exportar.png",
+     "url": "/#/clientes?tipo=sociedad",
+     "caption": "Lista filtrada por sociedades con el menú Exportar abierto: Excel (.xlsx) o CSV separado por punto y coma.",
+     "alt": "Tabla de sociedades con el botón Filtros marcando 1 filtro y el menú de exportación desplegado."
+    },
+    {
+     "src": "capturas/principal/clientes-tarjetas.png",
+     "url": "/#/clientes",
+     "caption": "Vista de tarjetas con el NIF, el código, el municipio, los modelos del perfil, el asesor y las etiquetas.",
+     "alt": "Rejilla de tarjetas de clientes, cada una con avatar, estado, tipo y municipio, modelos y asesor."
+    }
+   ],
+   "hace": [
+    "Lista los clientes con paginación y los ordena por código, nombre, NIF, tipo, régimen de IVA, asesor, municipio, estado o fecha de alta.",
+    "Separa la cartera por estado: en cartera, activos, potenciales, suspendidos y bajas, con el número de cada uno.",
+    "Filtra por tipo, régimen de IVA, asesor (o sin asesor), etiqueta, forma jurídica y modelo que presenta, como el 303 o el 111.",
+    "Busca por nombre, NIF o código mientras escribes.",
+    "Aplica acciones masivas a los clientes marcados, con confirmación: asignar asesor, añadir una etiqueta o cambiar el estado.",
+    "Recuerda en tu navegador las columnas visibles y si prefieres tabla o tarjetas."
+   ],
+   "ves": [
+    "Los botones Tabla y Tarjetas, Importar y Nuevo cliente en la cabecera.",
+    "En cada fila, el avatar con color por tipo de cliente, el nombre comercial y las obligaciones del perfil como etiquetas (100, 111T, 303T…).",
+    "El asesor responsable con su avatar, o «Sin asesor» resaltado en amarillo.",
+    "Las etiquetas de color del despacho, como Hostelería, Profesionales o Domicilia impuestos.",
+    "El selector de columnas, que añade también régimen de IVA, municipio y fecha de alta."
+   ],
+   "genera": [
+    "Exporta la lista filtrada a Excel (.xlsx) o a CSV con punto y coma, con 22 columnas de datos fiscales, contacto, asesor, obligaciones y etiquetas.",
+    "Cada exportación queda anotada en el registro de auditoría con el número de clientes.",
+    "Las acciones masivas cambian la ficha de cada cliente y quedan en su historial.",
+    "Los cambios masivos lanzan los mismos recálculos que una edición normal de la ficha."
+   ],
+   "tip": "Filtra por «Presenta el modelo» 303 y exporta a Excel para tener la lista de la campaña del IVA."
+  },
+  {
+   "id": "clientes-alta",
+   "title": "Alta de un cliente",
+   "menu": "Clientes › Nuevo cliente",
+   "lead": "Es el formulario para dar de alta o editar un cliente. Mientras lo rellenas, calcula a la derecha qué modelos presentará y por qué.",
+   "shots": [
+    {
+     "src": "capturas/principal/clientes-alta.png",
+     "url": "/#/clientes/nuevo",
+     "caption": "Alta de una sociedad: el NIF se valida al momento, la forma jurídica se deduce y el perfil de obligaciones se calcula al lado.",
+     "alt": "Formulario Nuevo cliente con el tipo Sociedad elegido, la razón social, el NIF validado como sociedad de responsabilidad limitada y el panel Perfil de obligaciones."
+    },
+    {
+     "src": "capturas/principal/clientes-alta-fiscal.png",
+     "url": "/#/clientes/nuevo",
+     "caption": "Secciones de actividad (CNAE-2025 e IAE), fiscalidad y situaciones que generan obligaciones, con sus interruptores.",
+     "alt": "Parte media del formulario con buscadores de actividad, régimen de IVA, tipo del IS, cierre del ejercicio e interruptores como Tiene trabajadores."
+    }
+   ],
+   "hace": [
+    "Valida el NIF, NIE o CIF mientras escribes, dice qué tipo de entidad es y avisa si otro cliente ya tiene ese NIF.",
+    "Deduce la forma jurídica por la letra del CIF y rellena la provincia con el código postal.",
+    "Busca la actividad en el catálogo oficial CNAE-2025 y los epígrafes del IAE, por palabras o por código.",
+    "Recoge régimen de IVA, estimación del IRPF, tipo del IS, cierre del ejercicio y marcas como SII, REDEME o gran empresa.",
+    "Pregunta por las situaciones que generan modelos: trabajadores, retenciones a profesionales, alquiler con retención, dividendos, operaciones intracomunitarias, importaciones y 347.",
+    "Calcula en vivo un primer perfil de obligaciones con el motivo de cada una y dice cuántos modelos quedan por decidir."
+   ],
+   "ves": [
+    "Cinco tarjetas para elegir el tipo: autónomo, sociedad, comunidad de bienes, asociación u otro.",
+    "Campos que cambian según el tipo: estimación del IRPF para autónomos, tipo del IS y pagos del 202 para sociedades.",
+    "El panel «Perfil de obligaciones» a la derecha, con cada obligación y su motivo, por ejemplo «Tiene trabajadores (sí)».",
+    "Un aviso como «Con estos datos aún no se sabe si presenta 21 modelos más: se preguntará en su expediente».",
+    "Asesor responsable, estado, fecha de alta, etiquetas y notas internas que solo ve el despacho."
+   ],
+   "genera": [
+    "La ficha del cliente con un código correlativo automático (C0041, C0042…) si no le pones uno.",
+    "Sus actividades CNAE e IAE, que pasan a la pestaña Actividades del expediente.",
+    "El perfil de obligaciones y sus vencimientos en el calendario fiscal.",
+    "La revisión de la normativa reciente del radar que le afecta.",
+    "Una entrada en el historial del cliente; si están activas, también las automatizaciones de «cliente nuevo»."
+   ],
+   "tip": "Rellena con calma la actividad CNAE y las situaciones: de ellas salen los modelos, los plazos y la normativa que se vigila."
+  },
+  {
+   "id": "clientes-importar",
+   "title": "Importar clientes",
+   "menu": "Clientes › Importar",
+   "lead": "Trae tu cartera de golpe desde Excel o CSV, incluidos los listados de clientes que exportan a3, Sage o Contasol. Antes de importar, comprueba fila a fila qué entra y qué falla.",
+   "shots": [
+    {
+     "src": "capturas/principal/clientes-importar-paso1.png",
+     "url": "/#/clientes/importar",
+     "caption": "Paso 1: arrastra el Excel (.xlsx) o el CSV; arriba a la derecha tienes la plantilla para descargar.",
+     "alt": "Pantalla Importar clientes con los cuatro pasos, la zona para soltar el fichero y el botón Descargar plantilla."
+    },
+    {
+     "src": "capturas/principal/clientes-importar-columnas.png",
+     "url": "/#/clientes/importar",
+     "caption": "Paso 2: cada columna del fichero con ejemplos y el campo de Gestoría Creative que se le ha asignado solo.",
+     "alt": "Tabla de relación de columnas con Cód. cliente, Razón social, NIF, Domicilio, C.P., Población y Provincia, y a la derecha el contador de 5 filas."
+    },
+    {
+     "src": "capturas/principal/clientes-importar-comprobar.png",
+     "url": "/#/clientes/importar",
+     "caption": "Paso 3: la comprobación sin guardar nada, con 2 clientes nuevos y 3 filas con errores explicados.",
+     "alt": "Tres cifras de comprobación y una tabla de filas con errores: NIF ya existente, NIF no válido e IBAN no válido, con el botón Importar 2 clientes."
+    }
+   ],
+   "hace": [
+    "Lee ficheros .xlsx, .csv y .txt de hasta 25 MB; los .xls antiguos hay que guardarlos antes como .xlsx.",
+    "Reconoce solas las cabeceras habituales (razón social, NIF/CIF, C.P., población, e-mail, régimen de IVA…), también las de a3, Sage y Contasol.",
+    "Te deja cambiar la fila de títulos, reasignar cualquier columna y guardar el mapeo con un nombre.",
+    "Comprueba sin guardar los NIF, los NIF repetidos en el fichero, los clientes que ya existen y los IBAN.",
+    "Recupera los ceros que Excel quita en los códigos postales y en los NIF de siete cifras.",
+    "Actualiza los clientes que ya existen con el mismo NIF solo si activas esa opción."
+   ],
+   "ves": [
+    "Cuatro pasos marcados arriba: Subir el fichero, Relacionar columnas, Comprobar y Resultado.",
+    "Una tabla con cada columna del fichero, tres ejemplos de su contenido y un desplegable con el campo de destino.",
+    "El contador de filas y de columnas relacionadas, y un aviso si falta la columna del nombre o hay campos repetidos.",
+    "En la comprobación, tres cifras: clientes nuevos, se actualizarán y con errores (se omiten).",
+    "La tabla de filas con errores, con número de fila, cliente y motivo, como «Ya existe un cliente con este NIF (se omite)»."
+   ],
+   "genera": [
+    "Una plantilla Excel con todas las columnas que reconoce y una fila de ejemplo.",
+    "Los clientes nuevos o actualizados, cada uno con su perfil de obligaciones calculado.",
+    "La cuenta bancaria del cliente si el fichero trae IBAN, y las etiquetas que vengan en él.",
+    "El mapeo de columnas guardado con el nombre que le pongas, para la próxima importación.",
+    "Una entrada en el registro de auditoría con los nuevos, los actualizados y los errores."
+   ],
+   "tip": "Guarda el mapeo con el nombre del programa de origen («Exportación de a3») y la próxima vez se relaciona con un clic."
+  },
+  {
+   "id": "expediente-resumen-datos",
+   "title": "Expediente: resumen, datos fiscales y contactos",
+   "menu": "Clientes › un cliente › Resumen, Datos fiscales, Contactos",
+   "lead": "El expediente es la ficha completa de cada cliente, con 18 pestañas que aportan todos los módulos. Las primeras te dan la foto general, los datos que usa el cálculo de obligaciones y las personas del cliente.",
+   "shots": [
+    {
+     "src": "capturas/principal/expediente-resumen.png",
+     "url": "/#/clientes/24",
+     "caption": "Cabecera del expediente con NIF, forma jurídica, contacto, modelos del perfil y etiquetas; debajo, la pestaña Resumen.",
+     "alt": "Expediente de Panadería La Espiga Dorada SL con su cabecera, la barra de pestañas y tarjetas de obligaciones periódicas, cuota mensual y contactos."
+    },
+    {
+     "src": "capturas/principal/expediente-fiscal.png",
+     "url": "/#/clientes/24?pestana=fiscal",
+     "caption": "Datos fiscales agrupados: identificación, domicilio fiscal y actividad, con el botón Editar datos.",
+     "alt": "Pestaña Datos fiscales con tres tarjetas de datos: identificación, domicilio fiscal y actividad con IAE 419.1 y CNAE 10.71."
+    },
+    {
+     "src": "capturas/principal/expediente-contactos.png",
+     "url": "/#/clientes/24?pestana=contactos",
+     "caption": "Contactos con su relación, cargo, participación y NIF, y las marcas Principal, Representante y Titular real.",
+     "alt": "Dos tarjetas de contacto: el administrador único con el 100 por cien, marcado como principal, representante y titular real, y la contable."
+    }
+   ],
+   "hace": [
+    "Reúne en la cabecera lo esencial: estado, NIF (se copia con un clic), tipo y forma jurídica, municipio, teléfono, correo, modelos activos y etiquetas.",
+    "Resume en la pestaña Resumen las obligaciones periódicas, la cuota mensual, los contactos, el equipo y los últimos cambios.",
+    "Agrupa en Datos fiscales la identificación, el domicilio, la actividad, el IVA, el IRPF o el Impuesto sobre Sociedades y las retenciones.",
+    "Asigna un equipo al cliente (fiscal, contable, laboral o apoyo): quien esté en el equipo lo ve aunque solo vea sus asignados.",
+    "Guarda los contactos con su relación (titular, administrador, socio, contable, representante…), su participación y si es titular real.",
+    "Da de baja al cliente desde el menú «…»: sale de las listas, del portal y de los conectores, y sus datos se conservan."
+   ],
+   "ves": [
+    "Tres tarjetas en Resumen: obligaciones periódicas, cuota mensual y contactos con acceso al portal.",
+    "El perfil de obligaciones con organismo y motivo, por ejemplo «AEAT · Está en el régimen general del IVA y en territorio común».",
+    "La barra de 18 pestañas con contadores (Contactos 2, Modelos 5…), que se desplaza en horizontal.",
+    "En Contactos, la caducidad del DNI en color cuando se ha leído de un documento de la bandeja.",
+    "El asesor responsable, la fecha de alta y el código del cliente a la derecha de la cabecera."
+   ],
+   "genera": [
+    "Cada cambio de ficha, equipo o contactos queda en el historial del expediente con el antes y el después.",
+    "Al editar los datos fiscales, se recalculan sus obligaciones, sus vencimientos y la normativa que le afecta.",
+    "Los contactos quedan disponibles para el correo del despacho, que asocia sus mensajes al cliente.",
+    "La baja conserva el expediente completo por la obligación legal de conservación."
+   ],
+   "tip": "Al dar de alta los contactos, marca quién es representante y quién es titular real (más del 25 % o control)."
+  },
+  {
+   "id": "expediente-obligaciones-modelos",
+   "title": "Expediente: actividades, obligaciones y modelos",
+   "menu": "Clientes › un cliente › Actividades, Obligaciones, Modelos",
+   "lead": "Estas pestañas dicen qué hace el cliente, qué tiene que presentar y por qué, y cómo va su año modelo a modelo. Son el corazón fiscal del expediente.",
+   "shots": [
+    {
+     "src": "capturas/principal/expediente-actividades.png",
+     "url": "/#/clientes/24?pestana=actividades",
+     "caption": "Actividades: la CNAE-2025 principal con su fecha de alta y el epígrafe del IAE de su alta censal.",
+     "alt": "Pestaña Actividades con la clase 10.71 marcada como principal, el epígrafe 419.1 del IAE y buscadores para añadir más."
+    },
+    {
+     "src": "capturas/principal/expediente-obligaciones.png",
+     "url": "/#/clientes/24?pestana=obligaciones",
+     "caption": "Obligaciones: el resumen del cálculo (65 obligaciones, 21 con plazos) y cada una con su porqué, agrupadas por ámbito.",
+     "alt": "Pestaña Obligaciones con el territorio Castilla y León, la actividad, las cifras 65 y 21 y la lista fiscal con los modelos 111, 115, 180, 190 y 200."
+    },
+    {
+     "src": "capturas/principal/expediente-obligaciones-vencimientos.png",
+     "url": "/#/clientes/24?pestana=obligaciones",
+     "caption": "Vencimientos del cliente por meses, con lo próximo destacado y el importe y el estado de cada presentación.",
+     "alt": "Subpestaña Vencimientos con el próximo pago del 202 el 20 de octubre y la lista de enero y febrero de 2026 con importes y estado Presentado."
+    },
+    {
+     "src": "capturas/principal/expediente-modelos.png",
+     "url": "/#/clientes/24?pestana=modelos",
+     "caption": "Modelos: cifras del año y una rejilla por modelo y trimestre con el estado y el resultado de cada borrador.",
+     "alt": "Pestaña Modelos con cuatro cifras y la rejilla del año para el 303, 111, 115, 349, 202, 390 y 347, con celdas Preparar o importes."
+    }
+   ],
+   "hace": [
+    "Guarda las actividades CNAE-2025 e IAE del catálogo oficial, marca la principal y conserva las bajas con su fecha.",
+    "Calcula qué presenta el cliente según su situación, su actividad y su territorio fiscal (común, foral, Canarias, Ceuta o Melilla).",
+    "Explica cada obligación en una frase, como «Tiene trabajadores (sí) y está en territorio común → 111 trimestral», y respeta lo cambiado a mano.",
+    "Pregunta los datos que faltan para afinar el perfil, recalcula al contestar y señala servicios que el cliente no tiene contratados.",
+    "Lista los vencimientos del año del cliente y abre el panel de cada uno para cambiar su estado.",
+    "Enseña en Modelos el año por modelo y periodo (303, 111, 115, 349, 202, 390, 347, 180…) y los datos fijos que usan los cálculos."
+   ],
+   "ves": [
+    "En Obligaciones, chips con el territorio y la actividad, y los botones Recalcular, Situación completa y Lo que ve el cliente.",
+    "Las subpestañas Obligaciones, Vencimientos, Historial y Normativa, cada una con su contador.",
+    "Cada obligación con su modelo, nombre, periodicidad y organismo; al abrirla, el plazo, la periodicidad y desde cuándo aplica.",
+    "Por separado, las obligaciones pendientes de un dato, las opcionales y las que ya no aplican.",
+    "En Modelos, cuatro cifras (por presentar, presentados, ingresado y a devolver) y celdas por periodo con icono de estado e importe.",
+    "Los datos fijos: prorrata, rendimiento neto anterior para el 130, cuota íntegra del IS para el 202 y locales alquilados para el 180."
+   ],
+   "genera": [
+    "El perfil de obligaciones y sus vencimientos en el calendario, que se recalculan solos cuando cambian los datos del cliente.",
+    "Un historial de cambios de obligaciones (entra, sale, cambia de periodicidad, a mano) con quién lo hizo.",
+    "Las obligaciones añadidas o quitadas a mano quedan marcadas «A mano» y el recálculo automático no las toca.",
+    "Con «Preparar» en un periodo cerrado, un borrador del modelo calculado con los libros de facturas, que se abre en Modelos.",
+    "La lista de normas del radar unidas a sus obligaciones, en la subpestaña Normativa."
+   ],
+   "tip": "Si un modelo no te cuadra, abre la obligación y lee el porqué: verás qué dato de la ficha la activa."
+  },
+  {
+   "id": "expediente-documentos-bancos",
+   "title": "Expediente: documentos, conectores, bancos y conciliación",
+   "menu": "Clientes › un cliente › Documentos, Conectores, Conciliación, Bancos, Credenciales",
+   "lead": "Aquí llega la documentación y el dinero del cliente: los papeles que sube o te mandan, las facturas que envía su programa y sus cuentas con lo que queda por conciliar.",
+   "shots": [
+    {
+     "src": "capturas/principal/expediente-documentos.png",
+     "url": "/#/clientes/24?pestana=documentos",
+     "caption": "Documentos del cliente: zona para arrastrar y la lista con emisor, número, fecha, estado e importe.",
+     "alt": "Pestaña Documentos con los segmentos Pendientes, Registrados y Todos, la zona de subida y facturas registradas de Envases Ribera, Gasóleos Burgos y Electra Castilla."
+    },
+    {
+     "src": "capturas/principal/expediente-conectores.png",
+     "url": "/#/clientes/24?pestana=conectores",
+     "caption": "Conectores: su programa de facturación (Holded) conectado, con las facturas leídas, avisos para su programa e invitaciones.",
+     "alt": "Tarjeta de Holded con el estado Conectada y 21 facturas, botones Pedir conexión, Conectar, Importar Excel y Módulo, y avisos para el programa."
+    },
+    {
+     "src": "capturas/principal/expediente-conciliacion.png",
+     "url": "/#/clientes/1?pestana=conciliacion",
+     "caption": "Conciliación (cliente C0001 de la demo): por conciliar, porcentaje conciliado, partidas abiertas, alertas y cada cuenta con su saldo.",
+     "alt": "Cuatro cifras de conciliación y dos cuentas con IBAN, saldo a fecha, movimientos y el estado Saldos continuos."
+    },
+    {
+     "src": "capturas/principal/expediente-bancos.png",
+     "url": "/#/clientes/24?pestana=bancos",
+     "caption": "Bancos: la cuenta del cliente con IBAN, entidad, cuenta principal y mandato SEPA.",
+     "alt": "Tarjeta de cuenta de Bankinter con el IBAN, la marca Principal y la referencia del mandato SEPA con su fecha."
+    }
+   ],
+   "hace": [
+    "Recibe documentos (PDF, fotos o XML) ya asignados al cliente; se clasifican, se leen y se comprueban solos.",
+    "Separa los documentos en Pendientes, Registrados y Todos, y abre cada uno para revisarlo.",
+    "Enseña los programas del cliente conectados (Holded, Dolibarr, FacturaScripts u Odoo) con su estado, las facturas recibidas y la próxima lectura.",
+    "Ofrece cuatro formas de conectar: pedírselo al cliente por su portal, conectarlo tú con su clave, importar un Excel o CSV, o el módulo de su programa.",
+    "Resume la conciliación del cliente y comprueba la continuidad de saldos de cada cuenta: continuos, falta un extracto o descuadre.",
+    "Importa extractos en Norma 43, camt, MT940, OFX, QIF, CSV o Excel; la cuenta se crea sola por su IBAN.",
+    "Guarda las cuentas con IBAN validado, BIC, alias, la cuenta para domiciliar impuestos y la referencia y fecha del mandato SEPA."
+   ],
+   "ves": [
+    "Contadores por segmento (Registrados 20, Todos 21) y un acceso a la bandeja del despacho.",
+    "Cada documento con icono por tipo, su estado en color y, si los tiene, plazo o caducidad (notificaciones, DNI).",
+    "Para cada conexión, su insignia de estado, cuándo se leyó, cuándo se leerá y cuántas facturas trae.",
+    "En Conciliación, la barra de lo conciliado, el neto de las partidas abiertas y el límite de conciliación automática de cada cuenta.",
+    "La pestaña Credenciales enseña solo lo no secreto de la Bóveda (tipo, organismo y caducidad) y las caducidades de los próximos 90 días."
+   ],
+   "genera": [
+    "Documentos en la bandeja del despacho, con su lectura y su propuesta de destino.",
+    "Facturas emitidas y recibidas que llegan solas desde el programa del cliente, como datos exactos y sin OCR.",
+    "Movimientos bancarios importados; se concilian solos los que tienen prueba suficiente y el resto queda para el conciliador.",
+    "Una invitación en el portal del cliente para que conecte su programa, y avisos o dudas que le llegan a ese programa.",
+    "Las cuentas bancarias del cliente, que los demás módulos usan para saber dónde domicilia."
+   ],
+   "tip": "Si una cuenta marca «Falta un extracto», importa el que falta antes de conciliar para no dejar huecos en los saldos."
+  },
+  {
+   "id": "expediente-relacion-historial",
+   "title": "Expediente: normativa, correo, servicios, portal e historial",
+   "menu": "Clientes › un cliente › Normativa, Correo, Servicios, Notas, Portal y conectores, Automatizaciones, Historial",
+   "lead": "Las últimas pestañas cubren la relación con el cliente: qué normas nuevas le tocan, qué os habéis escrito, qué paga, quién entra en su portal, qué han hecho las automatizaciones y quién ha cambiado qué.",
+   "shots": [
+    {
+     "src": "capturas/principal/expediente-normativa.png",
+     "url": "/#/clientes/24?pestana=normativa",
+     "caption": "Normativa que le afecta: cada norma del BOE o del RED con su motivo para este cliente, su situación y su estado de revisión.",
+     "alt": "Lista de normas con fuente BOE o RED, fecha, rango, la marca Derogada en un real decreto-ley y chips como Presenta el modelo 115 o Tiene trabajadores."
+    },
+    {
+     "src": "capturas/principal/expediente-honorarios.png",
+     "url": "/#/clientes/24?pestana=honorarios",
+     "caption": "Servicios contratados con importe y periodicidad, el equivalente al mes (307,17 €) y el reparto anual.",
+     "alt": "Tres servicios con su importe, una tarjeta con 307,17 euros al mes y 3686 euros al año, y una dona del reparto anual."
+    },
+    {
+     "src": "capturas/principal/expediente-portal.png",
+     "url": "/#/clientes/24?pestana=portal",
+     "caption": "Portal y conectores: la persona con acceso al portal y su último acceso, y los tokens de API para su programa.",
+     "alt": "Tarjeta de acceso al portal con Ana García Pérez activa y botón Invitar, y tarjeta de conectores API sin tokens y botón Nuevo token."
+    },
+    {
+     "src": "capturas/principal/expediente-historial.png",
+     "url": "/#/clientes/24?pestana=historial",
+     "caption": "Historial del expediente: quién cambió qué y cuándo, con el valor anterior tachado y el nuevo.",
+     "alt": "Línea de tiempo con entradas del Sistema y de Marta Gil Herrero, fecha y hora, y cambios de estado de borradores de borrador a revisado y enviado."
+    }
+   ],
+   "hace": [
+    "Lista la normativa del radar que afecta al cliente y por qué (su actividad CNAE, sus modelos o su comunidad autónoma), y sus actos del BORME si es sociedad.",
+    "Reúne las conversaciones de correo del cliente en los buzones que ves, con el filtro «Por atender» y búsqueda.",
+    "Registra los servicios contratados con importe sin IVA, periodicidad y fechas, y calcula su cuota mensual y anual.",
+    "Guarda notas internas del equipo, con la opción de fijarlas arriba.",
+    "Invita al portal a titulares o empleados del cliente y crea tokens para que su programa mande facturas, documentos o movimientos.",
+    "Enseña lo que las automatizaciones han hecho, proponen o esperan con el cliente, y permite apagarlas solo para él.",
+    "Guarda el historial del expediente, que no se puede borrar porque es el registro de auditoría."
+   ],
+   "ves": [
+    "Cada norma con su anillo de relevancia, fuente, fecha, rango, situación (por ejemplo «Derogada») y el motivo, como «Presenta el modelo 115».",
+    "En Correo, cada conversación con remitente, asunto, extracto y etiquetas, y el botón «Escribir a» el cliente.",
+    "En Servicios, una dona con el reparto anual de los honorarios por servicio.",
+    "En Portal, cada usuario con su correo, su último acceso y el estado Activo o Invitado; los tokens se ven por su prefijo gc_…",
+    "En Automatizaciones, el interruptor «Encendidas», las salvaguardas (máximo de mensajes, horario laboral, Deshacer) y lo hecho con su receta.",
+    "En Historial, una línea de tiempo con el autor (persona o Sistema), la acción, la fecha y los valores antes y después."
+   ],
+   "genera": [
+    "Un correo de invitación al portal para que el cliente elija su contraseña, que puedes reenviar.",
+    "Un token de conector que se enseña una sola vez; se guarda solo su huella y se puede revocar.",
+    "Mensajes al cliente desde el correo del despacho con el botón «Escribir a».",
+    "Los servicios y cuotas que alimentan la tarjeta «Cuotas al mes» del inicio.",
+    "Notas internas que solo ve el despacho."
+   ],
+   "tip": "Antes de llamar a un cliente, mira su Historial y su Correo: verás qué ha cambiado y qué tiene pendiente."
+  },
+  {
+   "id": "hoy-y-esta-semana",
+   "title": "Hoy y esta semana",
+   "menu": "Hoy y esta semana",
+   "lead": "Es la lista de trabajo de los plazos: lo que vence hoy, lo que se ha pasado, lo que llega en 7 días y los papeles que faltan. Puedes verla solo con tus clientes o con todo el despacho.",
+   "shots": [
+    {
+     "src": "capturas/principal/hoy-semana.png",
+     "url": "/#/obligaciones/hoy?todos=1",
+     "caption": "Seis cifras arriba y la sección «Fuera de plazo» con semáforo, obligación, cliente, periodo, estado y responsable.",
+     "alt": "Pantalla Miércoles, 7 de octubre con las cifras Hoy 17, Domiciliar 0, Atrasados 3, Semana 0, Sin papeles 23 y Hechos hoy 7, y la lista de fuera de plazo."
+    },
+    {
+     "src": "capturas/principal/hoy-documentacion.png",
+     "url": "/#/obligaciones/hoy?todos=1",
+     "caption": "Documentación que falta: vencimientos de los próximos 15 días sin papeles, con «Pedir a todos» y casillas para elegir.",
+     "alt": "Lista de vencimientos del 20 de octubre (111, 115, 202, 303, 349, 131, 130) con chips Sin papeles o Pedida y el botón Pedir a todos."
+    },
+    {
+     "src": "capturas/principal/hoy-panel-vencimiento.png",
+     "url": "/#/obligaciones/hoy?todos=1",
+     "caption": "Panel de un vencimiento (303 · 3T 2026): plazo, último día para domiciliar, estado, resultado, importe, justificante, documentación y responsable.",
+     "alt": "Panel lateral del modelo 303 de Construcciones Arlanza SL con el 20 de octubre, botones de estado, campos de resultado e importe y el interruptor Pago domiciliado."
+    }
+   ],
+   "hace": [
+    "Separa los vencimientos en Fuera de plazo, Vencen hoy, Domiciliación con último día hoy, Próximos 7 días y Documentación que falta.",
+    "Cambia entre «Lo mío» y «Todo el despacho»; si no eres responsable de nada, pasa sola a todo el despacho y te lo dice.",
+    "Marca un vencimiento como listo para presentar o como presentado con un botón en la propia fila.",
+    "Pide la documentación a uno, a varios o a todos los clientes que no la han mandado, o marca vencimientos como «No procede» con un motivo.",
+    "Enseña los cambios normativos ya aceptados que hay que revisar y los clientes con preguntas pendientes para completar su perfil.",
+    "Abre el panel de cada vencimiento para cambiar estado, resultado, importe, justificante o CSV, responsable, domiciliación y notas."
+   ],
+   "ves": [
+    "Seis cifras arriba: Hoy, Domiciliar, Atrasados, Semana, Sin papeles (vencen en 15 días) y Hechos hoy.",
+    "Un semáforo de riesgo, la obligación con su color, el cliente, el periodo y la fecha con «hace 30 días» o «en 13 días».",
+    "Chips «Sin papeles» o «Pedida» y un icono de banco cuando el pago está domiciliado.",
+    "En el panel, la explicación del plazo, como «Del 1 al 20 de octubre de 2026. Domiciliando el pago: hasta el 15 de octubre».",
+    "También en el panel, los periodos anteriores con su estado e importe, el expediente del vencimiento y un enlace a la Sede."
+   ],
+   "genera": [
+    "Una petición de documentación que llega al cliente como aviso en su portal y por correo, y deja el vencimiento como «Pedida».",
+    "Cada cambio de estado queda en el expediente del vencimiento, con quién lo hizo y cuándo.",
+    "El CSV o justificante y el resultado (a ingresar, a devolver, cero o a compensar) guardados en el vencimiento.",
+    "Recordatorios automáticos al responsable a 15, 7, 3 y 1 días del final, y aviso cuando algo pasa a fuera de plazo."
+   ],
+   "tip": "Revisa cada mañana «Documentación que falta» y pulsa «Pedir a todos»: el cliente lo recibe en su portal y por correo."
+  },
+  {
+   "id": "calendario-fiscal",
+   "title": "Calendario fiscal y laboral",
+   "menu": "Calendario fiscal",
+   "lead": "Muestra todos los plazos de tu cartera en vista de mes, semana o agenda. Las fechas salen de reglas oficiales con festivos y prórrogas, y cada día dice cuántos clientes quedan por hacer.",
+   "shots": [
+    {
+     "src": "capturas/principal/calendario-mes.png",
+     "url": "/#/calendario",
+     "caption": "Cifras del mes, navegación, cambio entre Mes, Semana y Agenda, filtros y leyenda de colores por organismo.",
+     "alt": "Cabecera del calendario de octubre de 2026 con 237 vencimientos, 32 por ciento hechos, 160 por hacer y 0 fuera de plazo, y la barra de filtros."
+    },
+    {
+     "src": "capturas/principal/calendario-mes-rejilla.png",
+     "url": "/#/calendario",
+     "caption": "Vista de mes: el festivo del 12 de octubre, los últimos días para domiciliar el 15 y los modelos que vencen el 20, con su barra de avance.",
+     "alt": "Rejilla de octubre con chips de domiciliación el día 15, chips de 111, 115 y 123 el día 20 y chips de 303, recibos de salarios, cuota de autónomos y seguros sociales el día 30."
+    },
+    {
+     "src": "capturas/principal/calendario-agenda.png",
+     "url": "/#/calendario?vista=agenda",
+     "caption": "Vista de agenda: cada día con sus obligaciones y, debajo, cada cliente con semáforo, estado, importe y responsable.",
+     "alt": "Agenda del 7 de octubre con los partes de accidente de trabajo de septiembre y la lista de clientes con su estado Presentado, Pendiente o Listo para presentar."
+    },
+    {
+     "src": "capturas/principal/calendario-grupo.png",
+     "url": "/#/calendario",
+     "caption": "Al pulsar un día y un modelo (115 · 3T 2026), la lista de sus clientes con su estado y las acciones en bloque.",
+     "alt": "Panel lateral del modelo 115 del 3T 2026 con 22 clientes, 10 hechos y 3 sin documentación, y una casilla por cliente abierto."
+    }
+   ],
+   "hace": [
+    "Calcula los vencimientos con reglas de plazo de 273 obligaciones (AEAT, TGSS, mercantiles, forales, Canarias, Ceuta y Melilla) y el último día para domiciliar.",
+    "Ajusta los plazos que caen en día inhábil según la regla de cada obligación, con festivos nacionales, autonómicos y locales.",
+    "Filtra por solo lo mío, responsable, cliente, obligación, organismo, estado y vencimientos en riesgo.",
+    "Agrupa en cada día los clientes por obligación y periodo, con cuántos están hechos y cuántos fuera de plazo.",
+    "Cambia en bloque el estado de los vencimientos elegidos (en preparación, listos, presentados o no procede) y pide la documentación.",
+    "Abre en vista de agenda en el móvil y te deja ocultar lo ya hecho de días pasados."
+   ],
+   "ves": [
+    "Cuatro cifras del mes: vencimientos, porcentaje hecho, por hacer (y cuántos son tuyos) y fuera de plazo.",
+    "Chips de color por organismo (AEAT, Trabajo e Inspección, Seguridad Social, Comunidad autónoma) con lo pendiente y una barra de avance.",
+    "Los festivos en rojo dentro de la celda y chips con icono de banco el último día para domiciliar, como «303 · 14».",
+    "Los botones Hoy y esta semana, Exportar y Suscribirme arriba a la derecha.",
+    "En la agenda, cada día con «hoy», «mañana» o «en N días» y cuántos quedan por hacer de cuántos."
+   ],
+   "genera": [
+    "Un CSV separado por punto y coma con los vencimientos del rango y los filtros: cliente, NIF, obligación, periodo, estado, responsable, importe y justificante.",
+    "Una suscripción iCalendar con dirección secreta para Google Calendar, Outlook o el iPhone, con aviso 3 días y 1 día antes.",
+    "La suscripción incluye solo tus vencimientos o todos los que puedes ver, y se revoca cuando quieras.",
+    "Cambios de estado en bloque, anotados en el expediente de cada vencimiento.",
+    "Peticiones de documentación en bloque, que llegan a cada cliente en su portal y por correo."
+   ],
+   "tip": "Suscríbete con «Los míos» desde el calendario del móvil y tendrás tus plazos con aviso 3 días y 1 día antes."
+  }
+ ],
+ "generated_outputs": [
+  {
+   "name": "Listado de clientes",
+   "format": "XLSX | CSV",
+   "where": "Clientes › Exportar",
+   "desc": "La lista filtrada con 22 columnas (datos fiscales, contacto, asesor, obligaciones y etiquetas) para trabajar fuera o cruzar con otros programas."
+  },
+  {
+   "name": "Plantilla de importación de clientes",
+   "format": "XLSX",
+   "where": "Clientes › Importar › Descargar plantilla",
+   "desc": "Hoja vacía con todas las columnas que reconoce el importador y una fila de ejemplo."
+  },
+  {
+   "name": "Ficha de cliente con perfil de obligaciones",
+   "format": "registro",
+   "where": "Clientes › Nuevo cliente / Importar",
+   "desc": "El expediente con código automático, sus actividades, su perfil de obligaciones y sus vencimientos en el calendario."
+  },
+  {
+   "name": "Mapeo de columnas guardado",
+   "format": "registro",
+   "where": "Clientes › Importar",
+   "desc": "La relación columna-campo de un programa de origen, para reutilizarla en la próxima importación."
+  },
+  {
+   "name": "Invitación al portal del cliente",
+   "format": "correo",
+   "where": "Expediente › Portal y conectores",
+   "desc": "Correo para que el titular o un empleado del cliente elija su contraseña y entre en el portal."
+  },
+  {
+   "name": "Token de conector",
+   "format": "texto (token)",
+   "where": "Expediente › Portal y conectores",
+   "desc": "Clave que se enseña una sola vez para que el programa del cliente mande facturas, documentos o movimientos."
+  },
+  {
+   "name": "Petición de documentación",
+   "format": "aviso en el portal + correo",
+   "where": "Hoy y esta semana, Calendario fiscal y panel del vencimiento",
+   "desc": "Pide al cliente los papeles de un vencimiento y lo deja marcado como «Pedida»."
+  },
+  {
+   "name": "Recordatorios de vencimientos",
+   "format": "aviso",
+   "where": "Automático (campana del responsable)",
+   "desc": "Aviso al responsable a 15, 7, 3 y 1 días del final, el último día para domiciliar y cuando algo pasa a fuera de plazo."
+  },
+  {
+   "name": "Vencimientos exportados",
+   "format": "CSV",
+   "where": "Calendario fiscal › Exportar",
+   "desc": "Los vencimientos del rango y filtros con fecha límite, domiciliación, cliente, NIF, obligación, periodo, estado, responsable, resultado, importe y justificante."
+  },
+  {
+   "name": "Suscripción al calendario",
+   "format": "ICS",
+   "where": "Calendario fiscal › Suscribirme",
+   "desc": "Dirección secreta y revocable con tus vencimientos para Google Calendar, Outlook o el iPhone, con aviso 3 días y 1 día antes."
+  },
+  {
+   "name": "Avisos de la campana",
+   "format": "aviso",
+   "where": "Barra superior",
+   "desc": "Notificaciones de los módulos (plazos, radar normativo, documentos, conectores) con enlace a la pantalla que toca."
+  },
+  {
+   "name": "Historial del expediente",
+   "format": "registro de auditoría",
+   "where": "Expediente › Historial",
+   "desc": "Quién cambió qué y cuándo en el cliente, con el antes y el después; no se puede borrar."
+  },
+  {
+   "name": "Estado y justificante de cada vencimiento",
+   "format": "registro",
+   "where": "Panel del vencimiento, Hoy y esta semana, Calendario",
+   "desc": "Estado, resultado, importe, CSV o justificante y expediente de cambios de cada presentación."
+  },
+  {
+   "name": "Borrador de modelo",
+   "format": "registro (abre en Modelos)",
+   "where": "Expediente › Modelos › Preparar",
+   "desc": "Borrador del modelo de un periodo cerrado calculado con los libros de facturas del cliente."
+  }
+ ]
+}

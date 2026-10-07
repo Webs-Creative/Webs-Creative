@@ -1,0 +1,257 @@
+{
+ "hero": "capturas/principal/inicio-tu-dia.png",
+ "boveda_shots": [
+  {
+   "src": "capturas/boveda/boveda-8-detalle.png",
+   "url": "/boveda",
+   "caption": "La bóveda abierta: un certificado y el acceso a la AEAT de un cliente, con la contraseña oculta y el código de doble factor en vivo.",
+   "alt": "Bóveda con dos credenciales y el detalle de un acceso a la AEAT con su código TOTP"
+  },
+  {
+   "src": "capturas/boveda/boveda-3-kit.png",
+   "url": "/boveda",
+   "caption": "Al crear tu llave sale el Kit de emergencia con tu Clave secreta, para imprimirlo y guardarlo fuera del ordenador.",
+   "alt": "Asistente de la bóveda con el Kit de emergencia y la Clave secreta"
+  },
+  {
+   "src": "capturas/boveda/boveda-9-certificado.png",
+   "url": "/boveda",
+   "caption": "Guardar un certificado .p12: se lee en el navegador, se comprueba la contraseña y salen titular, NIF, emisor y caducidad.",
+   "alt": "Formulario de nuevo certificado digital con los datos leídos del fichero .p12"
+  },
+  {
+   "src": "capturas/boveda/boveda-11-registro.png",
+   "url": "/boveda",
+   "caption": "Registro encadenado: cada apertura y cada cambio con quién, cuándo, el cliente y la huella, con el botón para verificar la cadena.",
+   "alt": "Tabla del registro encadenado de la bóveda"
+  }
+ ],
+ "base": {
+  "meta": {
+   "title": "Guía de Gestoría Creative",
+   "description": "Guía completa de Gestoría Creative para asesorías y gestorías: cada sección del programa con capturas reales, qué hace, qué ves y qué genera.",
+   "icon": "marca/gestoria-creative-icono.svg",
+   "kicker": "Guía del programa · Octubre de 2026",
+   "headline_html": "La asesoría entera, <em>en un solo programa</em>",
+   "lead": "Clientes, obligaciones, documentos, bancos, modelos, correo, normativa y el portal de tus clientes. Esta guía recorre cada sección con capturas reales y te cuenta qué hace, qué ves y qué genera.",
+   "cover_meta": [
+    [
+     "Para",
+     "asesorías y gestorías"
+    ],
+    [
+     "Versión",
+     "octubre de 2026"
+    ],
+    [
+     "Hecho por",
+     "Webs Creative"
+    ]
+   ],
+   "hero_alt": "Panel de inicio de Gestoría Creative en tema oscuro, con la lista «Tu día» de lo más urgente",
+   "url_base": "https://gestion.tu-asesoria.es"
+  },
+  "intro": {
+   "eyebrow": "Qué es",
+   "title": "Un programa web hecho para el trabajo de una asesoría",
+   "paragraphs": [
+    "Gestoría Creative reúne en una sola aplicación el expediente de cada cliente, su perfil de obligaciones, el calendario fiscal, los documentos, los bancos y la conciliación, los modelos tributarios, el correo del despacho, el radar normativo y un portal para tus clientes.",
+    "Se instala en el hosting de tu despacho con un **pago único**. Los datos de tus clientes se quedan en tu servidor. Una tarea programada hace el trabajo de fondo: lee los boletines oficiales, prepara los borradores de los modelos, concilia lo que es seguro y te avisa de lo urgente.",
+    "Cada sección de esta guía tiene tres bloques. **Qué hace** explica el trabajo que te quita. **Qué ves** describe la pantalla. **Qué genera** lista lo que sale de ella: ficheros, documentos, avisos y registros.",
+    "Las capturas son de la instalación de demostración, con 40 clientes ficticios de «Asesoría Ejemplo». Nombres, NIF, importes y actos del BORME son inventados."
+   ],
+   "facts": [
+    [
+     "594",
+     "obligaciones en el catálogo, de fiscales a locales, con sus plazos"
+    ],
+    [
+     "11",
+     "modelos que se calculan solos: 303, 130, 111, 115, 349, 347, 390, 180, 190, 202 y 309"
+    ],
+    [
+     "8",
+     "formatos de extracto bancario, de la Norma 43 al camt.053"
+    ],
+    [
+     "82",
+     "recetas de automatización «cuando pase esto, haz esto otro»"
+    ],
+    [
+     "3.497",
+     "actividades de la CNAE-2025, la CNAE-2009 y el IAE"
+    ],
+    [
+     "15",
+     "programas de facturación de tus clientes que se conectan hoy"
+    ]
+   ]
+  },
+  "bands_before": [
+   {
+    "id": "como-encaja",
+    "eyebrow": "Cómo encaja todo",
+    "title": "Lo que entra, lo que hace el programa y lo que sale",
+    "paragraphs": [
+     "Todo lo que llega al despacho entra por un sitio conocido y acaba en el expediente de su cliente. Desde ahí, cada módulo usa lo que ya está dentro: las facturas registradas alimentan los modelos y la conciliación, y los modelos presentados avisan a Obligaciones y a Bancos."
+    ],
+    "trio": [
+     [
+      "t-ves",
+      "Entra",
+      [
+       "Fotos, PDF y facturas XML que sube el cliente desde su portal o su móvil.",
+       "Correos de los buzones del despacho, con sus adjuntos.",
+       "Facturas de los programas de tus clientes: Holded, Dolibarr, FacturaScripts, Odoo o Excel.",
+       "Extractos del banco en Norma 43, camt.053, MT940, OFX, CSV o Excel.",
+       "Boletines oficiales: BOE, BORME, AEAT, Boletín RED, DOUE y autonómicos."
+      ]
+     ],
+     [
+      "t-hace",
+      "Trabaja",
+      [
+       "Expediente de cada cliente con su perfil de obligaciones calculado por actividad y situación.",
+       "Lectura, clasificación y comprobación de cada documento, con cotejo del QR con la AEAT.",
+       "Conciliación bancaria nocturna con prueba de identidad y explicación de cada propuesta.",
+       "Borradores de los modelos con cada casilla trazada hasta sus facturas.",
+       "Automatizaciones y radar normativo que cruzan cada novedad con tu cartera."
+      ]
+     ],
+     [
+      "t-gen",
+      "Sale",
+      [
+       "Borradores en PDF y ficheros en formato BOE para importar en la Sede.",
+       "Declaraciones revisadas y aprobadas por el cliente desde su portal.",
+       "Facturas registradas en el libro y cobros y pagos conciliados.",
+       "Avisos y recordatorios al equipo y al cliente, con su plazo.",
+       "Registro de auditoría de cada acceso y cada cambio."
+      ]
+     ]
+    ]
+   }
+  ],
+  "toc_title": "Las secciones del programa",
+  "toc_lead": "El orden sigue el menú lateral de la aplicación. Al final están el portal del cliente, todo lo que genera el programa, la seguridad y la instalación.",
+  "bands_after": [
+   {
+    "id": "seguridad",
+    "eyebrow": "Seguridad y protección de datos",
+    "title": "Tus datos, en tu servidor y bajo llave",
+    "paragraphs": [
+     "Gestoría Creative se instala en tu propio hosting. No depende de servicios externos para funcionar: todas las librerías se sirven desde tu servidor. Solo sale información si tú activas la inteligencia artificial, y entonces se seudonimiza por defecto."
+    ],
+    "trio": [
+     [
+      "t-hace",
+      "Acceso",
+      [
+       "Contraseñas guardadas con hash seguro y bloqueo de la cuenta tras varios intentos fallidos.",
+       "Verificación en dos pasos (TOTP) con códigos de recuperación, obligatoria para todo el equipo si lo decides.",
+       "53 permisos por rol; cada asesor puede ver solo sus clientes y cada cliente, solo sus empresas.",
+       "Token CSRF en cada cambio, cierre por inactividad y cabeceras de seguridad (CSP, HSTS con HTTPS)."
+      ]
+     ],
+     [
+      "t-ves",
+      "Datos y ficheros",
+      [
+       "Contraseñas de correo, claves de la IA y credenciales de conectores cifradas con AES-256-GCM.",
+       "Ficheros fuera de la carpeta pública, con comprobación del tipo real y huella SHA-256.",
+       "Antivirus ClamAV opcional para lo que suben los clientes.",
+       "Auditoría de accesos y cambios campo a campo, exportable a Excel o CSV."
+      ]
+     ],
+     [
+      "t-gen",
+      "Bóveda e IA",
+      [
+       "Bóveda con cifrado de extremo a extremo en el navegador: ni el servidor ni Webs Creative pueden leerla.",
+       "Registro encadenado de aperturas y cambios, verificado cada día.",
+       "La IA seudonimiza NIF, IBAN, correos, teléfonos y nombres antes de enviar nada.",
+       "Cada llamada a la IA queda registrada con su coste, sin guardar el contenido enviado."
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "instalacion",
+    "eyebrow": "Instalación y requisitos",
+    "title": "Se instala en tu hosting en unos minutos",
+    "paragraphs": [
+     "No necesita Docker, Node ni procesos permanentes: solo PHP y una tarea programada cada minuto. La instalación está documentada paso a paso para un hosting con Plesk."
+    ],
+    "trio": [
+     [
+      "t-ves",
+      "Lo que necesitas",
+      [
+       "PHP 8.1 a 8.4 con pdo_mysql, zip, openssl, mbstring, gd, curl, fileinfo, dom y xml.",
+       "MySQL 5.7 o superior, o MariaDB 10.3 o superior: la base de datos de tu propio hosting.",
+       "Un dominio o subdominio con HTTPS; el certificado Let's Encrypt de Plesk vale.",
+       "memory_limit de 256 MB y un tamaño de subida de 25 MB o más."
+      ]
+     ],
+     [
+      "t-hace",
+      "Cómo se instala",
+      [
+       "Creas la base de datos en Plesk y subes y extraes el ZIP en la carpeta del dominio.",
+       "Abres /instalar: comprueba el servidor y pide la base de datos, los datos del despacho y el primer administrador.",
+       "Creas la tarea programada cada minuto con la orden que te da Ajustes › Sistema.",
+       "Configuras el correo SMTP, envías una prueba y activas el 2FA obligatorio."
+      ]
+     ],
+     [
+      "t-gen",
+      "Copias y actualizaciones",
+      [
+       "La copia se hace desde Plesk: exportas la base de datos y copias la carpeta almacen/.",
+       "Para actualizar, extraes el ZIP nuevo encima sin borrar almacen/ y aplicas las migraciones.",
+       "Si quieres enseñarlo antes, el instalador carga 40 clientes de demostración en segundos.",
+       "El despacho y el portal se instalan como app (PWA) en el móvil y el ordenador."
+      ]
+     ]
+    ]
+   }
+  ],
+  "closing": {
+   "headline_html": "¿Lo vemos <em>en tu despacho</em>?",
+   "lead": "Pídenos una demostración: te enseñamos el programa funcionando y vemos contigo cómo instalarlo en el hosting de tu despacho.",
+   "contacts": [
+    [
+     "Web",
+     "webscreative.es"
+    ],
+    [
+     "Correo",
+     "info@webscreative.es"
+    ],
+    [
+     "Teléfono y WhatsApp",
+     "608 567 883"
+    ]
+   ],
+   "legal": "Gestoría Creative · © 2026 Webs Creative LLC. Todos los derechos reservados. Las capturas son de una instalación de demostración con datos ficticios. Funciones descritas según la versión de octubre de 2026."
+  }
+ },
+ "portal_extra_shots": {
+  "portal-cliente": [
+   {
+    "src": "capturas/boveda/portal-deposito-certificado.png",
+    "url": "/boveda/deposito",
+    "caption": "Envío seguro: el cliente elige su certificado, se comprueba en su navegador y se cifra antes de salir hacia tu bóveda.",
+    "alt": "Pantalla de envío seguro del portal con un certificado comprobado"
+   }
+  ]
+ },
+ "outputs_skip": [
+  "Petición de documentación",
+  "Token de conector",
+  "Vencimientos exportados"
+ ],
+ "outputs_where": {
+  "Exportación de vencimientos": "Campañas › Exportar y Calendario fiscal › Exportar"
+ }
+}

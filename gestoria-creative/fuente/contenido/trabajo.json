@@ -1,0 +1,488 @@
+{
+ "group": "Trabajo diario",
+ "group_desc": "Las pantallas donde el despacho trabaja cada día: campañas de vencimientos, borradores de los modelos, correo, novedades normativas y la bóveda de credenciales de los clientes.",
+ "modules": [
+  {
+   "id": "campanas",
+   "title": "Campañas",
+   "menu": "Trabajo diario › Campañas",
+   "lead": "Reúne un periodo de uno o varios modelos para toda la cartera, como «Trimestre 3T 2026». Ves de un vistazo quién lleva cada cliente, qué falta y cuánto queda para el plazo.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/campanas.png",
+     "url": "/#/campanas",
+     "caption": "Campañas abiertas con su avance y, arriba, las que conviene abrir ahora.",
+     "alt": "Pantalla Campañas con dos campañas sugeridas (mensuales de septiembre y octubre de 2026) y dos abiertas: Trimestre 3T 2026 al 47 % y 202 2.º pago 2026 al 35 %."
+    },
+    {
+     "src": "capturas/trabajo/campana-tablero.png",
+     "url": "/#/campanas/1",
+     "caption": "Tablero de la campaña: progreso por modelo, recuento por estado, reparto por asesor y ritmo de presentaciones.",
+     "alt": "Campaña Trimestre 3T 2026 con indicador de progreso del 47 %, barras por modelo (303, 111, 115, 130, 349, 131, 123), contadores por estado, gráfico 3D por responsable y avance de tres asesores."
+    },
+    {
+     "src": "capturas/trabajo/campana-lista.png",
+     "url": "/#/campanas/1",
+     "caption": "Lista de vencimientos con dos elegidos: aparece la barra de cambios en bloque.",
+     "alt": "Filtros de la campaña y barra con 2 elegidos y los botones En preparación, Listos, Presentados, No procede, Asignar a, Papeles recibidos y Pedir documentación, sobre la lista de vencimientos."
+    },
+    {
+     "src": "capturas/trabajo/campana-vencimiento.png",
+     "url": "/#/campanas/1",
+     "caption": "Panel de un vencimiento: plazo, estado, resultado, documentación del cliente y responsable.",
+     "alt": "Panel lateral del 303 del 3T 2026 de Construcciones Arlanza SL: vence el 20 de octubre, domiciliación hasta el 15, estado Pendiente, documentación pedida al cliente y pago domiciliado."
+    }
+   ],
+   "hace": [
+    "Agrupa en un solo tablero los vencimientos de un periodo, por ejemplo el 303, 111, 115, 130 y 349 del 3T, de todos tus clientes.",
+    "Te propone las campañas que conviene abrir, con los periodos cuyo plazo acaba en las próximas semanas, y las abre con un clic.",
+    "Te deja crear una campaña a medida eligiendo ejercicio, periodo (1T a 4T, un mes, 0A o los pagos 1P a 3P) y obligaciones.",
+    "Cambia en bloque el estado, el responsable o la documentación de los vencimientos que elijas.",
+    "Pide la documentación a varios clientes a la vez con un aviso en su portal y un correo.",
+    "Pone sola el estado «Fuera de plazo» y recibe el «Presentado» cuando registras la presentación en Modelos.",
+    "Recuerda a cada responsable lo que vence a 15, 7, 3 y 1 días del final, y al cliente solo si el despacho lo activa."
+   ],
+   "ves": [
+    "Una tarjeta por campaña con su porcentaje, los modelos que incluye, una barra de colores por estado y lo que queda por hacer.",
+    "La fecha límite del plazo, la de domiciliar el pago y los días que quedan.",
+    "Contadores por estado: fuera de plazo, pendiente, en preparación, listo para presentar, presentado y no procede.",
+    "Un gráfico 3D de quién lleva qué, el avance de cada asesor y el ritmo de presentaciones por día.",
+    "Filtros por cliente, NIF, obligación y estado, «Solo lo mío» y «En riesgo», en lista o en tablero por columnas.",
+    "Cada fila con semáforo de riesgo, modelo, cliente, NIF, documentación, importe, pago domiciliado, estado y responsable.",
+    "La ficha de cada vencimiento con resultado, importe, justificante o CSV, notas, periodos anteriores y el historial de cambios."
+   ],
+   "genera": [
+    "Exportación CSV de los vencimientos con fecha límite, cliente, NIF, obligación, periodo, estado, documentación, responsable, resultado, importe y justificante.",
+    "Avisos de recordatorio al responsable, agrupados por tramo de días, y también por correo si lo tiene activado en su perfil.",
+    "Aviso en el portal y correo al cliente cuando le pides la documentación, que queda como «Pedida al cliente».",
+    "Aviso el último día para presentar domiciliando y aviso único de lo que se ha quedado fuera de plazo.",
+    "Historial de cada vencimiento con quién cambió el estado, la documentación, el responsable o el resultado."
+   ],
+   "tip": "Activa «Solo lo mío» y «En riesgo» a primera hora: verás lo tuyo que vence pronto o que aún espera la documentación del cliente."
+  },
+  {
+   "id": "modelos-campana",
+   "title": "Modelos tributarios",
+   "menu": "Trabajo diario › Modelos",
+   "lead": "Prepara solos los borradores de los modelos de cada cliente al terminar el periodo, calculados con su libro de facturas. Aquí ves un modelo y un periodo para toda la cartera y trabajas en bloque.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/modelos-campana.png",
+     "url": "/#/modelos?modelo=303&periodo=2026-3T",
+     "caption": "Campaña del 303 del 3T 2026: estados, plazo, fecha para domiciliar e importes de toda la cartera.",
+     "alt": "Pantalla Modelos tributarios con fichas de campañas abiertas (303, 130, 111, 115), la ficha grande del 303 3T 2026 con 13 días de plazo y los indicadores A ingresar 51.255 €, A devolver o compensar 6085 €, Avance 31 % y Necesitan atención 2."
+    },
+    {
+     "src": "capturas/trabajo/modelos-tabla.png",
+     "url": "/#/modelos?modelo=303&periodo=2026-3T",
+     "caption": "Clientes de la campaña con su estado, resultado y seguimiento; al elegir varios salen las acciones en bloque.",
+     "alt": "Tabla de clientes del 303 con filtros por estado y dos clientes elegidos; barra con Recalcular, Marcar revisados, Enviar al cliente y Ficheros para la Sede."
+    }
+   ],
+   "hace": [
+    "Calcula los borradores del 303, 130, 111, 115, 349, 347, 390, 180, 190, 202 y 309 con el libro de facturas de cada cliente.",
+    "La tarea programada los prepara sola al terminar cada periodo, para los clientes que presentan ese modelo y mientras el plazo siga abierto.",
+    "Salta lo que en Obligaciones ya figura como «no procede», «presentado» o «domiciliado».",
+    "Vuelve a comprobar el borrador cuando se guarda o anula una factura o se concilia un cobro, y recalcula solo lo que aún no está revisado.",
+    "Te deja preparar los que faltan, recalcular, marcar como revisados y enviar al cliente varios borradores a la vez.",
+    "Aplica los criterios de cálculo del despacho, como devengo o expedición, retenciones por fecha de pago o umbral del 347, salvo en clientes con criterios propios."
+   ],
+   "ves": [
+    "Una ficha por cada campaña abierta, por modelo y periodo, con los días que quedan y cuántos están hechos.",
+    "El selector de modelo y periodo, la barra de estados y la cuenta atrás hasta el plazo con la fecha límite para domiciliar.",
+    "Cuatro indicadores: total a ingresar, a devolver o compensar, avance de la campaña y borradores que necesitan atención.",
+    "Filtros por estado: pendientes, sin preparar, borradores, revisados, en el cliente, aprobados, presentados, con errores, con cambios y con preguntas.",
+    "Cada cliente con su estado, marcas de errores, cambios en el libro o preguntas sin contestar, el resultado y el seguimiento.",
+    "Un aviso cuando la AEAT publica un diseño de registro distinto del que sigue la aplicación, con enlace a la Sede."
+   ],
+   "genera": [
+    "ZIP con los ficheros para la Sede de los borradores elegidos, hasta 500, y un LEEME.txt con avisos y lo que no se ha podido generar.",
+    "Aviso en el portal del cliente, «Tu modelo está listo para revisar», cada vez que le envías un borrador.",
+    "Una versión nueva del borrador cada vez que cambia lo que se declara, sin borrar las anteriores.",
+    "Avisos al asesor cuando cambia un borrador ya enviado o aprobado, cuando el cliente lo aprueba y cuando pregunta."
+   ],
+   "tip": "Filtra por «Con cambios» antes de enviar nada: son los borradores cuyas facturas o cobros han cambiado desde el último cálculo."
+  },
+  {
+   "id": "modelos-borrador",
+   "title": "Borrador de un modelo",
+   "menu": "Trabajo diario › Modelos › abrir un cliente",
+   "lead": "Cada borrador enseña las casillas del impreso con su explicación y las facturas que las forman. Lo revisas, lo envías al cliente y, después de presentarlo tú en la Sede, registras aquí el justificante.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/modelo-borrador.png",
+     "url": "/#/modelos/9",
+     "caption": "Borrador del 303 del 3T 2026 enviado al cliente: pasos del trabajo, casillas del IVA devengado y resultado a ingresar.",
+     "alt": "Borrador del modelo 303 3T 2026 de Panadería La Espiga Dorada SL con los pasos Borrador, Revisado y Enviado hechos, casillas 01 a 15 con sus importes, 161,20 € a ingresar y la tarjeta Siguiente paso."
+    },
+    {
+     "src": "capturas/trabajo/modelo-casilla.png",
+     "url": "/#/modelos/9",
+     "caption": "Detalle de una casilla: explicación, valor del periodo anterior, facturas que la forman y ajuste a mano con motivo.",
+     "alt": "Panel de la casilla 07, base imponible al 21 %, con 2199,96 €, el valor del 2T 2026, tres facturas y el formulario Ajustar a mano con motivo obligatorio."
+    },
+    {
+     "src": "capturas/trabajo/modelo-fichero.png",
+     "url": "/#/modelos/9",
+     "caption": "Pestaña «Fichero para la Sede»: el fichero cuadra con el diseño de registro y está listo para descargar.",
+     "alt": "Casillas de resultado 64, 66, 69 y 71 y la pestaña Fichero para la Sede con el aviso Cuadra con el diseño de registro, fichero B95030532_303_20263T.txt de 3767 posiciones y botón Descargar el fichero."
+    },
+    {
+     "src": "capturas/trabajo/modelo-pdf.png",
+     "url": "/#/modelos/9",
+     "caption": "Primera página del PDF que genera el botón «PDF», con la marca de agua de borrador.",
+     "alt": "PDF del modelo 303 del 3T 2026 con NIF, razón social, estado Enviado al cliente, resultado 161,20 € a ingresar, plazo hasta el 20/10/2026 y las casillas del IVA devengado."
+    }
+   ],
+   "hace": [
+    "Calcula cada casilla y guarda de dónde sale: las facturas que la forman, la regla aplicada con su artículo y la fórmula si es un total.",
+    "Pasa comprobaciones como NIF que faltan o no válidos, facturas duplicadas, tipos de IVA que no cuadran o un resultado muy distinto del periodo anterior.",
+    "Te deja ajustar una casilla con motivo obligatorio, poner datos que no salen del libro y clasificar facturas sin tocar el libro.",
+    "Sigue los pasos borrador, revisado, enviado, aprobado y presentado, o «no se presenta» con su motivo.",
+    "Recoge la aprobación del cliente desde su portal, o la que te da por teléfono, correo o en persona.",
+    "Registra la presentación con fecha, CSV, NRC, importe y justificante, y lo pasa a Obligaciones y a Bancos.",
+    "Si cambian facturas de un periodo ya presentado, no toca lo presentado: guarda cómo saldría ahora y te avisa por si hace falta una complementaria."
+   ],
+   "ves": [
+    "La cabecera con el cliente, el NIF, el enlace a su expediente y los botones PDF, Fichero y Recalcular.",
+    "Los pasos del trabajo y un aviso cuando han cambiado facturas o cobros desde el último cálculo.",
+    "Las casillas por secciones con su número, importe y número de facturas; las que están a cero se ocultan salvo que las pidas.",
+    "El resultado con los días que quedan y una comparación con el periodo anterior y el mismo del año pasado.",
+    "La tarjeta «Siguiente paso» y la tarjeta de pago para domiciliar con una cuenta del cliente.",
+    "Pestañas de comprobaciones, datos a mano y ajustes, conversación con el cliente, versiones y fichero para la Sede."
+   ],
+   "genera": [
+    "PDF del borrador con datos del contribuyente, resultado, casillas y tablas de detalle, con marca de agua «BORRADOR» hasta que se presenta.",
+    "Fichero en formato BOE (TXT en ISO-8859-1) para importar en la Sede: 303, 130, 111, 115, 349, 347, 180 y 190.",
+    "El 390, el 202 y el 309 se calculan, pero aún no tienen fichero: el borrador trae las casillas para copiarlas en el formulario de la Sede.",
+    "Registro de la aprobación con quién, cuándo, desde dónde y qué versión, sellado para detectar cambios.",
+    "Registro de la presentación, que marca el vencimiento en Obligaciones y deja en Bancos el cargo o la devolución esperados por el NRC.",
+    "Mensajes al cliente en la conversación del borrador, que le llegan como aviso a su portal."
+   ],
+   "tip": "Antes de enviar un borrador, abre «Comprobaciones»: los errores salen primero y algunos se arreglan con un clic, como «Es un bien de inversión»."
+  },
+  {
+   "id": "correo",
+   "title": "Correo",
+   "menu": "Trabajo diario › Correo",
+   "lead": "Lleva los buzones personales y compartidos del despacho dentro de la aplicación. Cada conversación se une al expediente de su cliente y los adjuntos pasan a Documentos con un botón.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/correo-bandeja.png",
+     "url": "/#/correo",
+     "caption": "Bandeja de tres paneles con vistas inteligentes, buzones, etiquetas y cada conversación marcada con su cliente, tipo y riesgo.",
+     "alt": "Bandeja de entrada con 16 conversaciones: facturas de la Panadería La Espiga Dorada, un requerimiento urgente de Construcciones Arlanza, una solicitud de presupuesto y un aviso de la Agencia Tributaria marcado como posible fraude."
+    },
+    {
+     "src": "capturas/trabajo/correo-conversacion.png",
+     "url": "/#/correo?hilo=4",
+     "caption": "Conversación abierta: estado, responsable, etiquetas, adjuntos con «A Documentos» y notas internas.",
+     "alt": "Conversación Facturas a Portugal y el modelo 349, por atender y asignada a Javier Ruiz Calvo, con dos facturas adjuntas, botones Responder y Reenviar y una nota interna sobre los NIF-IVA comprobados en el VIES."
+    },
+    {
+     "src": "capturas/trabajo/correo-reglas.png",
+     "url": "/#/correo/ajustes",
+     "caption": "Ajustes del correo › Reglas: lo que se hace solo con cada correo que llega.",
+     "alt": "Pestaña Reglas con dos reglas activas: facturas de clientes a la bandeja de documentos, aplicada 37 veces, y boletines con etiqueta y marcados como leídos, aplicada 112 veces."
+    },
+    {
+     "src": "capturas/trabajo/correo-plantillas.png",
+     "url": "/#/correo/ajustes",
+     "caption": "Ajustes del correo › Plantillas del despacho, agrupadas por categoría.",
+     "alt": "Pestaña Plantillas con 16 plantillas: Aviso de correos falsos, Requerimiento próximos pasos, Bienvenida al despacho, Propuesta de cita, Respuesta a una consulta y Respuesta a una solicitud de presupuesto."
+    }
+   ],
+   "hace": [
+    "Conecta buzones por IMAP y SMTP con contraseña, o con Google y Microsoft sin darla, y propone la configuración a partir de la dirección.",
+    "Trae el correo cada minuto sin marcar nada como leído y sin borrar nunca nada en el servidor.",
+    "Une cada conversación a su cliente por la dirección exacta de un contacto o por su dominio propio, nunca por dominios gratuitos.",
+    "Clasifica lo que llega con reglas explicables: requerimiento, notificación, facturas, consulta, cita, laboral, pagos, posible cliente o boletín, y su urgencia.",
+    "Detecta suplantaciones de Hacienda, la Seguridad Social o bancos y cambios de cuenta, y en los de riesgo alto desactiva enlaces e imágenes.",
+    "Aplica reglas «si… entonces…» del despacho o de cada persona: etiquetar, asignar, mover, mandar facturas a Documentos o preparar un borrador con plantilla.",
+    "Con la IA activada, clasifica, resume y propone respuestas, pero nunca envía nada ni asocia clientes por su cuenta."
+   ],
+   "ves": [
+    "Vistas inteligentes: bandeja de entrada, para mí, sin asignar, de clientes, con facturas, esperando respuesta, pospuestos, destacados y posibles fraudes.",
+    "La lista de conversaciones con el cliente, la etiqueta, si es urgente y si trae facturas o adjuntos.",
+    "Cada conversación con su estado, responsable, etiquetas y prioridad, los botones Hecho, Posponer, Responder y Reenviar, y las notas internas.",
+    "Los adjuntos con vista previa, descarga y el botón «A Documentos».",
+    "En Ajustes, las pestañas de buzones, reglas con las veces que se han aplicado, plantillas por categoría y ajustes del despacho.",
+    "Atajos de teclado: J y K para moverte, R para responder, E para darla por hecha y / para buscar."
+   ],
+   "genera": [
+    "Correos enviados por el SMTP del buzón, con un margen para deshacer de 0 a 30 segundos y envío programado.",
+    "Respuestas con plantillas que se rellenan solas con datos del cliente y sus plazos, como {{cliente.nombre}}.",
+    "Adjuntos en la bandeja de Documentos para leerlos y registrarlos, y las facturas de clientes conocidos de forma automática si lo activas.",
+    "Notas internas con menciones que solo ve el despacho.",
+    "La pestaña «Correo» del expediente de cada cliente, con todas sus conversaciones."
+   ],
+   "tip": "Si un cliente te reenvía un correo sospechoso «de Hacienda», contéstale con la plantilla «Aviso de correos falsos»."
+  },
+  {
+   "id": "normativa",
+   "title": "Radar normativo",
+   "menu": "Trabajo diario › Normativa",
+   "lead": "Lee cada día los boletines oficiales, clasifica cada novedad y la cruza con tu cartera. Solo avisa a los asesores de los clientes a los que afecta.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/normativa-novedades.png",
+     "url": "/#/normativa",
+     "caption": "Cabecera con la salud de las fuentes, indicadores del radar y pulso normativo por ámbito y semana.",
+     "alt": "Radar normativo con 26 fuentes y una con problemas, BOE del 06/10/2026, botón Consultar ahora, indicadores 69 pendientes, 22 importantes, 40 clientes afectados y 4 por convalidar, y gráfico 3D por ámbito."
+    },
+    {
+     "src": "capturas/trabajo/normativa-lista.png",
+     "url": "/#/normativa",
+     "caption": "Lista de novedades con filtros por estado, fuente, situación y territorio, y los clientes afectados de cada norma.",
+     "alt": "Filtros por fuente (BOE, AEAT, RED, DOUE, Diseños AEAT, autonómicos) y novedades del BOE con su rango, ámbitos, CNAE, territorio y número de clientes, junto a gráficos por sector y por día."
+    },
+    {
+     "src": "capturas/trabajo/normativa-ficha.png",
+     "url": "/#/normativa?estado=todas&id=30",
+     "caption": "Ficha de una norma: situación, historia y lo que cambia.",
+     "alt": "Ficha del Real Decreto-ley 26/2026 con la marca Derogada por Resolución del Congreso, nota Afecta a 40 clientes, botones Leer en BOE, PDF y Borrador de circular, y la historia de la norma."
+    },
+    {
+     "src": "capturas/trabajo/normativa-ficha-clientes.png",
+     "url": "/#/normativa?estado=todas&id=30",
+     "caption": "Parte baja de la ficha: propuesta del catálogo, norma en tramitación que encaja y clientes afectados con el motivo.",
+     "alt": "Ficha con el sector CNAE M, una propuesta de cambio del catálogo rechazada, la norma en tramitación Vivienda: alquiler y vivienda asequible y la lista de 40 clientes afectados con su modelo y su asesor."
+    }
+   ],
+   "hace": [
+    "Lee el BOE, el BORME, la legislación consolidada, las novedades de la AEAT, el Boletín RED, el DOUE y los boletines autonómicos de tus comunidades.",
+    "Clasifica cada novedad por ámbito, modelos citados, materias, sectores CNAE, comunidad y rango, con reglas explicables y una puntuación de relevancia.",
+    "Calcula a qué clientes afecta y por qué: su actividad, los modelos que presenta, su comunidad o, en normas laborales generales, tener trabajadores.",
+    "Avisa una sola vez a los asesores y equipos de los clientes afectados, aunque la norma salga en dos boletines.",
+    "Sigue la historia de cada norma y da por derogado el decreto-ley que no se convalida en plazo.",
+    "Trabaja solo con la tarea programada, que cada 5 minutos lee las fuentes a las que les toca; «Consultar ahora» lo adelanta."
+   ],
+   "ves": [
+    "Indicadores de pendientes de revisar, importantes de los últimos 30 días, clientes afectados y decretos-leyes por convalidar.",
+    "El pulso normativo en 3D por ámbito y semana, el recuento por ámbitos y gráficos por sector y por día.",
+    "Cada novedad con su fuente, fecha, rango, situación, ámbitos, modelos, CNAE, territorio y número de clientes afectados.",
+    "Filtros por estado, «Mis clientes», «Importantes», fuente, situación de la norma y territorio, y un buscador.",
+    "La ficha con la historia de la norma, lo que modifica, por qué te la mostramos y las obligaciones y sectores que toca.",
+    "Los clientes afectados con el motivo y su asesor, y un campo de notas del despacho."
+   ],
+   "genera": [
+    "Avisos a los asesores de los clientes afectados por una novedad relevante.",
+    "El estado de revisión de cada novedad (pendiente, revisada, aplicada o descartada), con quién la revisó y sus notas.",
+    "Borrador de circular para tus clientes, redactado con IA si está activa o con plantilla, para revisarlo y copiarlo.",
+    "Las novedades de cada cliente en la pestaña «Normativa» de su expediente.",
+    "Enlaces al texto oficial y al PDF de cada norma."
+   ],
+   "tip": "Empieza el día con «Mis clientes» e «Importantes» activados, y marca cada novedad como revisada o aplicada para que deje de salir en «Tu día»."
+  },
+  {
+   "id": "normativa-borme-fuentes",
+   "title": "Radar normativo: BORME, catálogo y fuentes",
+   "menu": "Trabajo diario › Normativa (pestañas)",
+   "lead": "Las otras pestañas del radar vigilan el Registro Mercantil de tus sociedades, proponen cambios en el catálogo de obligaciones y te dicen si cada fuente se lee bien.",
+   "shots": [
+    {
+     "src": "capturas/trabajo/normativa-borme.png",
+     "url": "/#/normativa?vista=borme",
+     "caption": "BORME de clientes: actos de las sociedades de la cartera, cotejados por NIF o por denominación. Los actos de la demostración son inventados.",
+     "alt": "Pestaña BORME de clientes con un concurso de Talleres Metálicos Burgaleses SL y una convocatoria de junta de Bodegas Ribera Alta SA, emparejados por denominación, con notas y botones Descartar y Revisado."
+    },
+    {
+     "src": "capturas/trabajo/normativa-propuestas.png",
+     "url": "/#/normativa?vista=propuestas",
+     "caption": "Propuestas del catálogo: el radar propone y el despacho acepta o rechaza con motivo.",
+     "alt": "Pestaña Propuestas del catálogo con 10 pendientes, filtros por tipo (modelo nuevo, cambio de plazo, diseño de registro, fecha de entrada en vigor, base legal modificada o derogada, calendario oficial) y botones Aceptar y Rechazar."
+    },
+    {
+     "src": "capturas/trabajo/normativa-tramitacion.png",
+     "url": "/#/normativa?vista=tramitacion",
+     "caption": "Normas en tramitación que sigue el despacho y las novedades que encajan con cada una.",
+     "alt": "Pestaña En tramitación con tres normas seguidas, entre ellas Vivienda: alquiler y vivienda asequible con 5 novedades que encajan, y el botón Seguir otra norma."
+    },
+    {
+     "src": "capturas/trabajo/normativa-fuentes.png",
+     "url": "/#/normativa?vista=fuentes",
+     "caption": "Fuentes y ajustes: salud de cada fuente con su última y próxima lectura, y aviso de la que falla.",
+     "alt": "Pestaña Fuentes y ajustes con 26 fuentes vigiladas, 25 al día, 1 con problemas (DOCM), 19 comunidades vigiladas, botón Reintentar ahora y tarjetas de BOE, BORME y AEAT."
+    }
+   ],
+   "hace": [
+    "Coteja cada día los actos del BORME de las provincias de tus sociedades con la cartera, por NIF si el anuncio lo trae o por denominación.",
+    "Avisa al asesor de cambios de administradores, domicilio, capital o denominación, fusiones, disoluciones, concursos y convocatorias de junta.",
+    "Propone altas de modelos, cambios de plazo, diseños de registro nuevos, fechas de entrada en vigor y bases legales modificadas o derogadas.",
+    "Nunca cambia el catálogo de obligaciones por su cuenta: al aceptar una propuesta, Obligaciones la aplica o deja revisiones a los responsables.",
+    "Compara cada novedad con las normas en tramitación que sigues y avisa a quien revisa cuando encaja.",
+    "Reintenta sola la fuente que falla, cada vez con más espera, sin parar las demás."
+   ],
+   "ves": [
+    "Los actos del BORME por revisar, revisados o descartados, con el tipo de acto, la provincia, el asesor y cómo se ha emparejado.",
+    "Las propuestas pendientes, aceptadas y rechazadas, filtradas por tipo y con las obligaciones a las que afectan.",
+    "Una tarjeta por norma en tramitación con su estado y las novedades que encajan.",
+    "Indicadores de fuentes vigiladas, al día, con problemas y comunidades vigiladas, y una tarjeta por fuente con su última y próxima lectura.",
+    "Las condiciones de reutilización de cada fuente oficial."
+   ],
+   "genera": [
+    "Avisos al asesor de cada acto del BORME de sus clientes.",
+    "El registro de propuestas decididas, que sirve de historial de cambios del catálogo con su norma de origen.",
+    "Avisos a quien revisa cuando una novedad encaja con una norma en tramitación.",
+    "Avisos a quien configura cuando una fuente cambia de formato o lleva más de un día sin responder.",
+    "Avisos en Modelos cuando la AEAT publica un diseño de registro distinto del que sigue la aplicación."
+   ],
+   "tip": "En «Fuentes y ajustes» puedes apagar fuentes concretas y elegir qué comunidades vigilar; por defecto, las de los códigos postales de tus clientes."
+  },
+  {
+   "id": "boveda",
+   "title": "Bóveda de credenciales y certificados",
+   "menu": "Trabajo diario › Bóveda",
+   "lead": "Guarda los certificados digitales de tus clientes con su contraseña, sus accesos a la AEAT, la Seguridad Social o la banca y sus códigos de doble factor. Todo se cifra en tu navegador: ni el servidor ni Webs Creative pueden leerlo.",
+   "shots": [],
+   "hace": [
+    "Guarda siete tipos de elemento: accesos, certificados .p12 o .pfx, banca electrónica, claves de API, apoderamientos, documentos seguros y notas seguras.",
+    "Cifra y firma cada elemento en tu navegador con AES-256-GCM; el servidor y las copias de seguridad solo ven datos cifrados.",
+    "Lee el certificado al guardarlo, comprueba su contraseña y saca titular, NIF, emisor, tipo y caducidad sin descifrar nunca su llave privada.",
+    "Pide contraseña maestra, Clave secreta y código de doble factor en cada apertura; por eso necesita HTTPS y la verificación en dos pasos activada.",
+    "Reparte la llave de recuperación del despacho entre varios socios, por ejemplo 2 de 3, y cada uso avisa a todos los administradores.",
+    "Solo abre cada credencial quien tiene acceso; si alguien deja de llevar a un cliente, pierde el acceso a sus credenciales.",
+    "Frena las aperturas masivas, avisa del uso fuera de horario, se bloquea por inactividad y tiene un botón de pánico que cierra todas las sesiones."
+   ],
+   "ves": [
+    "La lista de credenciales con filtros: del despacho, caducan pronto, para cambiar, recibidos del cliente, contraseñas débiles o repetidas y sin acceso.",
+    "El detalle de cada elemento con revelado temporal, copia al portapapeles que se borra sola y el código de doble factor del cliente en vivo.",
+    "La salud de la bóveda: contraseñas débiles, repetidas o caducadas, credenciales para cambiar o con una sola persona con acceso.",
+    "El historial de versiones de cada elemento y una papelera de 30 días.",
+    "Para administradores: personas y llaves, registro encadenado, recuperación y política de seguridad.",
+    "En el expediente, la pestaña «Credenciales» dice qué hay guardado del cliente y cuándo caduca, sin desbloquear nada."
+   ],
+   "genera": [
+    "Kit de emergencia de cada persona, para imprimir o descargar en texto, con su Clave secreta.",
+    "Partes impresas de la recuperación del despacho, una por socio custodio; el servidor no guarda ninguna.",
+    "Avisos de caducidad de certificados y credenciales a 60, 30, 15 y 7 días y el mismo día.",
+    "Registro encadenado de aperturas y cambios, que se verifica cada día y avisa a los administradores si alguien lo ha manipulado.",
+    "Plan de rotación al revocar a una persona: lo que pudo ver queda marcado para cambiar la contraseña.",
+    "Envío seguro desde el portal: el cliente cifra su certificado o sus claves en su navegador y solo lo abren las personas que llevan sus asuntos."
+   ],
+   "tip": "Imprime el Kit de emergencia y las partes de la recuperación y guárdalos fuera del ordenador: sin ellos nadie, tampoco Webs Creative, puede abrir la bóveda."
+  }
+ ],
+ "generated_outputs": [
+  {
+   "name": "Exportación de vencimientos",
+   "format": "CSV",
+   "where": "Campañas › una campaña › Exportar",
+   "desc": "Lista de los vencimientos de la campaña, con los filtros aplicados, para trabajarla en Excel."
+  },
+  {
+   "name": "Recordatorios de vencimientos",
+   "format": "aviso (y correo si la persona lo activa)",
+   "where": "Campañas y calendario, de forma automática",
+   "desc": "Avisan al responsable a 15, 7, 3 y 1 días, el último día para domiciliar y cuando algo queda fuera de plazo."
+  },
+  {
+   "name": "Petición de documentación al cliente",
+   "format": "aviso en el portal y correo",
+   "where": "Campañas › Pedir documentación, o el panel de un vencimiento",
+   "desc": "Pide al cliente los papeles de los vencimientos elegidos y los deja como «Pedida al cliente»."
+  },
+  {
+   "name": "Recordatorio al cliente de sus impuestos",
+   "format": "aviso en el portal (y correo, si se activa)",
+   "where": "Automático, solo si el despacho lo activa en Despacho › Obligaciones",
+   "desc": "Recuerda al cliente lo que vence pronto y la documentación que falta."
+  },
+  {
+   "name": "Borrador del modelo",
+   "format": "PDF",
+   "where": "Modelos › un borrador › PDF",
+   "desc": "Impreso claro con casillas, resultado y detalle, con marca de agua «BORRADOR» hasta que se presenta."
+  },
+  {
+   "name": "Fichero para la Sede",
+   "format": "TXT (BOE, ISO-8859-1)",
+   "where": "Modelos › un borrador › Fichero",
+   "desc": "Se importa en el formulario de la Sede de la AEAT; disponible para 303, 130, 111, 115, 349, 347, 180 y 190."
+  },
+  {
+   "name": "Ficheros para la Sede en lote",
+   "format": "ZIP con LEEME.txt",
+   "where": "Modelos › campaña › Ficheros para la Sede",
+   "desc": "Junta los ficheros de hasta 500 borradores y explica lo que no se ha podido generar."
+  },
+  {
+   "name": "Aviso «listo para revisar»",
+   "format": "aviso en el portal",
+   "where": "Modelos › Enviar al cliente",
+   "desc": "El cliente abre su declaración en «Mis declaraciones» para aprobarla o preguntar."
+  },
+  {
+   "name": "Evidencia de aprobación",
+   "format": "registro sellado",
+   "where": "Modelos (aprobación en el portal o «Ya lo ha aprobado»)",
+   "desc": "Guarda quién aprobó, cuándo, desde dónde o por qué vía, y qué versión."
+  },
+  {
+   "name": "Registro de la presentación",
+   "format": "registro con justificante (PDF o imagen)",
+   "where": "Modelos › Registrar la presentación",
+   "desc": "Guarda fecha, CSV, NRC e importe, marca el vencimiento y deja en Bancos el cargo o la devolución esperados."
+  },
+  {
+   "name": "Correo enviado",
+   "format": "correo",
+   "where": "Correo › Redactar, Responder o Reenviar",
+   "desc": "Sale por el buzón del despacho, con plantillas, deshacer el envío y envío programado."
+  },
+  {
+   "name": "Adjunto a Documentos",
+   "format": "documento en la bandeja",
+   "where": "Correo › adjunto › A Documentos, o regla automática",
+   "desc": "Lleva facturas y documentos del correo a la bandeja de Documentos para leerlos y registrarlos."
+  },
+  {
+   "name": "Aviso de novedad normativa",
+   "format": "aviso",
+   "where": "Normativa, de forma automática",
+   "desc": "Avisa una vez a los asesores de los clientes afectados por una norma relevante."
+  },
+  {
+   "name": "Aviso de acto del BORME",
+   "format": "aviso",
+   "where": "Normativa › BORME de clientes",
+   "desc": "Avisa al asesor de cambios societarios, concursos o juntas de sus clientes."
+  },
+  {
+   "name": "Borrador de circular",
+   "format": "texto para copiar",
+   "where": "Normativa › ficha de una novedad › Borrador de circular",
+   "desc": "Texto para los clientes, redactado con IA o con plantilla, que revisas antes de enviarlo."
+  },
+  {
+   "name": "Propuesta de cambio del catálogo",
+   "format": "registro",
+   "where": "Normativa › Propuestas del catálogo",
+   "desc": "Al aceptarla, Obligaciones la aplica o deja revisiones; al rechazarla, queda el motivo."
+  },
+  {
+   "name": "Kit de emergencia",
+   "format": "impresión o TXT",
+   "where": "Bóveda › crear tu llave",
+   "desc": "Papel con la Clave secreta que, junto a tu contraseña maestra, abre tu bóveda en cualquier dispositivo."
+  },
+  {
+   "name": "Partes de la recuperación",
+   "format": "impresión",
+   "where": "Bóveda › activar la bóveda del despacho",
+   "desc": "Una parte por socio custodio; hacen falta varias juntas para recuperar el acceso."
+  },
+  {
+   "name": "Avisos de caducidad",
+   "format": "aviso",
+   "where": "Bóveda, de forma automática",
+   "desc": "Avisan a 60, 30, 15 y 7 días y el día en que caduca un certificado o una credencial."
+  },
+  {
+   "name": "Plan de rotación",
+   "format": "lista en la bóveda",
+   "where": "Bóveda › Personas y llaves › Revocar",
+   "desc": "Marca para cambiar las credenciales que pudo ver la persona revocada."
+  }
+ ]
+}
