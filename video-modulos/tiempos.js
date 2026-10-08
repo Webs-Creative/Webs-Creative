@@ -1,0 +1,178 @@
+window.TIEMPOS = {
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "duracion": 70.773,
+  "flash": 3.302,
+  "voz": null,
+  "escenas": [
+    {
+      "id": "gancho",
+      "texto": "¿Tu Dolibarr todavía trabaja a mano?",
+      "ini": 0.0,
+      "vozIni": 0.45,
+      "vozFin": 2.632,
+      "fin": 2.582
+    },
+    {
+      "id": "encender",
+      "texto": "Enciéndelo. Con los módulos de Webs Creative.",
+      "ini": 2.582,
+      "vozIni": 3.082,
+      "vozFin": 6.129,
+      "fin": 6.229
+    },
+    {
+      "id": "nexus",
+      "texto": "Se lo pides por chat o por voz… y lo hace.",
+      "ini": 6.229,
+      "vozIni": 6.579,
+      "vozFin": 9.345,
+      "fin": 9.445
+    },
+    {
+      "id": "ocr",
+      "texto": "Las facturas de proveedor se leen y se registran solas.",
+      "ini": 9.445,
+      "vozIni": 9.795,
+      "vozFin": 13.128,
+      "fin": 13.228
+    },
+    {
+      "id": "smartorder",
+      "texto": "Los pedidos que llegan por correo se crean solos.",
+      "ini": 13.228,
+      "vozIni": 13.578,
+      "vozFin": 16.548,
+      "fin": 16.648
+    },
+    {
+      "id": "scan",
+      "texto": "Escaneas el lote y va directo a su ficha.",
+      "ini": 16.648,
+      "vozIni": 16.998,
+      "vozFin": 19.482,
+      "fin": 19.582
+    },
+    {
+      "id": "guardiancash",
+      "texto": "Tu banco, conciliado y explicado.",
+      "ini": 19.582,
+      "vozIni": 19.932,
+      "vozFin": 22.152,
+      "fin": 22.252
+    },
+    {
+      "id": "domiciliaciones",
+      "texto": "Los recibos SEPA se cobran solos.",
+      "ini": 22.252,
+      "vozIni": 22.602,
+      "vozFin": 24.602,
+      "fin": 24.752
+    },
+    {
+      "id": "renovaciones",
+      "texto": "Contratos y cuotas, en piloto automático.",
+      "ini": 24.752,
+      "vozIni": 25.102,
+      "vozFin": 27.807,
+      "fin": 27.907
+    },
+    {
+      "id": "fiscal",
+      "texto": "Los modelos de Hacienda, preparados con tus facturas.",
+      "ini": 27.907,
+      "vozIni": 28.257,
+      "vozFin": 31.689,
+      "fin": 31.789
+    },
+    {
+      "id": "plastico",
+      "texto": "El impuesto al plástico, calculado y vigilado.",
+      "ini": 31.789,
+      "vozIni": 32.139,
+      "vozFin": 35.147,
+      "fin": 35.247
+    },
+    {
+      "id": "deca",
+      "texto": "El documento de control del transporte, en un clic.",
+      "ini": 35.247,
+      "vozIni": 35.597,
+      "vozFin": 38.908,
+      "fin": 39.008
+    },
+    {
+      "id": "fichajes",
+      "texto": "Fichajes legales, con tu propia app.",
+      "ini": 39.008,
+      "vozIni": 39.358,
+      "vozFin": 41.76,
+      "fin": 41.86
+    },
+    {
+      "id": "calidad",
+      "texto": "Tu ISO nueve mil uno, de principio a fin.",
+      "ini": 41.86,
+      "vozIni": 42.21,
+      "vozFin": 44.915,
+      "fin": 45.015
+    },
+    {
+      "id": "dolishop",
+      "texto": "Tu tienda para profesionales, sobre tu catálogo.",
+      "ini": 45.015,
+      "vozIni": 45.365,
+      "vozFin": 48.494,
+      "fin": 48.594
+    },
+    {
+      "id": "mail",
+      "texto": "Todo tu correo, dentro de Dolibarr.",
+      "ini": 48.594,
+      "vozIni": 48.944,
+      "vozFin": 51.285,
+      "fin": 51.385
+    },
+    {
+      "id": "sign",
+      "texto": "Firmas los PDF sin imprimir nada.",
+      "ini": 51.385,
+      "vozIni": 51.735,
+      "vozFin": 53.735,
+      "fin": 53.885
+    },
+    {
+      "id": "supply",
+      "texto": "Compras y proveedores, bajo control.",
+      "ini": 53.885,
+      "vozIni": 54.235,
+      "vozFin": 56.637,
+      "fin": 56.737
+    },
+    {
+      "id": "aluminio",
+      "texto": "Y tu Dolibarr, con aspecto de app.",
+      "ini": 56.737,
+      "vozIni": 57.087,
+      "vozFin": 59.368,
+      "fin": 59.468
+    },
+    {
+      "id": "diecisiete",
+      "texto": "Diecisiete módulos. Cero trabajo a mano.",
+      "ini": 59.468,
+      "vozIni": 59.818,
+      "vozFin": 62.562,
+      "fin": 62.662
+    },
+    {
+      "id": "marca",
+      "texto": "Webs Creative. Enciende tu Dolibarr. Entra en webscreative punto es.",
+      "ini": 62.662,
+      "vozIni": 63.012,
+      "vozFin": 67.773,
+      "fin": 70.773
+    }
+  ]
+};

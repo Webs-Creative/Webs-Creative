@@ -1,0 +1,23 @@
+[
+  { "id": "gancho",          "voz": "¿Tu Dolibarr todavía trabaja a mano?" },
+  { "id": "encender",        "voz": "Enciéndelo. Con los módulos de Webs Creative." },
+  { "id": "nexus",           "voz": "Se lo pides por chat o por voz… y lo hace." },
+  { "id": "ocr",             "voz": "Las facturas de proveedor se leen y se registran solas." },
+  { "id": "smartorder",      "voz": "Los pedidos que llegan por correo se crean solos." },
+  { "id": "scan",            "voz": "Escaneas el lote y va directo a su ficha." },
+  { "id": "guardiancash",    "voz": "Tu banco, conciliado y explicado." },
+  { "id": "domiciliaciones", "voz": "Los recibos SEPA se cobran solos." },
+  { "id": "renovaciones",    "voz": "Contratos y cuotas, en piloto automático." },
+  { "id": "fiscal",          "voz": "Los modelos de Hacienda, preparados con tus facturas." },
+  { "id": "plastico",        "voz": "El impuesto al plástico, calculado y vigilado." },
+  { "id": "deca",            "voz": "El documento de control del transporte, en un clic." },
+  { "id": "fichajes",        "voz": "Fichajes legales, con tu propia app." },
+  { "id": "calidad",         "voz": "Tu ISO nueve mil uno, de principio a fin." },
+  { "id": "dolishop",        "voz": "Tu tienda para profesionales, sobre tu catálogo." },
+  { "id": "mail",            "voz": "Todo tu correo, dentro de Dolibarr." },
+  { "id": "sign",            "voz": "Firmas los PDF sin imprimir nada." },
+  { "id": "supply",          "voz": "Compras y proveedores, bajo control." },
+  { "id": "aluminio",        "voz": "Y tu Dolibarr, con aspecto de app." },
+  { "id": "diecisiete",      "voz": "Diecisiete módulos. Cero trabajo a mano." },
+  { "id": "marca",           "voz": "Webs Creative. Enciende tu Dolibarr. Entra en webscreative punto es." }
+]
