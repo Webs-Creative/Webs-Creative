@@ -355,7 +355,10 @@ def main():
 
     T = json.loads((AQUI / "tiempos.json").read_text(encoding="utf-8"))
     dur = T["duracion"]
-    voz_ruta = args.voz or T.get("voz")
+    voz_ruta = args.voz or (str(AQUI / T["voz"]) if T.get("voz") else None)
+    if voz_ruta and not Path(voz_ruta).exists():
+        print(f"Aviso: no encuentro la locución {voz_ruta}; sigo sin voz.")
+        voz_ruta = None
 
     if args.musica:
         base = leer_audio(args.musica, dur) * 0.5
@@ -370,7 +373,8 @@ def main():
         voz *= 0.5 / max(1e-6, np.abs(voz).max())
         env = envolvente(voz)
         habla = np.clip(env / 0.12, 0, 1)[:, None]
-        mezcla = base * (0.55 - 0.32 * habla) + fx * (0.75 - 0.25 * habla) + voz * 1.0
+        # música unos 11 dB por debajo de la voz mientras se habla
+        mezcla = base * (0.22 - 0.165 * habla) + fx * (0.75 - 0.35 * habla) + voz * 1.0
     else:
         mezcla = base * 0.6 + fx * 0.8
 

@@ -33,13 +33,14 @@ Lo generado va a `salida/` (no se sube al repositorio).
    Modelo **Eleven Multilingual v2**, una voz de España enérgica, de anuncio.
    Ajustes de partida: estabilidad 40 %, similitud 75 %, estilo 25 %,
    velocidad 1,05–1,1.
-2. Descarga el MP3 en una sola pieza y guárdalo como `voz.mp3` en esta carpeta.
+2. Descarga el MP3 en una sola pieza y guárdalo como `salida/voz.mp3` (no se
+   sube al repositorio).
 3. Vuelve a montar:
 
 ```bash
-python3 tiempos.py --voz voz.mp3   # cada escena entra cuando empieza su frase
-python3 audio.py                   # música + efectos + voz, a -14 LUFS
-node render.mjs                    # → salida/video.mp4
+python3 tiempos.py --voz salida/voz.mp3   # cada escena entra cuando empieza su frase
+python3 audio.py                          # música + efectos + voz, a -14 LUFS
+node render.mjs                           # → salida/video.mp4
 ```
 
 Si `tiempos.py` dice que faltan pausas, vuelve a generar la voz dejando las

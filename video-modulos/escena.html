@@ -477,7 +477,7 @@ function ajustarNombres(){
 
 /* ================= pintar ================= */
 
-const VENTANA = {gancho: [0, 0.25], encender: [0, 0.05], diecisiete: [0.1, 0.05], marca: [0.05, 0]};
+const VENTANA = {gancho: [0, 0.45], encender: [0, 0.05], diecisiete: [0.1, 0.05], marca: [0.05, 0]};
 
 function visible(id, t){
   const e = esc[id], [antes, despues] = VENTANA[id] || [0.15, 0.05];
@@ -516,7 +516,7 @@ function pintarFondo(t, luz){
 }
 
 function pintarGancho(t){
-  const e = esc.gancho, sale = av(t, e.fin - 0.1, 0.3, E.inCubic);
+  const e = esc.gancho, sale = av(t, e.fin + 0.1, 0.3, E.inCubic);
   $("#modoManual").style.opacity = ((0.4 + 0.6 * (Math.floor(t * 2.2) % 2)) * (1 - av(t, capas.gancho[0].t0, 0.2))).toFixed(2);
   capas.gancho.forEach((p, k) => {
     const a = av(t, p.t0, 0.22, E.outExpo);

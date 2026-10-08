@@ -12,6 +12,7 @@ cada escena donde empieza su frase. Escribe tiempos.json, que leen escena.html
 import argparse
 import json
 import math
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -185,7 +186,7 @@ def main():
         "alto": 1920,
         "duracion": lista[-1]["fin"],
         "flash": round(encender["vozIni"] + 0.22, 3),
-        "voz": str(Path(args.voz).resolve()) if args.voz else None,
+        "voz": os.path.relpath(Path(args.voz).resolve(), AQUI) if args.voz else None,
         "escenas": lista,
     }
     texto = json.dumps(datos, ensure_ascii=False, indent=2)
